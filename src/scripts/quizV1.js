@@ -24,8 +24,3 @@
 //     console.log(5 + 4);
 // }
 // add8
-new Promise(function (resolve, reject) {
-    setTimeout(() => {
-        reject(new Error("Whoops!"))
-    }, 1000);
-}).catch(alert);

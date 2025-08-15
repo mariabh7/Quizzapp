@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quizzly app</title>
+    <link rel="stylesheet" href="/output.css" />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="quizz app , quizzly , setup , forms " />
+    <meta name="description" content=" quizzly set up , login " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="w-full h-lvh flex flex-col  justify-center items-center ">
+        <div
+            class="border-2 border-gray-100 mb-36 md:mb-0  p-5 md:p-10 w-[90%]  md:w-[80%] lg:w-[60%] flex flex-col justify-start gap-10">
+            <div id="title">
+                <h1 class="text-blue-600 font-luckiest text-4xl">quick setup </h1>
+            </div>
+            <div class="capitalize">
+                <form id="PersonInfo" class="formC hidden flex-col gap-5  justify-start">
+                    <label class="text-blue-600 text-xl">
+                        your name
+                    </label>
+                    <input type="text" placeholder="enter your name "
+                        class="px-1 py-3 bg-gray-50 outline-1 text-gray-800 placeholder:capitalize outline-blue-600">
+                    <label class="text-blue-600 text-xl">
+                        your major
+                    </label>
+                    <input type="text" placeholder="enter your major "
+                        class="px-1 py-3 bg-gray-50 outline-1 text-gray-800 placeholder:capitalize outline-blue-600">
+                </form>
+                <form id="PersonInfo" class="formC flex flex-col gap-5  justify-start">
+                    <label class="text-blue-600 text-xl">
+                        quiz topic
+                    </label>
+                    <select class="p-3 outline-0 capitalize bg-blue-50 appearance-none " id="topicSel">
+                        <option>theme</option>
+                        <option>themes</option>
+                        <option>theme1</option>
+                    </select>
+                    <label class="text-blue-600 text-xl">
+                        level of difficulty
+                    </label>
+                    <select class="p-3 outline-0 capitalize bg-blue-50 appearance-none " id="diffLevel">
+                        <option>theme</option>
+                        <option>themes</option>
+                        <option>theme1</option>
+                    </select>
+                    <label class="text-blue-600 text-xl">
+                        number of question
+                    </label>
+                    <select class="p-3 outline-0 capitalize bg-blue-50 appearance-none " id="NumberOfQA">
+                        <option>theme</option>
+                        <option>themes</option>
+                        <option>theme1</option>
+                    </select>
+                </form>
+            </div>
+            <div class="flex self-end justify-start gap-2 ">
+                <button id="prev"
+                    class="bg-gray-300 text-xl border-2 border-gray-300 rounded-full text-white capitalize px-6 py-1 ">prev</button>
+                <button id="next"
+                    class="bg-blue-600 text-xl border-2 border-blue-600 rounded-full text-white capitalize px-6 py-1 ">next</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
