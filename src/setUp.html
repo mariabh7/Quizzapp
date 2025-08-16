@@ -13,7 +13,7 @@
 <body>
     <div class="w-full h-lvh flex flex-col  justify-center items-center ">
         <div
-            class="border-2 border-gray-100 mb-36 md:mb-0  p-5 md:p-10 w-[90%]  md:w-[80%] lg:w-[60%] flex flex-col justify-start gap-10">
+            class="border-2 border-gray-100 mb-36 md:mb-0 h-max p-5 md:p-10 w-[90%]  md:w-[80%] lg:w-[60%] flex flex-col justify-start gap-10">
             <div id="title">
                 <h1 class="text-blue-600 font-luckiest text-4xl">quick setup </h1>
             </div>
@@ -30,7 +30,7 @@
                     <input type="text" placeholder="enter your major "
                         class="px-1 py-3 bg-gray-50 outline-1 text-gray-800 placeholder:capitalize outline-blue-600">
                 </form>
-                <form id="PersonInfo" class="formC flex flex-col gap-5  justify-start">
+                <form id="TechInfo" class="formC hidden flex-col gap-5  justify-start">
                     <label class="text-blue-600 text-xl">
                         quiz topic
                     </label>
@@ -59,13 +59,15 @@
             </div>
             <div class="flex self-end justify-start gap-2 ">
                 <button id="prev"
-                    class="bg-gray-300 text-xl border-2 border-gray-300 rounded-full text-white capitalize px-6 py-1 ">prev</button>
+                    class="bg-gray-100 text-xl border-2 border-gray-100 rounded-full text-gray-500 capitalize px-6 py-1 ">prev</button>
                 <button id="next"
                     class="bg-blue-600 text-xl border-2 border-blue-600 rounded-full text-white capitalize px-6 py-1 ">next</button>
 
             </div>
         </div>
     </div>
+
+    <script type="module" src="/Quizapp/src/scripts/setUp.js"></script>
 </body>
 
 </html>
