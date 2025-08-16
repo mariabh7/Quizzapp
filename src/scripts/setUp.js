@@ -1,4 +1,5 @@
 import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.esm.min.js";
+const users = new Map();
 class Userdata {
     constructor(name, major, quizTopic, difficulty, NumofQs) {
         this.name = name;
@@ -38,9 +39,7 @@ class Userdata {
         const fuse = new Fuse(list, fuseOptions);
         return (fuse.search(this.major).length != 0 ? true : false);
     }
-
 }
-let user = new Userdata("maria", "Cloud Computing", "js", "hard", 8);
 const forms = document.getElementsByClassName("formC");
 const NextButton = document.getElementById("next");
 const PrevButton = document.getElementById("prev");
@@ -50,7 +49,6 @@ function showNextStep() {
         singleitem += 1;
     }
     if (singleitem == forms.length - 1) {
-        console.log(singleitem)
         NextButton.textContent = "submit";
     }
 
@@ -62,7 +60,7 @@ function showPrevStep() {
     NextButton.textContent = "next";
 
 }
-function SelectCont(singleitem) {
+function SelectContent(singleitem) {
     if (singleitem == 0) {
         PrevButton.classList.add("hidden");
     } else {
@@ -70,25 +68,49 @@ function SelectCont(singleitem) {
     }
     for (let i = 0; i < forms.length; i++) {
         if (i == singleitem) {
-            console.log(forms[i])
             forms[i].classList.remove("hidden");
             forms[i].classList.add("flex");
 
         } else {
-
             forms[i].classList.add("hidden");
             forms[i].classList.remove("flex");
         }
     }
 }
+const userName = document.getElementById("Username");
+const userMajor = document.getElementById("Usermajor");
+const topicSel = document.getElementById("topicSel");
+const diffLevel = document.getElementById("diffLevel");
+const NumberOfQA = document.getElementById("NumberOfQA");
 NextButton.addEventListener("click", (e) => {
     e.preventDefault();
+    if (NextButton.textContent === "submit") {
+        try {
+            ManageData();
+        } catch (err) {
+            console.log(err)
+        }
+    }
     showNextStep();
-    SelectCont(singleitem);
+    SelectContent(singleitem);
 });
 PrevButton.addEventListener("click", (e) => {
     e.preventDefault();
     showPrevStep();
-    SelectCont(singleitem);
+    SelectContent(singleitem);
 })
-SelectCont(singleitem);
+SelectContent(singleitem);
+
+function ManageData() {
+    let User = new Userdata(userName.value, userMajor.value, topicSel.value, diffLevel.value, parseInt(NumberOfQA.value));
+    if (users.has(User.name)) {
+        User.setData([diffLevel.value, topicSel.value, parseInt(NumberOfQA.value)])
+    } else {
+        users.set(User.name, User);
+    }
+    localStorage.setItem("usersName", User.name);
+    document.body.classList.add("fade-out");
+    setTimeout(() => {
+        window.location.href = "home.html";
+    }, 400);
+}
