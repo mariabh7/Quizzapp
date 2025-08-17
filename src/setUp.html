@@ -11,52 +11,54 @@
 </head>
 
 <body>
-    <div class="w-full h-lvh flex flex-col  justify-center items-center ">
+    <div class="w-full relative h-lvh flex flex-col  justify-center items-center ">
         <div
             class="border-2 border-gray-100 mb-36 md:mb-0 h-max p-5 md:p-10 w-[90%]  md:w-[80%] lg:w-[60%] flex flex-col justify-start gap-10">
             <div id="title">
                 <h1 class="text-blue-600 font-luckiest text-4xl">quick setup </h1>
             </div>
-            <div class="capitalize">
-                <form id="PersonInfo" class="formC hidden flex-col gap-5  justify-start">
-                    <label class="text-blue-600 text-xl">
+            <form class="capitalize" id="forms">
+                <div id="PersonInfo" class="formC hidden flex-col gap-5  justify-start">
+                    <label class="text-blue-600 text-xl" for="Username">
                         your name
                     </label>
-                    <input type="text" placeholder="enter your name "
+                    <input type="text" placeholder="enter your name" id="Username"
                         class="px-1 py-3 bg-gray-50 outline-1 text-gray-800 placeholder:capitalize outline-blue-600">
-                    <label class="text-blue-600 text-xl">
+                    <label class="text-blue-600 text-xl" for="Usermajor">
                         your major
                     </label>
-                    <input type="text" placeholder="enter your major "
+                    <input type="text" placeholder="enter your major " id="Usermajor"
                         class="px-1 py-3 bg-gray-50 outline-1 text-gray-800 placeholder:capitalize outline-blue-600">
-                </form>
-                <form id="TechInfo" class="formC hidden flex-col gap-5  justify-start">
-                    <label class="text-blue-600 text-xl">
+                </div>
+                <div id="TechInfo" class="formC hidden flex-col gap-5  justify-start">
+                    <label class="text-blue-600 text-xl" for="topicSel">
                         quiz topic
                     </label>
+
                     <select class="p-3 outline-0 capitalize bg-blue-50 appearance-none " id="topicSel">
-                        <option>theme</option>
-                        <option>themes</option>
-                        <option>theme1</option>
+                        <option>topic</option>
                     </select>
-                    <label class="text-blue-600 text-xl">
+
+                    <label class="text-blue-600  text-xl" for="diffLevel">
                         level of difficulty
                     </label>
                     <select class="p-3 outline-0 capitalize bg-blue-50 appearance-none " id="diffLevel">
-                        <option>theme</option>
-                        <option>themes</option>
-                        <option>theme1</option>
+                        <option>easy</option>
+                        <option>meduim</option>
+                        <option>hard</option>
                     </select>
-                    <label class="text-blue-600 text-xl">
+                    <label class="text-blue-600 text-xl" for="NumberOfQA">
                         number of question
                     </label>
                     <select class="p-3 outline-0 capitalize bg-blue-50 appearance-none " id="NumberOfQA">
-                        <option>theme</option>
-                        <option>themes</option>
-                        <option>theme1</option>
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
                     </select>
-                </form>
-            </div>
+                </div>
+
+            </form>
             <div class="flex self-end justify-start gap-2 ">
                 <button id="prev"
                     class="bg-gray-100 text-xl border-2 border-gray-100 rounded-full text-gray-500 capitalize px-6 py-1 ">prev</button>
@@ -65,6 +67,7 @@
 
             </div>
         </div>
+    </div>
     </div>
 
     <script type="module" src="/Quizapp/src/scripts/setUp.js"></script>
