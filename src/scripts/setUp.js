@@ -1,45 +1,6 @@
-import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.esm.min.js";
-const users = new Map();
-class Userdata {
-    constructor(name, major, quizTopic, difficulty, NumofQs) {
-        this.name = name;
-        this.major = major;
-        this.quizTopic = quizTopic;
-        this.difficulty = difficulty;
-        this.NumofQs = NumofQs
-    }
-    setData([diff = this.difficulty, Topic = this.quizTopic, NumofQes = this.NumofQs] = []) {
-        this.difficulty = diff;
-        this.quizTopic = Topic;
-        this.NumofQs = NumofQes;
-    }
-    CheckMajorIsCs() {
-        const fuseOptions = {
-            isCaseSensitive: false,
-            includeScore: true,
-            ignoreDiacritics: true,
-            // shouldSort: true,
-            // includeMatches: false,
-            // findAllMatches: false,
-            // minMatchCharLength: 1,
-            // location: 0,
-            // threshold: 0.6,
-            // distance: 100,
-            // useExtendedSearch: false,
-            // ignoreLocation: false,
-            // ignoreFieldNorm: false,
-            // fieldNormWeight: 1,
 
-        };
-        const list = [
-            "computer science",
-            "cs",
-            "software engineer"
-        ]
-        const fuse = new Fuse(list, fuseOptions);
-        return (fuse.search(this.major).length != 0 ? true : false);
-    }
-}
+import { Userdata } from "./quizV1.js";
+const users = new Map();
 const forms = document.getElementsByClassName("formC");
 const NextButton = document.getElementById("next");
 const PrevButton = document.getElementById("prev");
@@ -105,8 +66,7 @@ async function GetDataViaAPI() {
         console.log("problem loading topics");
     }
 }
-GetDataViaAPI()
-
+GetDataViaAPI();
 NextButton.addEventListener("click", (e) => {
     e.preventDefault();
     if (NextButton.textContent === "submit") {
@@ -143,8 +103,8 @@ function ManageData() {
         } else {
             users.set(User.name, User);
         }
-        console.log(User);
-        localStorage.setItem("usersName", User.name);
+        console.log(JSON.stringify(User));
+        localStorage.setItem("usersName", JSON.stringify(User));
         document.body.classList.add("fade-out");
         setTimeout(() => {
             window.location.href = "home.html";
@@ -152,3 +112,4 @@ function ManageData() {
     }
 
 }
+export { Userdata }

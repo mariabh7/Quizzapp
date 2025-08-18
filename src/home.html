@@ -10,11 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
-    <div class="min-h-max">
-        <div class=" w-[90%] md:min-w-max  mx-5 md:mx-16  my-10 grid grid-rows-2 lg:grid-cols-[70%_20%] gap-10">
+<body class="bg-gray-100 ">
+    <div class="">
+        <div class=" w-[90%] md:min-w-max  mx-5 md:mx-16  my-10 grid  lg:grid-cols-[70%_20%] gap-10">
             <main class="flex flex-col gap-10 ">
-                <header class="border-2 flex flex-col justify-start gap-2 border-gray-100 p-5 md:p-10">
+                <header
+                    class="border-2 flex flex-col bg-white backdrop-blur-sm justify-start gap-2 border-white rounded-2xl p-5 md:p-10">
                     <div>
                         <h1 class="font-luckiest capitalize text-blue-600 text-3xl  md:text-5xl">hello <span
                                 id="GetName" class="text-blue-400">name</span>
@@ -25,11 +26,12 @@
                             ?</span>
                     </div>
                 </header>
-                <section class="border-2 h-full p-5 md:p-10  border-gray-100">
+                <section
+                    class="border-2 h-full p-5 md:p-10 flex flex-col align-middle items-start  rounded-xl bg-white border-white">
                     <div id="quizzTaken ">
 
                     </div>
-                    <div>
+                    <div class="self-center">
                         <button id="StartQuizz"
                             class="bg-blue-600 text-xl border-2 border-blue-600 rounded-full text-white capitalize px-6 py-2 ">start
                             a quizz </button>
@@ -38,29 +40,55 @@
             </main>
             <aside class="h-full flex flex-col gap-10">
                 <div id="timer"
-                    class=" cursor-pointer capitalize text-xl font-medium border-2 flex flex-col justify-center items-center gap-3  border-gray-100 p-5">
+                    class=" cursor-pointer capitalize text-xl font-medium border-2 flex flex-col justify-center rounded-xl items-center gap-3  bg-white border-white p-5">
                     <span class="text-blue-600">timer</span>
                     <div class="border-2 border-gray-200 w-20 h-20 rounded-full flex justify-center items-center p-10">
                         <span id="time ">
-                            00:00
+                            <span id="hr">00</span>:<span id="min">00</span>
                         </span>
                     </div>
                 </div>
                 <div id="chars"
-                    class="border-2 h-full py-10 px-3 text-xl flex flex-col justify-start gap-10 border-gray-100">
+                    class="border-2 h-full py-10 px-3 text-xl flex flex-col justify-start gap-10 bg-white rounded-xl border-white">
                     <div>
                         <span class="capitalize text-gray-500 ">your score is <span
                                 class="text-blue-600">0</span></span>
                     </div>
                     <ul class="flex flex-row  lg:flex-col justify-start  gap-5 lg:gap-10 capitalize">
-                        <li class="li-s"><span id="topic">topic</span></li>
-                        <li class="li-s"><span id="difficulty">difficulty</span></li>
-                        <li class="li-s"><span id="NumOfQA">NumOfQA</span></li>
+                        <li class="li-s">topic: <span id="topic">topic</span></li>
+                        <li class="li-s text-white"> level: <span id="difficulty">difficulty</span></li>
+                        <li class="li-s"> questions: <span id="NumOfQA">NumOfQA</span></li>
                     </ul>
                 </div>
             </aside>
         </div>
     </div>
+    <div class=" hidden transition-[display] duration-300 delay-150" id="modal-sugg">
+        <div class=" fixed inset-0   backdrop-blur-sm flex justify-center items-center">
+            <div class="bg-white  p-10 rounded-xl flex flex-col w-[90%] md:w-[50%]  justify-start items-start gap-5 ">
+                <div class="flex flex-col justify-start items-start gap-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="#007aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="Hide cursor-pointer">
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
+                    <h1 class="font-luckiest text-blue-600 text-4xl">quick suggestion :</h1>
+                </div>
+                <div>
+                    <p class="text-xl text-gray-500">since your major is <span id="majorOfuser"
+                            class="text-red-600 font-luckiest">major</span> we suggest
+                        taking a look on the
+                        topic you want
+                        at <a href="https://www.w3schools.com/"
+                            class="underline text-blue-600 font-luckiest">w3schools</a>
+                        if youre already familiar never mind just ignore this suggestion messsage
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="/Quizapp/src/scripts/home.js"></script>
 </body>
 
 </html>
