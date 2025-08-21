@@ -35,14 +35,19 @@ function setUserInfo() {
 }
 
 setUserInfo();
-const TimerWr = document.getElementById("timer");
 const TimerSettModal = document.getElementById("Timersett");
-const Minutes = document.getElementById("GetMins");
-const Seconds = document.getElementById("GetSecs");
-const TimerC = document.getElementById("time");
+const TimerWr = document.getElementById("timer");
 TimerWr.addEventListener("click", () => {
     TimerSettModal.classList.remove("hidden");
 })
+document.addEventListener("click", (event) => {
+    if (!document.getElementById("containerTimer").contains(event.target) && event.target !== TimerWr) {
+        TimerSettModal.classList.add("hidden");
+    }
+});
+const Minutes = document.getElementById("GetMins");
+const Seconds = document.getElementById("GetSecs");
+const TimerC = document.getElementById("time");
 function timerSEttings() {
     document.querySelectorAll("input").forEach(element => {
         element.addEventListener("input", () => {
@@ -75,7 +80,7 @@ class Timer {
         this.minInput.value = `${String(this.minInt).padStart(2, '0')}`;
         this.secInput.value = `${String(this.secInt).padStart(2, '0')}`;
     }
-
+    // clock ticking logic 
     ticking() {
         if (this.isPaused) {
             return;
@@ -94,6 +99,7 @@ class Timer {
         this.updateDisplay();
         this.timerV = setTimeout(() => { this.ticking() }, 1000);
     }
+    // start timer 
     start() {
         this.minInt = parseInt(this.minInput.value) || 0;
         this.secInt = parseInt(this.secInput.value) || 0;
@@ -101,33 +107,33 @@ class Timer {
         this.updateDisplay();
         this.ticking();
     }
+    // pause the timer
     pause() {
         this.isPaused = true;
         clearTimeout(this.timerV);
         this.timerV = null;
     }
-
+    // resume timer where it stopped 
     resume() {
         if (this.isPaused) {
             this.isPaused = false;
             this.ticking();
         }
     }
-
+    // reset timer 
     reset() {
-        this.pause();
+        this.stop();
         this.minInt = 0;
         this.secInt = 0;
         this.updateDisplay();
     }
-
+    // stop and clear timer 
     stop() {
         clearTimeout(this.timerV);
         this.timerV = null;
     }
     SaveToLocal() {
         localStorage.setItem("TimerData", this.minInt);
-        localStorage
     }
 }
 let clock = new Timer(Minutes, Seconds, TimerC)
@@ -144,11 +150,7 @@ document.getElementById("startTimer").addEventListener("click", () => {
     } else {
         clock.start();
     }
+
     TimerSettModal.classList.add("hidden");
 })
-timerSEttings()
-document.addEventListener("click", (event) => {
-    if (!document.getElementById("containerTimer").contains(event.target) && event.target !== TimerWr) {
-        TimerSettModal.classList.add("hidden");
-    }
-});
+timerSEttings();
