@@ -9,7 +9,6 @@ function setUserInfo() {
     let data = JSON.parse(localStorage.getItem("usersName"));
     const item = new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
     name.textContent = item.name;
-    console.log(item.quizTopic);
     topiVal.textContent = item.quizTopic;
     levelVal.textContent = item.difficulty;
     QsNumber.textContent = item.NumofQs;
@@ -40,8 +39,7 @@ const TimerWr = document.getElementById("timer");
 const TimerSettModal = document.getElementById("Timersett");
 const Minutes = document.getElementById("GetMins");
 const Seconds = document.getElementById("GetSecs");
-const min = document.getElementById("Min");
-const secOfT = document.getElementById("sec");
+const TimerC = document.getElementById("time");
 TimerWr.addEventListener("click", () => {
     TimerSettModal.classList.remove("hidden");
 })
@@ -60,74 +58,95 @@ function timerSEttings() {
     });
 
 }
-let ispaused = false;
 // countDown function 
-function timer({ minutes, seconds }) {
-    let minInt = parseInt(minutes);
-    let secInt = parseInt(seconds);
-    let timerV;
-    setTimeout(function countdown() {
-        if (ispaused) {
+class Timer {
+    constructor(minutes, seconds, time) {
+        this.minInt = 0;
+        this.secInt = 0;
+        this.timerV = null;
+        this.isPaused = false;
+        this.displayTime = time;
+        this.minInput = minutes;
+        this.secInput = seconds;
+        this.ClockEndaudio = new Audio("/Quizapp/public/mixkit-clock-bells-hour-signal-1069.wav");
+    }
+    updateDisplay() {
+        this.displayTime.textContent = `${String(this.minInt).padStart(2, '0')}:${String(this.secInt).padStart(2, '0')}`;
+        this.minInput.value = `${String(this.minInt).padStart(2, '0')}`;
+        this.secInput.value = `${String(this.secInt).padStart(2, '0')}`;
+    }
+
+    ticking() {
+        if (this.isPaused) {
             return;
         }
-        if (minInt === 0 && secInt === 0) {
+        if (this.minInt === 0 && this.secInt === 0) {
+            this.stop();
+            this.ClockEndaudio.play();
             return;
         }
-        if (secInt === 0) {
-            secInt = 59;
-            minInt -= 1;
+        if (this.secInt === 0) {
+            this.secInt = 59;
+            this.minInt -= 1;
         } else {
-            secInt -= 1;
+            this.secInt -= 1;
         }
-        document.getElementById("time").textContent = `${String(minInt).padStart(2, '0')}:${String(secInt).padStart(2, '0')}`;
-        Minutes.value = `${String(minInt).padStart(2, '0')}`;
-        Seconds.value = `${String(secInt).padStart(2, '0')}`;
-        timerV = setTimeout(countdown, 1000);
-
-    }, 1000)
-    document.getElementById("resetTimer").addEventListener("click", () => {
-        ResetTimer(timerV);
-    })
-    document.getElementById("PoseTimer").addEventListener("click", () => {
-        stopTimer(minInt, secInt);
-    })
-
-}
-
-function ResetTimer(timer) {
-    clearTimeout(timer);
-    Minutes.value = "00";
-    Seconds.value = "00";
-    document.getElementById("time").textContent = "00:00";
-}
-function stopTimer(CurrentMins, CurrentSec) {
-    ispaused = true;
-    document.getElementById("time").textContent = `${String(CurrentMins).padStart(2, '0')}:${String(CurrentSec).padStart(2, '0')}`
-}
-function StartTimer() {
-    let data = {
-        minutes: Minutes.value,
-        seconds: Seconds.value
+        this.updateDisplay();
+        this.timerV = setTimeout(() => { this.ticking() }, 1000);
     }
-    for (let key in data) {
-        if (data[key].length == 0) {
-            data[key] = "00";
+    start() {
+        this.minInt = parseInt(this.minInput.value) || 0;
+        this.secInt = parseInt(this.secInput.value) || 0;
+        this.isPaused = false;
+        this.updateDisplay();
+        this.ticking();
+    }
+    pause() {
+        this.isPaused = true;
+        clearTimeout(this.timerV);
+        this.timerV = null;
+    }
 
+    resume() {
+        if (this.isPaused) {
+            this.isPaused = false;
+            this.ticking();
         }
     }
-    if (data.seconds.length == 1) {
-        let newVal = Array.from(data.seconds);
-        newVal.splice(1, 0, "0");
-        data.seconds = newVal.join('');
+
+    reset() {
+        this.pause();
+        this.minInt = 0;
+        this.secInt = 0;
+        this.updateDisplay();
     }
-    ispaused = false;
-    timer(data);
+
+    stop() {
+        clearTimeout(this.timerV);
+        this.timerV = null;
+    }
+    SaveToLocal() {
+        localStorage.setItem("TimerData", this.minInt);
+        localStorage
+    }
 }
+let clock = new Timer(Minutes, Seconds, TimerC)
+
+document.getElementById("resetTimer").addEventListener("click", () => {
+    clock.reset();
+})
+document.getElementById("PoseTimer").addEventListener("click", () => {
+    clock.pause();
+})
 document.getElementById("startTimer").addEventListener("click", () => {
-    StartTimer();
+    if (clock.isPaused) {
+        clock.resume();
+    } else {
+        clock.start();
+    }
     TimerSettModal.classList.add("hidden");
 })
-timerSEttings();
+timerSEttings()
 document.addEventListener("click", (event) => {
     if (!document.getElementById("containerTimer").contains(event.target) && event.target !== TimerWr) {
         TimerSettModal.classList.add("hidden");
