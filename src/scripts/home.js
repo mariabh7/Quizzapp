@@ -34,4 +34,102 @@ function setUserInfo() {
         }
     }
 }
+
 setUserInfo();
+const TimerWr = document.getElementById("timer");
+const TimerSettModal = document.getElementById("Timersett");
+const Minutes = document.getElementById("GetMins");
+const Seconds = document.getElementById("GetSecs");
+const min = document.getElementById("Min");
+const secOfT = document.getElementById("sec");
+TimerWr.addEventListener("click", () => {
+    TimerSettModal.classList.remove("hidden");
+})
+function timerSEttings() {
+    document.querySelectorAll("input").forEach(element => {
+        element.addEventListener("input", () => {
+            if (element.value.length > 2) {
+                element.value = element.value.slice(0, 2);
+            }
+            if (element.dataset.min = "secs") {
+                if (parseInt(element.value) > 59) {
+                    element.value = "00"
+                }
+            }
+        })
+    });
+
+}
+let ispaused = false;
+// countDown function 
+function timer({ minutes, seconds }) {
+    let minInt = parseInt(minutes);
+    let secInt = parseInt(seconds);
+    let timerV;
+    setTimeout(function countdown() {
+        if (ispaused) {
+            return;
+        }
+        if (minInt === 0 && secInt === 0) {
+            return;
+        }
+        if (secInt === 0) {
+            secInt = 59;
+            minInt -= 1;
+        } else {
+            secInt -= 1;
+        }
+        document.getElementById("time").textContent = `${String(minInt).padStart(2, '0')}:${String(secInt).padStart(2, '0')}`;
+        Minutes.value = `${String(minInt).padStart(2, '0')}`;
+        Seconds.value = `${String(secInt).padStart(2, '0')}`;
+        timerV = setTimeout(countdown, 1000);
+
+    }, 1000)
+    document.getElementById("resetTimer").addEventListener("click", () => {
+        ResetTimer(timerV);
+    })
+    document.getElementById("PoseTimer").addEventListener("click", () => {
+        stopTimer(minInt, secInt);
+    })
+
+}
+
+function ResetTimer(timer) {
+    clearTimeout(timer);
+    Minutes.value = "00";
+    Seconds.value = "00";
+    document.getElementById("time").textContent = "00:00";
+}
+function stopTimer(CurrentMins, CurrentSec) {
+    ispaused = true;
+    document.getElementById("time").textContent = `${String(CurrentMins).padStart(2, '0')}:${String(CurrentSec).padStart(2, '0')}`
+}
+function StartTimer() {
+    let data = {
+        minutes: Minutes.value,
+        seconds: Seconds.value
+    }
+    for (let key in data) {
+        if (data[key].length == 0) {
+            data[key] = "00";
+
+        }
+    }
+    if (data.seconds.length == 1) {
+        let newVal = Array.from(data.seconds);
+        newVal.splice(1, 0, "0");
+        data.seconds = newVal.join('');
+    }
+    ispaused = false;
+    timer(data);
+}
+document.getElementById("startTimer").addEventListener("click", () => {
+    StartTimer();
+    TimerSettModal.classList.add("hidden");
+})
+timerSEttings();
+document.addEventListener("click", (event) => {
+    if (!document.getElementById("containerTimer").contains(event.target) && event.target !== TimerWr) {
+        TimerSettModal.classList.add("hidden");
+    }
+});

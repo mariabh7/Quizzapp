@@ -88,7 +88,7 @@ PrevButton.addEventListener("click", (e) => {
 SelectContent(singleitem);
 
 function ManageData() {
-    if (userName.value.length == 0 || userMajor.value.length == 0 || topicSel.value == "topic" || diffLevel.value == "level" || parseInt(NumberOfQA.value) == 0) {
+    if (userName.value.length == 0 || userMajor.value.length == 0 || diffLevel.value == "level" || parseInt(NumberOfQA.value) == 0) {
         let warning = document.createElement("p");
         warning.textContent = "your submittion failed , please provide Infos"
         warning.className = " my-10 text-red-500"
