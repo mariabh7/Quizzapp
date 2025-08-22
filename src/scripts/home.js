@@ -1,4 +1,4 @@
-
+"use strict"
 import { Userdata } from "./quizV1.js";
 const name = document.getElementById("GetName");
 const topiVal = document.getElementById("topic");
@@ -10,6 +10,11 @@ function setUserInfo() {
     let item = new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
     return item;
 }
+let colorClasses = {
+    hard: ["bg-red-500", "border-red-500"],
+    medium: ["bg-yellow-500", "border-yellow-500"],
+    easy: ["bg-green-400", "border-green-400"]
+};
 const OurUser = setUserInfo();
 function UpdateDom() {
     name.textContent = OurUser.name;
@@ -17,15 +22,6 @@ function UpdateDom() {
     levelVal.textContent = OurUser.difficulty;
     QsNumber.textContent = OurUser.NumofQs;
     document.getElementById("majorOfuser").textContent = OurUser.major;
-    let colorClasses = {
-        hard: ["bg-red-500", "border-red-500"],
-        medium: ["bg-yellow-500", "border-yellow-500"],
-        easy: ["bg-green-400", "border-green-400"]
-    };
-    if (levelVal.parentElement.parentElement.parentElement.classList.contains(...(colorClasses[levelVal.textContent]))) {
-        console.log(...(colorClasses[levelVal.textContent]));
-        levelVal.parentElement.parentElement.parentElement.classList.remove(...(colorClasses[levelVal.textContent]))
-    }
     levelVal.parentElement.parentElement.parentElement.classList.add(...(colorClasses[levelVal.textContent] || []));
     if (!OurUser.CheckMajorIsCs()) {
         if (!localStorage.getItem("suggestionShowsn")) {
@@ -44,6 +40,9 @@ function UpdateDom() {
 }
 document.querySelectorAll("select").forEach((sel) => {
     sel.addEventListener("change", () => {
+        if (levelVal.parentElement.parentElement.parentElement.classList.contains(...(colorClasses[levelVal.textContent]))) {
+            levelVal.parentElement.parentElement.parentElement.classList.remove(...(colorClasses[levelVal.textContent]))
+        }
         OurUser.setData([sel.value]);
         console.log(OurUser);
         UpdateDom();
