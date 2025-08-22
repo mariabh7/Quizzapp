@@ -44,7 +44,6 @@ document.querySelectorAll("select").forEach((sel) => {
             levelVal.parentElement.parentElement.parentElement.classList.remove(...(colorClasses[levelVal.textContent]))
         }
         OurUser.setData([sel.value]);
-        console.log(OurUser);
         UpdateDom();
     })
 })
