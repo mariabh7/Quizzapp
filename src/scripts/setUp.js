@@ -1,6 +1,5 @@
 
-import { Userdata } from "./quizV1.js";
-const users = new Map();
+import { Userdata, users } from "./quizV1.js";
 const forms = document.getElementsByClassName("formC");
 const NextButton = document.getElementById("next");
 const PrevButton = document.getElementById("prev");
@@ -103,7 +102,6 @@ function ManageData() {
         } else {
             users.set(User.name, User);
         }
-        console.log(JSON.stringify(User));
         localStorage.setItem("usersName", JSON.stringify(User));
         document.body.classList.add("fade-out");
         setTimeout(() => {

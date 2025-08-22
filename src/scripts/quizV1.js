@@ -40,3 +40,4 @@ export class Userdata {
         return (fuse.search(this.major).length != 0 ? true : false);
     }
 }
+export const users = new Map();

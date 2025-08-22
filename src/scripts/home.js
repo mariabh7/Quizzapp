@@ -7,19 +7,27 @@ const QsNumber = document.getElementById("NumOfQA");
 const suggestionModal = document.getElementById("modal-sugg");
 function setUserInfo() {
     let data = JSON.parse(localStorage.getItem("usersName"));
-    const item = new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
-    name.textContent = item.name;
-    topiVal.textContent = item.quizTopic;
-    levelVal.textContent = item.difficulty;
-    QsNumber.textContent = item.NumofQs;
-    document.getElementById("majorOfuser").textContent = item.major;
+    let item = new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
+    return item;
+}
+const OurUser = setUserInfo();
+function UpdateDom() {
+    name.textContent = OurUser.name;
+    topiVal.textContent = OurUser.quizTopic;
+    levelVal.textContent = OurUser.difficulty;
+    QsNumber.textContent = OurUser.NumofQs;
+    document.getElementById("majorOfuser").textContent = OurUser.major;
     let colorClasses = {
         hard: ["bg-red-500", "border-red-500"],
-        meduim: ["bg-yellow-500", "border-yellow-500"],
+        medium: ["bg-yellow-500", "border-yellow-500"],
         easy: ["bg-green-400", "border-green-400"]
     };
-    levelVal.parentElement.classList.add(...(colorClasses[levelVal.textContent] || []));
-    if (!item.CheckMajorIsCs()) {
+    if (levelVal.parentElement.parentElement.parentElement.classList.contains(...(colorClasses[levelVal.textContent]))) {
+        console.log(...(colorClasses[levelVal.textContent]));
+        levelVal.parentElement.parentElement.parentElement.classList.remove(...(colorClasses[levelVal.textContent]))
+    }
+    levelVal.parentElement.parentElement.parentElement.classList.add(...(colorClasses[levelVal.textContent] || []));
+    if (!OurUser.CheckMajorIsCs()) {
         if (!localStorage.getItem("suggestionShowsn")) {
             let ShowSugg = setTimeout(() => {
                 suggestionModal.classList.remove("hidden");
@@ -32,19 +40,18 @@ function setUserInfo() {
             }, 2000);
         }
     }
-}
 
-setUserInfo();
+}
+document.querySelectorAll("select").forEach((sel) => {
+    sel.addEventListener("change", () => {
+        OurUser.setData([sel.value]);
+        console.log(OurUser);
+        UpdateDom();
+    })
+})
+UpdateDom();
 const TimerSettModal = document.getElementById("Timersett");
 const TimerWr = document.getElementById("timer");
-TimerWr.addEventListener("click", () => {
-    TimerSettModal.classList.remove("hidden");
-})
-document.addEventListener("click", (event) => {
-    if (!document.getElementById("containerTimer").contains(event.target) && event.target !== TimerWr) {
-        TimerSettModal.classList.add("hidden");
-    }
-});
 const Minutes = document.getElementById("GetMins");
 const Seconds = document.getElementById("GetSecs");
 const TimerC = document.getElementById("time");
@@ -63,6 +70,17 @@ function timerSEttings() {
     });
 
 }
+
+
+TimerWr.addEventListener("click", () => {
+    TimerSettModal.classList.remove("hidden");
+    timerSEttings();
+})
+document.addEventListener("click", (event) => {
+    if (!document.getElementById("containerTimer").contains(event.target) && event.target !== TimerWr) {
+        TimerSettModal.classList.add("hidden");
+    }
+});
 // countDown function 
 class Timer {
     constructor(minutes, seconds, time) {
@@ -153,4 +171,3 @@ document.getElementById("startTimer").addEventListener("click", () => {
 
     TimerSettModal.classList.add("hidden");
 })
-timerSEttings();
