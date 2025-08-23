@@ -1,5 +1,6 @@
 
-import { Userdata, users } from "./quizV1.js";
+import { Userdata, users, GetDataViaAPI } from "./quizV1.js";
+
 const forms = document.getElementsByClassName("formC");
 const NextButton = document.getElementById("next");
 const PrevButton = document.getElementById("prev");
@@ -39,33 +40,11 @@ function SelectContent(singleitem) {
 }
 const userName = document.getElementById("Username");
 const userMajor = document.getElementById("Usermajor");
-const topicSel = document.getElementById("topicSel");
-const diffLevel = document.getElementById("diffLevel");
-const NumberOfQA = document.getElementById("NumberOfQA");
-async function GetDataViaAPI() {
-    try {
-        let res = await fetch("https://quizapi.io/api/v1/tags?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso");
-        let Data = await res.json();
-        try {
-            Data.forEach(element => {
-                let opt = document.createElement("option");
-                if (element.name != "Undefined") {
-                    opt.textContent = element.name;
-                    topicSel.appendChild(opt);
-                }
-            });
-        } catch {
-            let warning = document.createElement("p");
-            warning.textContent = "failed to retrieve topic data ! please try again later "
-            warning.className = " my-10 text-yellow-500"
-            document.getElementById("TechInfo").appendChild(warning);
-        }
-
-    } catch {
-        console.log("problem loading topics");
-    }
-}
-GetDataViaAPI();
+const topicSel = document.getElementById("Topic");
+const diffLevel = document.getElementById("diff");
+const NumberOfQA = document.getElementById("NumofQes");
+const ContainerInfo = document.getElementById("TechInfo");
+GetDataViaAPI(topicSel, ContainerInfo);
 NextButton.addEventListener("click", (e) => {
     e.preventDefault();
     if (NextButton.textContent === "submit") {
@@ -96,9 +75,9 @@ function ManageData() {
             warning.remove();
         }, 5000);
     } else {
-        let User = new Userdata(userName.value, userMajor.value, topicSel.value, diffLevel.value, parseInt(NumberOfQA.value));
+        let User = new Userdata(userName.value, userMajor.value, topicSel.value, diffLevel.value, NumberOfQA.value);
         if (users.has(User.name)) {
-            User.setData([diffLevel.value, topicSel.value, parseInt(NumberOfQA.value)])
+            User.setData({ [diffLevel.id]: diffLevel.value, [topicSel.id]: topicSel.value, [NumberOfQA.id]: NumberOfQA.value })
         } else {
             users.set(User.name, User);
         }

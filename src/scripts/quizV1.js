@@ -6,12 +6,12 @@ export class Userdata {
         this.major = major;
         this.quizTopic = quizTopic;
         this.difficulty = difficulty;
-        this.NumofQs = NumofQs
+        this.NumofQs = parseInt(NumofQs);
     }
-    setData([diff = this.difficulty, Topic = this.quizTopic, NumofQes = this.NumofQs] = []) {
+    setData({ diff = this.difficulty, Topic = this.quizTopic, NumofQes = this.NumofQs } = {}) {
         this.difficulty = diff;
         this.quizTopic = Topic;
-        this.NumofQs = NumofQes;
+        this.NumofQs = parseInt(NumofQes);
     }
     CheckMajorIsCs() {
         const fuseOptions = {
@@ -41,3 +41,26 @@ export class Userdata {
     }
 }
 export const users = new Map();
+export async function GetDataViaAPI(selectEl, ParentEL) {
+    try {
+        let res = await fetch("https://quizapi.io/api/v1/tags?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso");
+        let Data = await res.json();
+        try {
+            Data.forEach(element => {
+                let opt = document.createElement("option");
+                if (element.name != "Undefined") {
+                    opt.textContent = element.name;
+                    selectEl.appendChild(opt);
+                }
+            });
+        } catch {
+            let warning = document.createElement("p");
+            warning.textContent = "failed to retrieve topic data ! please try again later "
+            warning.className = " my-10 text-yellow-500 "
+            ParentEL.appendChild(warning);
+        }
+
+    } catch {
+        console.log("problem loading topics");
+    }
+}
