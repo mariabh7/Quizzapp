@@ -8,8 +8,12 @@ const QsNumber = document.getElementById("NumOfQA");
 const suggestionModal = document.getElementById("modal-sugg");
 
 function setUserInfo() {
-    let data = JSON.parse(localStorage.getItem("usersName"));
-    return new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
+    try {
+        let data = JSON.parse(localStorage.getItem("usersName"));
+        return new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
+    } catch (err) {
+        console.log(`problem catched :${err} , unfortunatelly we can't get the user yet `)
+    }
 }
 
 let colorClasses = {
@@ -27,11 +31,11 @@ const selectDataMap = {
 };
 
 function UpdateDom() {
-    name.textContent = OurUser.name;
-    topiVal.textContent = OurUser.quizTopic;
-    levelVal.textContent = OurUser.difficulty;
-    QsNumber.textContent = OurUser.NumofQs;
-    document.getElementById("majorOfuser").textContent = OurUser.major;
+    name.textContent = OurUser?.name;
+    topiVal.textContent = OurUser?.quizTopic;
+    levelVal.textContent = OurUser?.difficulty;
+    QsNumber.textContent = OurUser?.NumofQs;
+    document.getElementById("majorOfuser").textContent = OurUser?.major;
 
     // Remove any previous color classes first
     Object.values(colorClasses).flat().forEach(c => {
@@ -41,7 +45,7 @@ function UpdateDom() {
     // Add the correct color class
     levelVal.parentElement.parentElement.classList.add(...(colorClasses[levelVal.textContent] || []));
     GetRestData();
-    if (!OurUser.CheckMajorIsCs()) {
+    if (!OurUser?.CheckMajorIsCs()) {
         if (!localStorage.getItem("suggestionShowsn")) {
             let ShowSugg = setTimeout(() => {
                 suggestionModal.classList.remove("hidden");
@@ -63,7 +67,7 @@ document.querySelectorAll("select").forEach((sel) => {
 });
 
 UpdateDom();
-GetDataViaAPI(Sel, document.getElementById("chars"));
+GetDataViaAPI(Sel, document.getElementById("QuizzCon"));
 function GetRestData() {
     Object.entries(selectDataMap).forEach(([id, values]) => {
         const sel = document.getElementById(id);
@@ -213,7 +217,7 @@ document.getElementById("startTimer").addEventListener("click", () => {
 let ShowRightContent = false;
 async function GetQuestions() {
     try {
-        const res = await fetch(`https://quizapi.io/api/v1/questions?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso&difficulty=${OurUser.difficulty}&limit=${OurUser.NumofQs}&tags=${OurUser.quizTopic}`);
+        const res = await fetch(`https://quizapi.io/api/v1/questions?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso&difficulty=${OurUser?.difficulty}&limit=${OurUser?.NumofQs}&tags=${OurUser?.quizTopic}`);
         const data = await res.json();
         data.forEach(item => console.log(item));
     } catch (err) {
