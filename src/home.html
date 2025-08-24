@@ -27,15 +27,11 @@
                     </div>
                 </header>
                 <section
-                    class="border-2 h-full p-5 md:p-10 flex flex-col align-middle items-start  rounded-xl bg-white border-white">
+                    class="border-2 h-full p-5 md:p-10 flex flex-col align-middle items-center  rounded-xl bg-white border-white">
                     <div id="quizzTaken ">
+                        <span class="capitalize text-2xl font-luckiest tracking-widest ">you did take no quiz yet</span>
+                    </div>
 
-                    </div>
-                    <div class="self-center">
-                        <button id="StartQuizz"
-                            class="bg-blue-600 text-xl border-2 border-blue-600 rounded-full text-white capitalize px-6 py-2 ">start
-                            a quizz </button>
-                    </div>
                 </section>
             </main>
             <aside class="h-full flex flex-col gap-10">
@@ -52,6 +48,7 @@
 
                 <div id="chars"
                     class="border-2 h-full py-10 px-3 text-xl flex flex-col justify-start gap-10 bg-white rounded-xl border-white">
+
                     <div>
                         <span class="capitalize text-gray-500 ">your score is <span
                                 class="text-blue-600">0</span></span>
@@ -67,10 +64,15 @@
                                 <option id="difficulty">difficulty</option>
                             </select>
                         </li>
-                        <li class="li-s"> <span>questions:</span> <select id="NumofQes" class="sel-u">
+                        <li class="li-s"> <span>Ques:</span> <select id="NumofQes" class="sel-u">
                                 <option id="NumOfQA">NumOfQA</option>
                             </select></li>
                     </ul>
+                    <div class="self-center">
+                        <button id="StartQuizz"
+                            class="bg-blue-600 text-xl border-2 border-blue-600 rounded-full text-white capitalize px-6 py-2 ">start
+                            a quizz </button>
+                    </div>
                 </div>
             </aside>
         </div>

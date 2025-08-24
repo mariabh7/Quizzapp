@@ -63,7 +63,7 @@ document.querySelectorAll("select").forEach((sel) => {
 });
 
 UpdateDom();
-GetDataViaAPI(Sel, Sel.parentElement);
+GetDataViaAPI(Sel, document.getElementById("chars"));
 function GetRestData() {
     Object.entries(selectDataMap).forEach(([id, values]) => {
         const sel = document.getElementById(id);
@@ -207,3 +207,16 @@ document.getElementById("startTimer").addEventListener("click", () => {
     }
     TimerSettModal.classList.add("hidden");
 });
+
+/* ---------------- QUIZ SECTION  CODE ---------------- */
+
+let ShowRightContent = false;
+async function GetQuestions() {
+    try {
+        const res = await fetch(`https://quizapi.io/api/v1/questions?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso&difficulty=${OurUser.difficulty}&limit=${OurUser.NumofQs}&tags=${OurUser.quizTopic}`);
+        const data = await res.json();
+        data.forEach(item => console.log(item));
+    } catch (err) {
+        console.log("no questions yet ")
+    }
+}
