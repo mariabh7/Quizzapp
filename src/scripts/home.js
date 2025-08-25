@@ -244,18 +244,38 @@ function escapeHTML(str) {
     return str.replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
 }
-function ShowSuggestedAnswers(item, ParentEL) {
-    const answers = item?.answers;
-    Object.entries(answers).forEach(([id, value]) => {
-        if (value != null) {
-            let li = document.createElement("li");
-            li.textContent = value;
-            li.id = id;
-            li.className = "answer-li";
-            ParentEL.appendChild(li);
-        }
-    })
+function ShowAns() {
+    let map = new Map();
+    return function AnswersSett(item, ParentEL) {
+        const answers = item?.answers;
+        Object.entries(answers).forEach(([id, value]) => {
+            if (value !== null) {
+                let li = document.createElement("li");
+                li.textContent = value;
+                li.id = id;
+                if (map.get(`answer${currentItem}`) === value) {
+                    li.className = "answer-Active";
+                } else {
+                    li.className = "answer-li";
+                }
+                ParentEL.appendChild(li);
+                li.addEventListener("click", (event) => {
+                    li.parentElement.querySelectorAll("li").forEach(el => {
+                        el.classList.remove("answer-Active");
+                        el.classList.add("answer-li");
+                    });
+                    li.classList.remove("answer-li");
+                    li.classList.add("answer-Active");
+
+                    map.set(`answer${currentItem}`, li.textContent);
+                    console.log(map);
+                })
+            }
+        })
+
+    }
 }
+const ShowSuggestedAnswers = ShowAns();
 function showCurrentQuestion(current) {
     const item = data.find((cItem, index, array) => index == current);
     document.getElementById("QuizContent").innerHTML = "";
