@@ -18,7 +18,7 @@
                     class="border-2 flex flex-col bg-white backdrop-blur-sm justify-start gap-2 border-white rounded-2xl p-5 md:p-10">
                     <div>
                         <h1 class="font-luckiest capitalize text-blue-600 text-3xl  md:text-5xl">hello <span
-                                id="GetName" class="text-blue-400">name</span>
+                                id="GetName" class="text-blue-400 text-3xl">name</span>
                         </h1>
                     </div>
                     <div>
@@ -29,10 +29,20 @@
                 <section
                     class="border-2 h-full p-5 md:p-10 flex flex-col align-middle items-center  rounded-xl bg-white border-white"
                     id="QuizzCon">
-                    <div id="quizzTaken">
+                    <!-- <div id="quizzTaken">
                         <span class="capitalize text-2xl font-luckiest tracking-widest ">you did take no quiz yet</span>
-                    </div>
+                    </div> -->
+                    <div id="TakeQuiz" class="w-full h-full flex flex-col gap-10 justify-between">
+                        <div id="QuizContent">
+                        </div>
+                        <div class="self-end flex justify-end gap-5">
+                            <button id="prev"
+                                class="bg-gray-100 flex-shrink-0 text-xl border-2 border-gray-100 rounded-full text-gray-500 capitalize px-6 py-1 ">prev</button>
+                            <button id="next"
+                                class="bg-blue-600 flex-shrink-0 text-xl border-2 border-blue-600 rounded-full text-white capitalize px-6 py-1 ">next</button>
 
+                        </div>
+                    </div>
                 </section>
             </main>
             <aside class="h-full flex flex-col gap-10">
@@ -48,13 +58,13 @@
                 </div>
 
                 <div id="chars"
-                    class="border-2 h-full py-10 px-3 text-xl flex flex-col justify-start gap-10 bg-white rounded-xl border-white">
+                    class="border-2 h-full py-10 px-3 text-xl flex flex-col justify-start  gap-10 bg-white rounded-xl border-white">
 
                     <div>
                         <span class="capitalize text-gray-500 ">your score is <span
                                 class="text-blue-600">0</span></span>
                     </div>
-                    <ul class="flex flex-row  lg:flex-col justify-start  gap-3 lg:gap-10 capitalize">
+                    <ul class="flex flex-col  md:flex-row  lg:flex-col justify-start  gap-3 lg:gap-8 capitalize">
                         <li class="li-s"><span>topic:</span>
                             <select id="Topic" class="sel-u">
                                 <option id="topic">topic</option>

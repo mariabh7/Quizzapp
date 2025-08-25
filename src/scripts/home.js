@@ -24,7 +24,7 @@ let colorClasses = {
 const Sel = document.getElementById("Topic");
 const OurUser = setUserInfo();
 const levels = ["hard", "medium", "easy"];
-const nums = [5, 10, 15, 20];
+const nums = [3, 5, 10, 15, 20];
 const selectDataMap = {
     diff: levels,
     NumofQes: nums
@@ -63,11 +63,12 @@ document.querySelectorAll("select").forEach((sel) => {
     sel.addEventListener("change", () => {
         OurUser.setData({ [sel.id]: sel.value });
         UpdateDom();
+
     });
 });
 
 UpdateDom();
-GetDataViaAPI(Sel, document.getElementById("QuizzCon"));
+// GetDataViaAPI(Sel, document.getElementById("QuizzCon"));
 function GetRestData() {
     Object.entries(selectDataMap).forEach(([id, values]) => {
         const sel = document.getElementById(id);
@@ -215,12 +216,64 @@ document.getElementById("startTimer").addEventListener("click", () => {
 /* ---------------- QUIZ SECTION  CODE ---------------- */
 
 let ShowRightContent = false;
+let currentItem = 0;
 async function GetQuestions() {
     try {
         const res = await fetch(`https://quizapi.io/api/v1/questions?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso&difficulty=${OurUser?.difficulty}&limit=${OurUser?.NumofQs}&tags=${OurUser?.quizTopic}`);
         const data = await res.json();
-        data.forEach(item => console.log(item));
+        return data;
     } catch (err) {
-        console.log("no questions yet ")
+        console.log("no questions yet ");
     }
 }
+let data = JSON.parse(localStorage.getItem("data"));
+
+function showNextStep() {
+    if (currentItem < data.length - 1) {
+        currentItem += 1;
+    }
+
+}
+function showPrevStep() {
+    if (currentItem != 0) {
+        currentItem -= 1;
+    }
+
+}
+function escapeHTML(str) {
+    return str.replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+}
+function ShowSuggestedAnswers(item, ParentEL) {
+    const answers = item?.answers;
+    Object.entries(answers).forEach(([id, value]) => {
+        if (value != null) {
+            let li = document.createElement("li");
+            li.textContent = value;
+            li.id = id;
+            li.className = "answer-li";
+            ParentEL.appendChild(li);
+        }
+    })
+}
+function showCurrentQuestion(current) {
+    const item = data.find((cItem, index, array) => index == current);
+    document.getElementById("QuizContent").innerHTML = "";
+    let div = document.createElement("div");
+    div.innerHTML = `
+    <h3 class=" text-lg md:text-xl font-semibold first-letter:capitalize  text-blue-600 ">${escapeHTML(item?.question)}</h3>
+    <div><ul id="suggestedAnswers" class=" mt-4 md:mt-8 flex flex-col gap-5  md:gap-8 "></ul>
+    </div>`
+    ShowSuggestedAnswers(item, div.querySelector("#suggestedAnswers"));
+    document.getElementById("QuizContent").appendChild(div);
+}
+
+document.getElementById("prev").addEventListener("click", () => {
+    showPrevStep();
+    showCurrentQuestion(currentItem);
+})
+document.getElementById("next").addEventListener("click", () => {
+    showNextStep();
+    showCurrentQuestion(currentItem);
+})
+showCurrentQuestion(currentItem);
