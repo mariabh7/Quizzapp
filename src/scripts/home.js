@@ -215,7 +215,13 @@ document.getElementById("startTimer").addEventListener("click", () => {
 
 /* ---------------- QUIZ SECTION  CODE ---------------- */
 
-let ShowRightContent = false;
+
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+const ContentContainer = document.getElementById("QuizContent");
+const startQuizz = document.getElementById("StartQuizz");
+const TakeQuiz = document.getElementById("TakeQuiz");
+const quizzTaken = document.getElementById("quizzTaken");
 let currentItem = 0;
 async function GetQuestions() {
     try {
@@ -227,7 +233,26 @@ async function GetQuestions() {
     }
 }
 let data = JSON.parse(localStorage.getItem("data"));
+let ShowRightContent = true;
 
+function showQuizorNot() {
+    TakeQuiz.classList.toggle("hidden", ShowRightContent);
+    quizzTaken.classList.toggle("hidden", !ShowRightContent);
+    localStorage.setItem("ShowRightContent", ShowRightContent);
+}
+
+// restore state if exists
+const saved = localStorage.getItem("ShowRightContent");
+if (saved !== null) {
+    ShowRightContent = saved === "true";
+    showQuizorNot();
+
+}
+
+startQuizz.addEventListener("click", () => {
+    ShowRightContent = false;
+    showQuizorNot();
+});
 function showNextStep() {
     if (currentItem < data.length - 1) {
         currentItem += 1;
@@ -272,28 +297,37 @@ function ShowAns() {
                 })
             }
         })
-
     }
 }
 const ShowSuggestedAnswers = ShowAns();
 function showCurrentQuestion(current) {
     const item = data.find((cItem, index, array) => index == current);
-    document.getElementById("QuizContent").innerHTML = "";
+    ContentContainer.innerHTML = "";
     let div = document.createElement("div");
     div.innerHTML = `
-    <h3 class=" text-lg md:text-xl font-semibold first-letter:capitalize  text-blue-600 ">${escapeHTML(item?.question)}</h3>
+    <h3 class=" text-lg md:text-xl font-semibold first-letter:capitalize  text-blue-600 ">${currentItem + 1}- ${escapeHTML(item?.question)}</h3>
     <div><ul id="suggestedAnswers" class=" mt-4 md:mt-8 flex flex-col gap-5  md:gap-8 "></ul>
     </div>`
     ShowSuggestedAnswers(item, div.querySelector("#suggestedAnswers"));
-    document.getElementById("QuizContent").appendChild(div);
+    ContentContainer.appendChild(div);
+    if (currentItem == data.length - 1) {
+        next.textContent = "submit";
+    } else {
+        next.textContent = "next";
+    }
 }
 
-document.getElementById("prev").addEventListener("click", () => {
+prev.addEventListener("click", () => {
     showPrevStep();
     showCurrentQuestion(currentItem);
 })
-document.getElementById("next").addEventListener("click", () => {
-    showNextStep();
-    showCurrentQuestion(currentItem);
+next.addEventListener("click", (e) => {
+    if (next.textContent == "submit") {
+        ShowRightContent = true;
+        showQuizorNot();
+    } else {
+        showNextStep();
+        showCurrentQuestion(currentItem);
+    }
 })
 showCurrentQuestion(currentItem);
