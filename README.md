@@ -34,7 +34,7 @@ This project uses the [QuizAPI.io](https://quizapi.io/)
 API to fetch tech-related quiz questions.  
 The API provides multiple topics and difficulty levels, which are integrated into the app to generate dynamic quizzes.
 ## Contributing
-
-Contributions are always welcome!
+unfortunately the usage of quizzly is very limited as the number of request done isnt that high {50 / day } so if you know another Quizzapi   resource 
+Contributions are always welcome! 
 looking forward to any code review or fixes
 
