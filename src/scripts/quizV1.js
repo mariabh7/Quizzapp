@@ -40,14 +40,38 @@ export class Userdata {
         const fuse = new Fuse(list, fuseOptions);
         return (fuse.search(this.major).length != 0 ? true : false);
     }
+    flattenMaps(map) {
+        let maps = [];
+        let maped = Array.from(map.entries());
+        for (let item of maped) {
+            if (item[1] instanceof Map) {
+                let innerEntry = Array.from(item[1].entries());
+                // Replace the inner map with [key, value]
+                item[1] = innerEntry;
+            }
+            maps.push(item);
+        }
+        return maps;
+    }
     setGalleryData(topic, answer) {
         if (this.map == null) {
             this.map = new Map();
         } else {
-            this.map = new Map(this.map);
+            this.map = this.GetMap();
         }
         this.map.set(topic, answer);
-        this.map = Array.from(this.map.entries());
+        this.map = this.flattenMaps(this.map);
+    }
+    GetMap() {
+        let flmap = this.map;
+        for (let item of flmap) {
+            if (Array.isArray(item[1])) {
+                let innerEntry = new Map(item[1].values());
+                // Replace the inner map with [key, value]
+                item[1] = innerEntry;
+            }
+        }
+        return new Map(flmap);
     }
 
 }

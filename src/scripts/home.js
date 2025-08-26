@@ -10,7 +10,6 @@ const suggestionModal = document.getElementById("modal-sugg");
 function setUserInfo() {
     try {
         let data = JSON.parse(localStorage.getItem("usersName"));
-        console.log(data);
         return new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs, data.map);
     } catch (err) {
         console.log(`problem catched :${err} , unfortunatelly we can't get the user yet `)
@@ -227,6 +226,7 @@ const TakeQuiz = document.getElementById("TakeQuiz");
 const quizzTaken = document.getElementById("quizzTaken");
 let currentItem = 0;
 let data;
+let Gallery;
 async function GetQuestions() {
     try {
 
@@ -319,8 +319,8 @@ function ShowAns() {
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
 
-                        map.set(`answer${currentItem}`, li.textContent);
-                        console.log(map);
+                        map.set(`${li.id}`, li.textContent);
+                        Gallery = map;
                     })
                 }
             })
@@ -357,11 +357,10 @@ function showCurrentQuestion(current) {
     }
 }
 function Addtogallery() {
-    OurUser.setGalleryData(OurUser.quizTopic, { "level": OurUser.difficulty, "number of questions taken": OurUser.NumofQs });
-    console.log(OurUser.map);
+    OurUser.setGalleryData(OurUser.quizTopic, Gallery);
     localStorage.setItem("usersName", JSON.stringify(OurUser));
+    console.log(OurUser.GetMap());
 }
-console.log(OurUser.map)
 prev.addEventListener("click", () => {
     showPrevStep();
     showCurrentQuestion(currentItem);
