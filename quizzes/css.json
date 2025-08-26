@@ -1,451 +1,847 @@
 [
   {
-    "id": 1,
-    "question": "Sample css Easy Question 1?",
+    "id": 21,
+    "question": "What does the 'float' property do in CSS?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q1",
-      "answer_b": "Option B for css Q1",
-      "answer_c": "Option C for css Q1",
-      "answer_d": "Option D for css Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Floats an element to the left or right of its container",
+      "answer_b": "Centers an element vertically",
+      "answer_c": "Makes text bold",
+      "answer_d": "Increases element width"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Easy Q1.",
-    "tip": "Tip for css Easy Q1.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Easy"
+    "tags": ["css"],
+    "difficulty": "easy"
   },
   {
-    "id": 2,
-    "question": "Sample css Easy Question 2?",
+    "id": 22,
+    "question": "Which CSS property is used to control the transparency of an element?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q2",
-      "answer_b": "Option B for css Q2",
-      "answer_c": "Option C for css Q2",
-      "answer_d": "Option D for css Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "visibility",
+      "answer_b": "opacity",
+      "answer_c": "filter",
+      "answer_d": "alpha"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Easy Q2.",
-    "tip": "Tip for css Easy Q2.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Easy"
+    "tags": ["css"],
+    "difficulty": "easy"
   },
   {
-    "id": 3,
-    "question": "Sample css Easy Question 3?",
+    "id": 23,
+    "question": "Which CSS selector targets all `<p>` elements inside a `<div>`?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q3",
-      "answer_b": "Option B for css Q3",
-      "answer_c": "Option C for css Q3",
-      "answer_d": "Option D for css Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "div p",
+      "answer_b": "div > p",
+      "answer_c": "p div",
+      "answer_d": "div+p"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Easy Q3.",
-    "tip": "Tip for css Easy Q3.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Easy"
+    "tags": ["css"],
+    "difficulty": "easy"
   },
   {
-    "id": 4,
-    "question": "Sample css Easy Question 4?",
+    "id": 24,
+    "question": "Which property sets the space between letters?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q4",
-      "answer_b": "Option B for css Q4",
-      "answer_c": "Option C for css Q4",
-      "answer_d": "Option D for css Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "line-height",
+      "answer_b": "letter-spacing",
+      "answer_c": "word-spacing",
+      "answer_d": "text-indent"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Easy Q4.",
-    "tip": "Tip for css Easy Q4.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Easy"
+    "tags": ["css"],
+    "difficulty": "easy"
   },
   {
-    "id": 5,
-    "question": "Sample css Easy Question 5?",
+    "id": 25,
+    "question": "Which CSS rule correctly makes text italic?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q5",
-      "answer_b": "Option B for css Q5",
-      "answer_c": "Option C for css Q5",
-      "answer_d": "Option D for css Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "font-weight: italic;",
+      "answer_b": "text-style: italic;",
+      "answer_c": "font-style: italic;",
+      "answer_d": "style: italic;"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Easy Q5.",
-    "tip": "Tip for css Easy Q5.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Easy"
+    "tags": ["css"],
+    "difficulty": "easy"
   },
   {
-    "id": 6,
-    "question": "Sample css Medium Question 1?",
+    "id": 26,
+    "question": "What is the default value of the position property in CSS?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q1",
-      "answer_b": "Option B for css Q1",
-      "answer_c": "Option C for css Q1",
-      "answer_d": "Option D for css Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "absolute",
+      "answer_b": "relative",
+      "answer_c": "static",
+      "answer_d": "fixed"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Medium Q1.",
-    "tip": "Tip for css Medium Q1.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Medium"
+    "tags": ["css"],
+    "difficulty": "medium"
   },
   {
-    "id": 7,
-    "question": "Sample css Medium Question 2?",
+    "id": 27,
+    "question": "Which of the following creates a flex container?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q2",
-      "answer_b": "Option B for css Q2",
-      "answer_c": "Option C for css Q2",
-      "answer_d": "Option D for css Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "display: inline;",
+      "answer_b": "display: flex;",
+      "answer_c": "position: flex;",
+      "answer_d": "flex: container;"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Medium Q2.",
-    "tip": "Tip for css Medium Q2.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Medium"
+    "tags": ["css"],
+    "difficulty": "medium"
   },
   {
-    "id": 8,
-    "question": "Sample css Medium Question 3?",
+    "id": 28,
+    "question": "Which property defines the order of flex items?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q3",
-      "answer_b": "Option B for css Q3",
-      "answer_c": "Option C for css Q3",
-      "answer_d": "Option D for css Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "flex-direction",
+      "answer_b": "align-items",
+      "answer_c": "order",
+      "answer_d": "flex-order"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Medium Q3.",
-    "tip": "Tip for css Medium Q3.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Medium"
+    "tags": ["css"],
+    "difficulty": "medium"
   },
   {
-    "id": 9,
-    "question": "Sample css Medium Question 4?",
+    "id": 29,
+    "question": "How do you apply a CSS rule only if the screen width is less than 600px?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q4",
-      "answer_b": "Option B for css Q4",
-      "answer_c": "Option C for css Q4",
-      "answer_d": "Option D for css Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "@screen(max-width:600px)",
+      "answer_b": "@media(max-width:600px)",
+      "answer_c": "@responsive(max-width:600px)",
+      "answer_d": "@query(max-width:600px)"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Medium Q4.",
-    "tip": "Tip for css Medium Q4.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Medium"
+    "tags": ["css"],
+    "difficulty": "medium"
   },
   {
-    "id": 10,
-    "question": "Sample css Medium Question 5?",
+    "id": 30,
+    "question": "What does 'z-index' control?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q5",
-      "answer_b": "Option B for css Q5",
-      "answer_c": "Option C for css Q5",
-      "answer_d": "Option D for css Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Font size",
+      "answer_b": "Element stacking order",
+      "answer_c": "Background color",
+      "answer_d": "Line height"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Medium Q5.",
-    "tip": "Tip for css Medium Q5.",
-    "tags": [
-      "css"
-    ],
-    "category": "CSS",
-    "difficulty": "Medium"
+    "tags": ["css"],
+    "difficulty": "medium"
   },
   {
-    "id": 11,
-    "question": "Sample css Hard Question 1?",
+    "id": 31,
+    "question": "Which CSS property is NOT inherited by default?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q1",
-      "answer_b": "Option B for css Q1",
-      "answer_c": "Option C for css Q1",
-      "answer_d": "Option D for css Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "color",
+      "answer_b": "font-size",
+      "answer_c": "margin",
+      "answer_d": "font-family"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 32,
+    "question": "Which unit is relative to the width of the viewport?",
+    "description": null,
+    "answers": {
+      "answer_a": "em",
+      "answer_b": "px",
+      "answer_c": "vw",
+      "answer_d": "rem"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 33,
+    "question": "How can you create a CSS variable?",
+    "description": null,
+    "answers": {
+      "answer_a": "--main-color: red;",
+      "answer_b": "$main-color: red;",
+      "answer_c": "var-main-color: red;",
+      "answer_d": "@main-color: red;"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 34,
+    "question": "What does 'inherit' do when used as a CSS value?",
+    "description": null,
+    "answers": {
+      "answer_a": "Sets the property to its initial value",
+      "answer_b": "Hides the property",
+      "answer_c": "Takes the value from the parent element",
+      "answer_d": "Removes the property"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 35,
+    "question": "Which pseudo-class selects the first child element of a parent?",
+    "description": null,
+    "answers": {
+      "answer_a": ":nth-child(1)",
+      "answer_b": ":first",
+      "answer_c": ":first-child",
+      "answer_d": ":child(1)"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 36,
+    "question": "How can you animate elements in CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "Using @motion",
+      "answer_b": "Using @keyframes",
+      "answer_c": "Using @frameset",
+      "answer_d": "Using @steps"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Hard Q1.",
-    "tip": "Tip for css Hard Q1.",
-    "tags": [
-      "css"
-    ],
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 37,
+    "question": "Which CSS property is used to make a grid container?",
+    "description": null,
+    "answers": {
+      "answer_a": "display: grid;",
+      "answer_b": "grid: container;",
+      "answer_c": "position: grid;",
+      "answer_d": "flex: grid;"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 38,
+    "question": "Which property defines the number of columns in a CSS grid?",
+    "description": null,
+    "answers": {
+      "answer_a": "grid-template-columns",
+      "answer_b": "grid-columns",
+      "answer_c": "columns-template",
+      "answer_d": "col-template"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 39,
+    "question": "Which property controls how extra text is displayed when it overflows?",
+    "description": null,
+    "answers": {
+      "answer_a": "text-overflow",
+      "answer_b": "overflow-text",
+      "answer_c": "overflow",
+      "answer_d": "clip-text"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 40,
+    "question": "Which CSS function is used to apply a linear gradient?",
+    "description": null,
+    "answers": {
+      "answer_a": "gradient()",
+      "answer_b": "linear-gradient()",
+      "answer_c": "radial-gradient()",
+      "answer_d": "color-gradient()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["css"],
+    "difficulty": "medium"
+  }
+]
+[
+  {
+    "id": 41,
+    "question": "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "Relative positions element based on its normal flow, absolute positions it relative to nearest positioned ancestor, fixed is relative to viewport, sticky toggles between relative and fixed depending on scroll.",
+      "answer_b": "All position elements relative to viewport.",
+      "answer_c": "Absolute and fixed are identical.",
+      "answer_d": "Relative and sticky are identical."
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Relative shifts based on normal flow, absolute on nearest ancestor, fixed stays at viewport, sticky is hybrid.",
+    "tip": null,
+    "tags": ["css"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
-    "id": 12,
-    "question": "Sample css Hard Question 2?",
+    "id": 42,
+    "question": "Which CSS feature allows different styles depending on device width, height, or orientation?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q2",
-      "answer_b": "Option B for css Q2",
-      "answer_c": "Option C for css Q2",
-      "answer_d": "Option D for css Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Transitions",
+      "answer_b": "Animations",
+      "answer_c": "Media Queries",
+      "answer_d": "Pseudo-classes"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Hard Q2.",
-    "tip": "Tip for css Hard Q2.",
-    "tags": [
-      "css"
-    ],
+    "correct_answer": "answer_c",
+    "explanation": "Media queries let you apply conditional styles depending on device characteristics.",
+    "tags": ["css"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
-    "id": 13,
-    "question": "Sample css Hard Question 3?",
+    "id": 43,
+    "question": "What does the CSS property 'will-change' do?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for css Q3",
-      "answer_b": "Option B for css Q3",
-      "answer_c": "Option C for css Q3",
-      "answer_d": "Option D for css Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Defines which property is likely to change so browser can optimize rendering",
+      "answer_b": "Applies hardware acceleration",
+      "answer_c": "Forces repaint",
+      "answer_d": "Delays style calculation"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Hard Q3.",
-    "tip": "Tip for css Hard Q3.",
-    "tags": [
-      "css"
-    ],
+    "correct_answer": "answer_a",
+    "explanation": "It’s a performance hint telling browsers to prepare optimizations for expected changes.",
+    "tags": ["css"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
-    "id": 14,
-    "question": "Sample css Hard Question 4?",
-    "description": null,
+    "id": 44,
+    "question": "How does 'contain' property in CSS improve performance?",
     "answers": {
-      "answer_a": "Option A for css Q4",
-      "answer_b": "Option B for css Q4",
-      "answer_c": "Option C for css Q4",
-      "answer_d": "Option D for css Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "By isolating an element’s rendering from the rest of the page",
+      "answer_b": "By compressing stylesheets",
+      "answer_c": "By removing unused CSS",
+      "answer_d": "By forcing GPU compositing"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Hard Q4.",
-    "tip": "Tip for css Hard Q4.",
-    "tags": [
-      "css"
-    ],
+    "correct_answer": "answer_a",
+    "explanation": "CSS contain limits the scope of an element, allowing browsers to skip work outside it.",
+    "tags": ["css"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
-    "id": 15,
-    "question": "Sample css Hard Question 5?",
-    "description": null,
+    "id": 45,
+    "question": "What’s the difference between translate3d and translate in CSS transforms?",
     "answers": {
-      "answer_a": "Option A for css Q5",
-      "answer_b": "Option B for css Q5",
-      "answer_c": "Option C for css Q5",
-      "answer_d": "Option D for css Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "translate3d uses GPU acceleration and allows Z-axis movement",
+      "answer_b": "They are identical",
+      "answer_c": "translate only works in Firefox",
+      "answer_d": "translate3d is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "translate3d(x,y,z) can use hardware acceleration and adds depth movement.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 46,
+    "question": "Which CSS function allows defining variables with fallback values?",
+    "answers": {
+      "answer_a": "var()",
+      "answer_b": "calc()",
+      "answer_c": "env()",
+      "answer_d": "clamp()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "var(--property, fallback) lets you define CSS custom properties with defaults.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between 'em' and 'rem' units?",
+    "answers": {
+      "answer_a": "em is relative to parent font-size, rem is relative to root (html) font-size",
+      "answer_b": "They are identical",
+      "answer_c": "rem only works in Chrome",
+      "answer_d": "em is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "em cascades with parent font-size, rem remains consistent with root.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 48,
+    "question": "Which CSS property allows you to create a grid layout?",
+    "answers": {
+      "answer_a": "grid-template",
+      "answer_b": "display: grid",
+      "answer_c": "grid-auto-flow",
+      "answer_d": "grid-row"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
     "correct_answer": "answer_b",
-    "explanation": "This is the explanation for css Hard Q5.",
-    "tip": "Tip for css Hard Q5.",
-    "tags": [
-      "css"
-    ],
+    "explanation": "Setting display: grid enables CSS Grid Layout.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 49,
+    "question": "What is the difference between 'minmax()' and 'clamp()'?",
+    "answers": {
+      "answer_a": "minmax() is for grid track sizing, clamp() for general CSS values",
+      "answer_b": "Both are identical",
+      "answer_c": "clamp() is only for grid",
+      "answer_d": "minmax() works only in flexbox"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "minmax() applies in Grid, clamp() works for any numeric CSS property.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 50,
+    "question": "How does 'backface-visibility' work in CSS?",
+    "answers": {
+      "answer_a": "Determines whether the back side of a transformed element is visible",
+      "answer_b": "Controls opacity of background",
+      "answer_c": "Controls z-index stacking",
+      "answer_d": "Hides background image"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "It lets you hide/show the back side of 3D transformed elements.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 51,
+    "question": "What’s the difference between 'inline', 'inline-block', and 'block' elements?",
+    "answers": {
+      "answer_a": "Inline flows inside text, inline-block keeps inline but allows block features, block takes full width",
+      "answer_b": "All take full width",
+      "answer_c": "Inline-block and block are the same",
+      "answer_d": "Inline-block is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Inline flows with text, inline-block combines inline flow with block box, block takes full line.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 52,
+    "question": "What is the difference between relative and absolute units in CSS?",
+    "answers": {
+      "answer_a": "Relative depend on another value (like font-size), absolute have fixed measurement (px, cm, in)",
+      "answer_b": "They are identical",
+      "answer_c": "Absolute is responsive",
+      "answer_d": "Relative works only in grid"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Relative units scale with context, absolute stay fixed.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 53,
+    "question": "What is the difference between CSS specificity and inheritance?",
+    "answers": {
+      "answer_a": "Specificity determines which rule wins, inheritance means properties cascade from parent",
+      "answer_b": "They are identical",
+      "answer_c": "Specificity applies only in inline styles",
+      "answer_d": "Inheritance only applies to IDs"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Specificity compares selectors, inheritance passes styles to children.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 54,
+    "question": "How does the CSS cascade order work?",
+    "answers": {
+      "answer_a": "Browser default < External < Internal < Inline, with specificity and importance overriding",
+      "answer_b": "Inline < Internal < External",
+      "answer_c": "Cascade is random",
+      "answer_d": "Specificity has no effect"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Cascade considers origin, specificity, and importance.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 55,
+    "question": "What is the difference between CSS Grid and Flexbox?",
+    "answers": {
+      "answer_a": "Grid is 2D (rows+columns), Flexbox is 1D (row or column)",
+      "answer_b": "They are identical",
+      "answer_c": "Flexbox is 3D",
+      "answer_d": "Grid works only with floats"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Grid is for two-dimensional layouts, Flexbox for one-dimensional alignment.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "question": "What is the default position value in CSS?",
+    "answers": {
+      "answer_a": "static",
+      "answer_b": "relative",
+      "answer_c": "absolute",
+      "answer_d": "inherit"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "By default, elements are positioned 'static'.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 57,
+    "question": "Which pseudo-class selects elements currently being clicked?",
+    "answers": {
+      "answer_a": ":focus",
+      "answer_b": ":hover",
+      "answer_c": ":active",
+      "answer_d": ":checked"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_c",
+    "explanation": ":active applies while an element is being activated by the user.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 58,
+    "question": "What’s the difference between relative and absolute paths in CSS url()?",
+    "answers": {
+      "answer_a": "Relative is based on CSS file location, absolute starts from root or full URL",
+      "answer_b": "They are identical",
+      "answer_c": "Absolute is required for images",
+      "answer_d": "Relative is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Relative depends on CSS file location, absolute ignores that.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 59,
+    "question": "Which CSS property can prevent an element from shrinking inside a flex container?",
+    "answers": {
+      "answer_a": "flex-shrink: 0",
+      "answer_b": "flex-grow: 0",
+      "answer_c": "min-width: auto",
+      "answer_d": "flex-basis: auto"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "flex-shrink: 0 prevents the item from shrinking.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 60,
+    "question": "What is the difference between inline styles and external CSS?",
+    "answers": {
+      "answer_a": "Inline applies to one element, external applies site-wide",
+      "answer_b": "They are identical",
+      "answer_c": "Inline is always faster",
+      "answer_d": "External is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "answer_a",
+    "explanation": "Inline styles target a single element; external CSS allows consistent site-wide styling.",
+    "tags": ["css"],
     "category": "CSS",
     "difficulty": "Hard"
   }
