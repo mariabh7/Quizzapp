@@ -1,76 +1,76 @@
 [
   {
     "id": 1,
-    "question": "Which keyword is used to declare a variable in JavaScript?",
-    "description": "Variable declaration basics",
+    "question": "What does JSON stand for?",
+    "description": "Basic definition of JSON",
     "answers": {
-      "answer_a": "var",
-      "answer_b": "int",
-      "answer_c": "let",
-      "answer_d": "constant"
+      "answer_a": "JavaScript Object Notation",
+      "answer_b": "Java Source Open Network",
+      "answer_c": "Java Standard Output Name",
+      "answer_d": "JavaScript Online Namespace"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "true",
       "answer_b_correct": "false",
-      "answer_c_correct": "true",
+      "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "a,c",
-    "tags": ["javascript"],
+    "correct_answer": "a",
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
   },
   {
     "id": 2,
-    "question": "Which symbol is used for single-line comments in JavaScript?",
-    "description": "Comment syntax",
+    "question": "Which data types can JSON support?",
+    "description": "Valid JSON data types",
     "answers": {
-      "answer_a": "#",
-      "answer_b": "//",
-      "answer_c": "/*",
-      "answer_d": "<!--"
+      "answer_a": "String, Number, Object, Array, Boolean, Null",
+      "answer_b": "String, Function, Date, Symbol",
+      "answer_c": "Only String and Number",
+      "answer_d": "Only Object and Array"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "b",
-    "tags": ["javascript"],
+    "correct_answer": "a",
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
   },
   {
     "id": 3,
-    "question": "What is the output of: console.log(typeof null)?",
-    "description": "Typeof operator behavior",
+    "question": "What is the correct file extension for JSON files?",
+    "description": "File extension usage",
     "answers": {
-      "answer_a": "object",
-      "answer_b": "null",
-      "answer_c": "undefined",
-      "answer_d": "string"
+      "answer_a": ".jsn",
+      "answer_b": ".json",
+      "answer_c": ".jsonp",
+      "answer_d": ".txt"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "a",
-    "tags": ["javascript"],
+    "correct_answer": "b",
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
   },
   {
     "id": 4,
-    "question": "Which method is used to convert a JSON string into a JavaScript object?",
-    "description": "JSON parsing",
+    "question": "Which method in JavaScript is used to convert a JSON string into an object?",
+    "description": "Parsing JSON in JavaScript",
     "answers": {
       "answer_a": "JSON.parse()",
       "answer_b": "JSON.stringify()",
-      "answer_c": "parse.JSON()",
-      "answer_d": "stringify.JSON()"
+      "answer_c": "JSON.toObject()",
+      "answer_d": "JSON.convert()"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -80,60 +80,18 @@
       "answer_d_correct": "false"
     },
     "correct_answer": "a",
-    "tags": ["javascript"],
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
   },
   {
     "id": 5,
-    "question": "Which operator is used to compare both value and type in JavaScript?",
-    "description": "Strict equality",
+    "question": "Which method in JavaScript converts an object into a JSON string?",
+    "description": "Stringifying objects into JSON",
     "answers": {
-      "answer_a": "==",
-      "answer_b": "===",
-      "answer_c": "!=",
-      "answer_d": "="
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "b",
-    "tags": ["javascript"],
-    "difficulty": "Easy"
-  },
-  {
-    "id": 6,
-    "question": "How do you write 'Hello World' in an alert box?",
-    "description": "Alert usage",
-    "answers": {
-      "answer_a": "msg('Hello World')",
-      "answer_b": "alert('Hello World')",
-      "answer_c": "console.log('Hello World')",
-      "answer_d": "print('Hello World')"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "b",
-    "tags": ["javascript"],
-    "difficulty": "Easy"
-  },
-  {
-    "id": 7,
-    "question": "What will `console.log(2 + '2')` output?",
-    "description": "Type coercion",
-    "answers": {
-      "answer_a": "22",
-      "answer_b": "4",
-      "answer_c": "NaN",
-      "answer_d": "undefined"
+      "answer_a": "JSON.stringify()",
+      "answer_b": "JSON.parse()",
+      "answer_c": "JSON.encode()",
+      "answer_d": "object.toJSON()"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -143,18 +101,18 @@
       "answer_d_correct": "false"
     },
     "correct_answer": "a",
-    "tags": ["javascript"],
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
   },
   {
-    "id": 8,
-    "question": "Which built-in method combines two arrays?",
-    "description": "Array concatenation",
+    "id": 6,
+    "question": "What is the MIME type for JSON?",
+    "description": "Correct MIME type usage",
     "answers": {
-      "answer_a": "append()",
-      "answer_b": "concat()",
-      "answer_c": "combine()",
-      "answer_d": "merge()"
+      "answer_a": "application/javascript",
+      "answer_b": "application/json",
+      "answer_c": "text/json",
+      "answer_d": "text/plain"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -164,18 +122,81 @@
       "answer_d_correct": "false"
     },
     "correct_answer": "b",
-    "tags": ["javascript"],
+    "tags": ["javascript", "json"],
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "question": "Which symbol is used to enclose JSON objects?",
+    "description": "Object notation in JSON",
+    "answers": {
+      "answer_a": "[]",
+      "answer_b": "{}",
+      "answer_c": "()",
+      "answer_d": "<>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript", "json"],
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "Which symbol is used to enclose JSON arrays?",
+    "description": "Array notation in JSON",
+    "answers": {
+      "answer_a": "[]",
+      "answer_b": "{}",
+      "answer_c": "()",
+      "answer_d": "<>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "a",
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
   },
   {
     "id": 9,
-    "question": "Which company developed JavaScript?",
-    "description": "History fact",
+    "question": "In JSON, keys must always be:",
+    "description": "Rules for JSON keys",
     "answers": {
-      "answer_a": "Microsoft",
-      "answer_b": "Sun Microsystems",
-      "answer_c": "Netscape",
-      "answer_d": "Oracle"
+      "answer_a": "Numbers",
+      "answer_b": "Strings enclosed in double quotes",
+      "answer_c": "Any valid identifier",
+      "answer_d": "Single-quoted strings"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript", "json"],
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is valid JSON?",
+    "description": "Checking JSON validity",
+    "answers": {
+      "answer_a": "{ 'name': 'Maria', 'age': 18 }",
+      "answer_b": "{ name: 'Maria', age: 18 }",
+      "answer_c": "{ \"name\": \"Maria\", \"age\": 18 }",
+      "answer_d": "{ \"name\": \"Maria\", age: 18 }"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -185,31 +206,9 @@
       "answer_d_correct": "false"
     },
     "correct_answer": "c",
-    "tags": ["javascript"],
+    "tags": ["javascript", "json"],
     "difficulty": "Easy"
-  },
-  {
-    "id": 10,
-    "question": "Which value is considered falsy in JavaScript?",
-    "description": "Falsy values",
-    "answers": {
-      "answer_a": "0",
-      "answer_b": "false",
-      "answer_c": "'' (empty string)",
-      "answer_d": "All of the above"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "true"
-    },
-    "correct_answer": "d",
-    "tags": ["javascript"],
-    "difficulty": "Easy"
-  },[
-  {
+  }, {
     "id": 11,
     "question": "Which method is used to remove the last element from an array?",
     "description": "Array method",
@@ -418,7 +417,7 @@
     "correct_answer": "c",
     "tags": ["javascript"],
     "difficulty": "Easy"
-  },{
+  }, {
     "id": 21,
     "question": "What will `typeof NaN` return?",
     "description": "Checking type of NaN",
@@ -627,7 +626,7 @@
     "correct_answer": "c",
     "tags": ["javascript"],
     "difficulty": "Medium"
-  },{
+  }, {
     "id": 31,
     "question": "What will `typeof NaN` return?",
     "description": "Check type of NaN",
@@ -836,7 +835,7 @@
     "correct_answer": "b",
     "tags": ["javascript"],
     "difficulty": "Medium"
-  }, {
+  },{
     "id": 41,
     "question": "What does `Promise.race([p1, p2, p3])` return?",
     "description": "Promise.race behavior",
@@ -1045,8 +1044,7 @@
     "correct_answer": "b",
     "tags": ["javascript"],
     "difficulty": "Hard"
-  },
-{
+  },{
     "id": 51,
     "question": "What does `Array.prototype.flat()` do?",
     "description": "Flatten arrays",
