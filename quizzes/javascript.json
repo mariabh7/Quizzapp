@@ -1045,5 +1045,215 @@
     "correct_answer": "b",
     "tags": ["javascript"],
     "difficulty": "Hard"
+  },
+{
+    "id": 51,
+    "question": "What does `Array.prototype.flat()` do?",
+    "description": "Flatten arrays",
+    "answers": {
+      "answer_a": "Removes all elements",
+      "answer_b": "Flattens nested arrays into a single array",
+      "answer_c": "Returns array length",
+      "answer_d": "Sorts array elements"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 52,
+    "question": "Which method copies properties from one object to another?",
+    "description": "Object manipulation",
+    "answers": {
+      "answer_a": "Object.assign()",
+      "answer_b": "Object.copy()",
+      "answer_c": "Object.clone()",
+      "answer_d": "Object.extend()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "a",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 53,
+    "question": "What does the `import()` function do in JavaScript?",
+    "description": "Dynamic imports",
+    "answers": {
+      "answer_a": "Imports modules statically",
+      "answer_b": "Imports modules dynamically at runtime",
+      "answer_c": "Imports CSS files",
+      "answer_d": "Imports JSON only"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 54,
+    "question": "Which statement is true about `Map` in JavaScript?",
+    "description": "Map object",
+    "answers": {
+      "answer_a": "Keys can only be strings",
+      "answer_b": "Keys can be any value (object or primitive)",
+      "answer_c": "Map has no size property",
+      "answer_d": "Values must be primitive"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 55,
+    "question": "What is the purpose of `Object.freeze()`?",
+    "description": "Prevent modification",
+    "answers": {
+      "answer_a": "Prevent adding new properties",
+      "answer_b": "Prevent deleting or changing existing properties",
+      "answer_c": "Both a and b",
+      "answer_d": "Do nothing"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "c",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "question": "What does `async function*` define?",
+    "description": "Async generator function",
+    "answers": {
+      "answer_a": "A regular function",
+      "answer_b": "A generator function that yields promises",
+      "answer_c": "A function returning an array",
+      "answer_d": "A function returning a number"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 57,
+    "question": "Which of these statements about closures is true?",
+    "description": "Closures in JS",
+    "answers": {
+      "answer_a": "Closures can access outer function variables even after outer function has executed",
+      "answer_b": "Closures cannot access outer variables",
+      "answer_c": "Closures destroy outer variables",
+      "answer_d": "Closures are only for classes"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "a",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 58,
+    "question": "What does `BigInt` in JavaScript represent?",
+    "description": "Large integers",
+    "answers": {
+      "answer_a": "Floating-point numbers",
+      "answer_b": "Arbitrary large integers",
+      "answer_c": "Strings",
+      "answer_d": "Boolean values"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "b",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 59,
+    "question": "Which of the following will NOT create a new object in memory?",
+    "description": "Object references",
+    "answers": {
+      "answer_a": "{}",
+      "answer_b": "Object.create(null)",
+      "answer_c": "Object.assign({}, obj)",
+      "answer_d": "var a = b;"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "correct_answer": "d",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 60,
+    "question": "Which is true about the event loop in JavaScript?",
+    "description": "Event loop behavior",
+    "answers": {
+      "answer_a": "It executes synchronous code first, then handles queued tasks",
+      "answer_b": "It executes asynchronous code first",
+      "answer_c": "It executes only setTimeout functions",
+      "answer_d": "It blocks the main thread always"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "correct_answer": "a",
+    "tags": ["javascript"],
+    "difficulty": "Hard"
   }
 ]
