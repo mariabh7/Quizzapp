@@ -398,9 +398,7 @@
     },
     "tags": ["css"],
     "difficulty": "medium"
-  }
-]
-[
+  },
   {
     "id": 41,
     "question": "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
