@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "question": "What does the <p> tag represent in HTML?",
+    "question": "What does HTML stand for?",
     "description": null,
     "answers": {
-      "answer_a": "Paragraph",
-      "answer_b": "Preformatted text",
-      "answer_c": "Page",
-      "answer_d": "Property"
+      "answer_a": "Hyper Text Markup Language",
+      "answer_b": "Home Tool Markup Language",
+      "answer_c": "Hyperlinks and Text Markup Language",
+      "answer_d": "Hyper Tool Multi Language"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -16,82 +16,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "The <p> tag defines a paragraph.",
-    "difficulty": "Easy",
-    "tags": ["HTML"]
+    "explanation": "HTML is Hyper Text Markup Language.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
   },
   {
     "id": 2,
-    "question": "Which attribute is used to provide alternative text for an image?",
-    "description": null,
-    "answers": {
-      "answer_a": "title",
-      "answer_b": "alt",
-      "answer_c": "src",
-      "answer_d": "longdesc"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "explanation": "The alt attribute provides alternative text.",
-    "difficulty": "Easy",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 3,
-    "question": "Which HTML5 element is used to play audio files?",
-    "description": null,
-    "answers": {
-      "answer_a": "<music>",
-      "answer_b": "<sound>",
-      "answer_c": "<audio>",
-      "answer_d": "<play>"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "explanation": "The <audio> element is used for sound content.",
-    "difficulty": "Easy",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 4,
-    "question": "Which tag is used to define a table row?",
-    "description": null,
-    "answers": {
-      "answer_a": "<td>",
-      "answer_b": "<tr>",
-      "answer_c": "<th>",
-      "answer_d": "<row>"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "explanation": "The <tr> tag defines a table row.",
-    "difficulty": "Easy",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 5,
-    "question": "Which element is used to create a hyperlink?",
+    "question": "Which HTML tag is used to create a hyperlink?",
     "description": null,
     "answers": {
       "answer_a": "<a>",
       "answer_b": "<link>",
       "answer_c": "<href>",
-      "answer_d": "<hyper>"
+      "answer_d": "<hlink>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -100,19 +38,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "The <a> tag creates a hyperlink.",
-    "difficulty": "Easy",
-    "tags": ["HTML"]
+    "explanation": "The <a> tag defines hyperlinks.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
   },
   {
-    "id": 6,
-    "question": "What does the <canvas> element in HTML5 provide?",
+    "id": 3,
+    "question": "Which attribute is used to provide alternative text for an image?",
     "description": null,
     "answers": {
-      "answer_a": "2D drawing surface",
-      "answer_b": "Video playback",
-      "answer_c": "Image gallery",
-      "answer_d": "Audio player"
+      "answer_a": "alt",
+      "answer_b": "src",
+      "answer_c": "title",
+      "answer_d": "longdesc"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -121,103 +60,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "<canvas> provides a surface for graphics via JavaScript.",
-    "difficulty": "Medium",
-    "tags": ["HTML"]
+    "explanation": "The alt attribute provides alternative text.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
   },
   {
-    "id": 7,
-    "question": "Which HTML attribute specifies that an input field must be filled out?",
+    "id": 4,
+    "question": "What is the correct HTML element for inserting a line break?",
     "description": null,
     "answers": {
-      "answer_a": "placeholder",
-      "answer_b": "validate",
-      "answer_c": "required",
-      "answer_d": "mandatory"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "explanation": "The 'required' attribute ensures input is not empty.",
-    "difficulty": "Medium",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 8,
-    "question": "Which tag is used to embed a document inside another HTML document?",
-    "description": null,
-    "answers": {
-      "answer_a": "<iframe>",
-      "answer_b": "<embed>",
-      "answer_c": "<object>",
-      "answer_d": "<frame>"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "explanation": "The <iframe> tag embeds external content.",
-    "difficulty": "Medium",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 9,
-    "question": "Which attribute is used with <form> to specify the script that processes the form?",
-    "description": null,
-    "answers": {
-      "answer_a": "action",
-      "answer_b": "method",
-      "answer_c": "target",
-      "answer_d": "submit"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "explanation": "The 'action' attribute defines the script URL.",
-    "difficulty": "Medium",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 10,
-    "question": "What does the 'novalidate' attribute in a <form> element do?",
-    "description": null,
-    "answers": {
-      "answer_a": "Disables browser validation",
-      "answer_b": "Hides form inputs",
-      "answer_c": "Disables form submission",
-      "answer_d": "Resets all inputs"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "explanation": "novalidate disables default form validation.",
-    "difficulty": "Medium",
-    "tags": ["HTML"]
-  },
-  {
-    "id": 11,
-    "question": "What does this code output?\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<p id='demo'></p>\n<script>\ndocument.getElementById('demo').innerHTML = 2 + '2';\n</script>\n</body>\n</html>\n```",
-    "description": null,
-    "answers": {
-      "answer_a": "4",
-      "answer_b": "22",
-      "answer_c": "Error",
-      "answer_d": "NaN"
+      "answer_a": "<break>",
+      "answer_b": "<br>",
+      "answer_c": "<lb>",
+      "answer_d": "<line>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -226,19 +82,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "String concatenation happens, output is '22'.",
-    "difficulty": "Hard",
-    "tags": ["HTML", "JavaScript"]
+    "explanation": "The <br> tag inserts a line break.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
   },
   {
-    "id": 12,
-    "question": "Which attribute in <video> enables default controls?",
+    "id": 5,
+    "question": "Which HTML tag is used to define an unordered list?",
     "description": null,
     "answers": {
-      "answer_a": "controls",
-      "answer_b": "play",
-      "answer_c": "default",
-      "answer_d": "autoplay"
+      "answer_a": "<ul>",
+      "answer_b": "<ol>",
+      "answer_c": "<li>",
+      "answer_d": "<list>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -247,18 +104,464 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "The 'controls' attribute enables built-in playback controls.",
-    "difficulty": "Hard",
-    "tags": ["HTML"]
+    "explanation": "Unordered lists use <ul>.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "Which HTML tag is used for the largest heading?",
+    "description": null,
+    "answers": {
+      "answer_a": "<h1>",
+      "answer_b": "<h6>",
+      "answer_c": "<head>",
+      "answer_d": "<heading>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<h1> is the largest heading.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "question": "Which HTML element is used to define emphasized text?",
+    "description": null,
+    "answers": {
+      "answer_a": "<italic>",
+      "answer_b": "<em>",
+      "answer_c": "<i>",
+      "answer_d": "<strong>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The <em> tag emphasizes text.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "Which attribute is used to specify the URL in an <a> tag?",
+    "description": null,
+    "answers": {
+      "answer_a": "href",
+      "answer_b": "src",
+      "answer_c": "link",
+      "answer_d": "target"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The href attribute specifies the link destination.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 9,
+    "question": "What is the correct HTML tag for creating a checkbox?",
+    "description": null,
+    "answers": {
+      "answer_a": "<input type='checkbox'>",
+      "answer_b": "<check>",
+      "answer_c": "<cb>",
+      "answer_d": "<box>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Checkboxes are made using <input type='checkbox'>.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Which HTML tag is used for a table row?",
+    "description": null,
+    "answers": {
+      "answer_a": "<tr>",
+      "answer_b": "<td>",
+      "answer_c": "<th>",
+      "answer_d": "<row>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<tr> defines a table row.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 11,
+    "question": "What is the correct HTML for making a drop-down list?",
+    "description": null,
+    "answers": {
+      "answer_a": "<list>",
+      "answer_b": "<input type='list'>",
+      "answer_c": "<select>",
+      "answer_d": "<dropdown>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<select> creates a drop-down list.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "Which attribute specifies an image's width in HTML?",
+    "description": null,
+    "answers": {
+      "answer_a": "size",
+      "answer_b": "width",
+      "answer_c": "length",
+      "answer_d": "scale"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Width is set with the width attribute.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
   },
   {
     "id": 13,
-    "question": "Which is NOT a semantic HTML element?",
+    "question": "What does the <title> element define?",
     "description": null,
     "answers": {
-      "answer_a": "<section>",
-      "answer_b": "<article>",
-      "answer_c": "<div>",
+      "answer_a": "Document's visible heading",
+      "answer_b": "Document's metadata",
+      "answer_c": "Document's title shown in browser/tab",
+      "answer_d": "Top banner text"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The <title> appears in the browser tab.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "Which tag is used for inserting JavaScript into HTML?",
+    "description": null,
+    "answers": {
+      "answer_a": "<script>",
+      "answer_b": "<js>",
+      "answer_c": "<javascript>",
+      "answer_d": "<code>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The <script> tag is used for JavaScript.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "Which tag is used to define a paragraph?",
+    "description": null,
+    "answers": {
+      "answer_a": "<p>",
+      "answer_b": "<para>",
+      "answer_c": "<pg>",
+      "answer_d": "<text>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<p> defines a paragraph.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Which tag is used to display an image in HTML?",
+    "description": null,
+    "answers": {
+      "answer_a": "<src>",
+      "answer_b": "<img>",
+      "answer_c": "<image>",
+      "answer_d": "<pic>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The <img> tag embeds images.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Which HTML tag creates a numbered list?",
+    "description": null,
+    "answers": {
+      "answer_a": "<ol>",
+      "answer_b": "<ul>",
+      "answer_c": "<list>",
+      "answer_d": "<nl>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<ol> creates ordered lists.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "What does the <meta> tag provide?",
+    "description": null,
+    "answers": {
+      "answer_a": "Document body",
+      "answer_b": "Page metadata",
+      "answer_c": "Page footer",
+      "answer_d": "Document styles"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<meta> provides metadata.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "Which HTML tag is used for a table cell?",
+    "description": null,
+    "answers": {
+      "answer_a": "<td>",
+      "answer_b": "<tr>",
+      "answer_c": "<th>",
+      "answer_d": "<cell>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<td> defines a cell in a table row.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Which HTML tag is used to define bold text?",
+    "description": null,
+    "answers": {
+      "answer_a": "<bold>",
+      "answer_b": "<strong>",
+      "answer_c": "<b>",
+      "answer_d": "<em>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<strong> is semantically correct, <b> is also valid.",
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 21,
+    "question": "Which attribute is used to specify an alternate text for an image, if the image cannot be displayed?",
+    "description": null,
+    "answers": {
+      "answer_a": "alt",
+      "answer_b": "title",
+      "answer_c": "src",
+      "answer_d": "longdesc"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'alt' attribute provides alternate text for an image.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Which HTML5 element is used to specify a header for a document or section?",
+    "description": null,
+    "answers": {
+      "answer_a": "<head>",
+      "answer_b": "<header>",
+      "answer_c": "<hgroup>",
+      "answer_d": "<section>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<header> is used to define introductory content or a set of navigational links.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "Which HTML5 element is used to embed a video?",
+    "description": null,
+    "answers": {
+      "answer_a": "<embed>",
+      "answer_b": "<video>",
+      "answer_c": "<object>",
+      "answer_d": "<source>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<video> is the correct HTML5 tag to embed video content.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "What is the correct HTML element for playing audio files?",
+    "description": null,
+    "answers": {
+      "answer_a": "<sound>",
+      "answer_b": "<audio>",
+      "answer_c": "<play>",
+      "answer_d": "<music>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<audio> is the HTML5 tag for embedding sound content.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "Which element is used to display a scalar measurement within a range?",
+    "description": null,
+    "answers": {
+      "answer_a": "<progress>",
+      "answer_b": "<meter>",
+      "answer_c": "<range>",
+      "answer_d": "<output>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<meter> is used to measure data within a given range.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "Which element is used to represent self-contained content that could stand independently?",
+    "description": null,
+    "answers": {
+      "answer_a": "<div>",
+      "answer_b": "<section>",
+      "answer_c": "<article>",
       "answer_d": "<aside>"
     },
     "multiple_correct_answers": "false",
@@ -268,19 +571,21 @@
       "answer_c_correct": "true",
       "answer_d_correct": "false"
     },
-    "explanation": "<div> is non-semantic.",
-    "difficulty": "Hard",
-    "tags": ["HTML"]
+    "explanation": "<article> is for self-contained independent content.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
   },
   {
-    "id": 14,
-    "question": "What does the <meta charset='UTF-8'> tag specify?",
+    "id": 27,
+    "question": "Which element defines navigation links in HTML5?",
     "description": null,
     "answers": {
-      "answer_a": "The language of the page",
-      "answer_b": "The character encoding",
-      "answer_c": "The viewport settings",
-      "answer_d": "The content type"
+      "answer_a": "<menu>",
+      "answer_b": "<nav>",
+      "answer_c": "<link>",
+      "answer_d": "<aside>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -289,19 +594,330 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "It specifies the character encoding standard.",
-    "difficulty": "Hard",
-    "tags": ["HTML"]
+    "explanation": "<nav> defines navigation links in HTML5.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
   },
   {
-    "id": 15,
-    "question": "What does this render?\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<style>\np {color: red;}\n</style>\n</head>\n<body>\n<p>Hello</p>\n</body>\n</html>\n```",
+    "id": 28,
+    "question": "What is the correct HTML element for inserting a line break?",
     "description": null,
     "answers": {
-      "answer_a": "Hello in black",
-      "answer_b": "Hello in red",
-      "answer_c": "Error",
-      "answer_d": "Nothing"
+      "answer_a": "<lb>",
+      "answer_b": "<break>",
+      "answer_c": "<br>",
+      "answer_d": "<line>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<br> inserts a line break in HTML.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "Which element is used to define emphasized text with italic style?",
+    "description": null,
+    "answers": {
+      "answer_a": "<i>",
+      "answer_b": "<b>",
+      "answer_c": "<em>",
+      "answer_d": "<strong>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "<em> is for emphasized text, usually italicized.",
+    "tip": null,
+    "tags": ["html"],
+    "category": "HTML",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "What does the <datalist> element do?",
+    "description": null,
+    "answers": {
+      "answer_a": "Defines a list of pre-defined options for input",
+      "answer_b": "Defines a table of data",
+      "answer_c": "Defines a dropdown menu",
+      "answer_d": "Defines metadata for the page"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "<datalist> provides a set of predefined options for input fields.",
+    "tip": null
+  },
+  {
+    "id": 31,
+    "question": "Which HTML tag is used to define a client-side script?",
+    "description": null,
+    "answers": {
+      "answer_a": "<js>",
+      "answer_b": "<script>",
+      "answer_c": "<javascript>",
+      "answer_d": "<code>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_b_correct": "true",
+      "answer_a_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "The <script> element defines client-side JavaScript.",
+    "tip": null
+  },
+  {
+    "id": 32,
+    "question": "Which attribute is used to open a link in a new tab?",
+    "description": null,
+    "answers": {
+      "answer_a": "target='_blank'",
+      "answer_b": "href='_blank'",
+      "answer_c": "link='_new'",
+      "answer_d": "rel='blank'"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "target='_blank' opens the link in a new tab.",
+    "tip": null
+  },
+  {
+    "id": 33,
+    "question": "Which tag defines the header of a table?",
+    "description": null,
+    "answers": {
+      "answer_a": "<th>",
+      "answer_b": "<thead>",
+      "answer_c": "<h1>",
+      "answer_d": "<tr>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "<th> defines the header cell in a table.",
+    "tip": null
+  },
+  {
+    "id": 34,
+    "question": "What does the <caption> tag provide in a table?",
+    "description": null,
+    "answers": {
+      "answer_a": "Adds a title/caption to the table",
+      "answer_b": "Adds a header row",
+      "answer_c": "Adds a footer row",
+      "answer_d": "Adds styles"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "The <caption> element provides a title for the table.",
+    "tip": null
+  },
+  {
+    "id": 35,
+    "question": "Which attribute is used in <form> to send data using GET or POST?",
+    "description": null,
+    "answers": {
+      "answer_a": "type",
+      "answer_b": "action",
+      "answer_c": "method",
+      "answer_d": "submit"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_c_correct": "true",
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "The method attribute defines whether to send data via GET or POST.",
+    "tip": null
+  },
+  {
+    "id": 36,
+    "question": "What does the <mark> element do in HTML?",
+    "description": null,
+    "answers": {
+      "answer_a": "Defines highlighted text",
+      "answer_b": "Defines bold text",
+      "answer_c": "Defines italic text",
+      "answer_d": "Defines underlined text"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "<mark> is used to highlight text in HTML.",
+    "tip": null
+  },
+  {
+    "id": 37,
+    "question": "What is the purpose of the <time> element in HTML?",
+    "description": null,
+    "answers": {
+      "answer_a": "Displays a digital clock",
+      "answer_b": "Represents a specific time/date",
+      "answer_c": "Adds a timestamp automatically",
+      "answer_d": "Used for time-based CSS styling"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_b_correct": "true",
+      "answer_a_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "The <time> element represents a specific time or date.",
+    "tip": null
+  },
+  {
+    "id": 38,
+    "question": "Which HTML tag defines a dropdown list?",
+    "description": null,
+    "answers": {
+      "answer_a": "<input type='dropdown'>",
+      "answer_b": "<dropdown>",
+      "answer_c": "<select>",
+      "answer_d": "<list>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_c_correct": "true",
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "<select> defines a dropdown list in HTML forms.",
+    "tip": null
+  },
+  {
+    "id": 39,
+    "question": "Which tag is used to define inline quotations?",
+    "description": null,
+    "answers": {
+      "answer_a": "<quote>",
+      "answer_b": "<q>",
+      "answer_c": "<blockquote>",
+      "answer_d": "<cite>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_b_correct": "true",
+      "answer_a_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "<q> defines an inline quotation, while <blockquote> is for block-level.",
+    "tip": null
+  },
+  {
+    "id": 40,
+    "question": "Which HTML element is used to embed video content?",
+    "description": null,
+    "answers": {
+      "answer_a": "<video>",
+      "answer_b": "<media>",
+      "answer_c": "<movie>",
+      "answer_d": "<play>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "tags": ["html"],
+    "difficulty": "Medium",
+    "explanation": "The <video> tag is used to embed video in HTML.",
+    "tip": null
+},
+{
+    "id": 41,
+    "question": "What does the `rel=\"noopener noreferrer\"` attribute combination in a hyperlink prevent?",
+    "description": "Security measure for links",
+    "answers": {
+      "answer_a": "Prevents the new page from accessing the window.opener property",
+      "answer_b": "Forces links to open in a new tab",
+      "answer_c": "Adds SEO benefits",
+      "answer_d": "Prevents caching"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "It prevents the newly opened page from controlling the original page using `window.opener`.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 42,
+    "question": "What is the difference between `<section>` and `<article>` elements in HTML5?",
+    "description": "Semantic differences",
+    "answers": {
+      "answer_a": "Both are interchangeable",
+      "answer_b": "Section groups related content, article is self-contained",
+      "answer_c": "Article is for headings only",
+      "answer_d": "Section is for footers only"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -310,8 +926,386 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "explanation": "The CSS applies red color to the paragraph.",
-    "difficulty": "Hard",
-    "tags": ["HTML", "CSS"]
+    "explanation": "Use `<section>` for grouping content; `<article>` is meant to stand alone and be independently distributable.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 43,
+    "question": "What does the `srcset` attribute in `<img>` do?",
+    "description": "Responsive images",
+    "answers": {
+      "answer_a": "Specifies multiple image sources for different devices",
+      "answer_b": "Provides fallback text for broken images",
+      "answer_c": "Sets image aspect ratio",
+      "answer_d": "Adds captions to images"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`srcset` allows browsers to choose the most appropriate image depending on screen size and resolution.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 44,
+    "question": "What is the difference between `async` and `defer` when loading scripts?",
+    "description": "Script loading behavior",
+    "answers": {
+      "answer_a": "Async loads in order, defer loads randomly",
+      "answer_b": "Async executes as soon as loaded, defer executes after parsing",
+      "answer_c": "Defer blocks parsing, async does not",
+      "answer_d": "Both mean the same thing"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`async` scripts run immediately when loaded; `defer` waits until the document is parsed.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 45,
+    "question": "Which element provides machine-readable metadata about the page but is not visible to users?",
+    "description": "Metadata container",
+    "answers": {
+      "answer_a": "<meta>",
+      "answer_b": "<header>",
+      "answer_c": "<script>",
+      "answer_d": "<style>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The `<meta>` element defines metadata such as charset, viewport, and SEO keywords.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 46,
+    "question": "What is the purpose of the `aria-*` attributes?",
+    "description": "Accessibility",
+    "answers": {
+      "answer_a": "Defines styling rules",
+      "answer_b": "Improves accessibility for assistive technologies",
+      "answer_c": "Improves SEO",
+      "answer_d": "Loads async content"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "ARIA (Accessible Rich Internet Applications) attributes improve screen reader and accessibility support.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 47,
+    "question": "Which attribute is used in `<form>` to prevent autocomplete suggestions?",
+    "description": "Form input behavior",
+    "answers": {
+      "answer_a": "autocorrect",
+      "answer_b": "autocomplete=\"off\"",
+      "answer_c": "novalidate",
+      "answer_d": "disabled"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Setting `autocomplete=\"off\"` disables autocomplete suggestions in forms.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 48,
+    "question": "What does the `<noscript>` tag do?",
+    "description": "Fallback for no-JS users",
+    "answers": {
+      "answer_a": "Defines scripts that run if JavaScript is disabled",
+      "answer_b": "Hides CSS styles",
+      "answer_c": "Disables script execution",
+      "answer_d": "Defines inline event handlers"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The `<noscript>` tag provides alternative content if the user’s browser does not support JavaScript.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 49,
+    "question": "What is the difference between `<embed>` and `<object>` for multimedia?",
+    "description": "Embedding media",
+    "answers": {
+      "answer_a": "<embed> is for images only, <object> is for videos",
+      "answer_b": "<embed> is used for external resources, <object> allows fallback content",
+      "answer_c": "They are identical",
+      "answer_d": "Object is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`<embed>` just inserts external content; `<object>` allows fallback if content isn’t supported.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 50,
+    "question": "Which HTML attribute improves security for external iframes by restricting features?",
+    "description": "Iframe restrictions",
+    "answers": {
+      "answer_a": "security",
+      "answer_b": "sandbox",
+      "answer_c": "safe",
+      "answer_d": "policy"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The `sandbox` attribute applies restrictions like blocking scripts or preventing form submissions in iframes.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 51,
+    "question": "What does the `<template>` element do?",
+    "description": "Reusable fragments",
+    "answers": {
+      "answer_a": "Renders hidden reusable content",
+      "answer_b": "Executes scripts automatically",
+      "answer_c": "Defines CSS templates",
+      "answer_d": "Is deprecated in HTML5"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`<template>` holds content that is not rendered immediately but can be cloned later using JavaScript.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 52,
+    "question": "Which attribute in `<form>` specifies where to send form data?",
+    "description": "Form submission target",
+    "answers": {
+      "answer_a": "target",
+      "answer_b": "action",
+      "answer_c": "method",
+      "answer_d": "rel"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The `action` attribute defines the URL where the form data should be sent.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 53,
+    "question": "What does the `download` attribute on `<a>` do?",
+    "description": "Download behavior",
+    "answers": {
+      "answer_a": "Forces the linked file to download",
+      "answer_b": "Disables links",
+      "answer_c": "Caches resources",
+      "answer_d": "Adds rel security features"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`download` makes the link open a file download instead of navigating.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 54,
+    "question": "What is the difference between `<progress>` and `<meter>`?",
+    "description": "Progress vs measurement",
+    "answers": {
+      "answer_a": "<progress> shows task completion, <meter> shows measurement within range",
+      "answer_b": "<progress> is deprecated, <meter> is new",
+      "answer_c": "They are identical",
+      "answer_d": "<meter> is only for percentages"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`<progress>` represents task progress; `<meter>` shows a known measurement value like disk usage.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 55,
+    "question": "What is the effect of the `translate=\"no\"` attribute?",
+    "description": "Prevent translation",
+    "answers": {
+      "answer_a": "Prevents translation tools from translating the element",
+      "answer_b": "Enables language fallback",
+      "answer_c": "Adds semantic meaning",
+      "answer_d": "Applies bidirectional text rules"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`translate=\"no\"` tells translation tools like Google Translate not to translate the element’s text.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "question": "Which attribute in `<track>` specifies the kind of text track?",
+    "description": "Subtitles and captions",
+    "answers": {
+      "answer_a": "src",
+      "answer_b": "kind",
+      "answer_c": "label",
+      "answer_d": "default"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The `kind` attribute specifies if the track is subtitles, captions, metadata, etc.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 57,
+    "question": "What is the difference between `<strong>` and `<b>`?",
+    "description": "Semantic emphasis",
+    "answers": {
+      "answer_a": "Strong means bold, b is italic",
+      "answer_b": "Strong is semantic emphasis, b is only visual",
+      "answer_c": "Both are identical",
+      "answer_d": "B is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`<strong>` conveys semantic importance; `<b>` just makes text bold.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 58,
+    "question": "What is the difference between `<em>` and `<i>`?",
+    "description": "Semantic italics",
+    "answers": {
+      "answer_a": "Em means bold, i is underline",
+      "answer_b": "Em is semantic emphasis, i is just styling",
+      "answer_c": "Both are identical",
+      "answer_d": "I is deprecated"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`<em>` conveys stress emphasis, `<i>` is just italic styling.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 59,
+    "question": "Which HTML API allows drag-and-drop functionality?",
+    "description": "Native drag & drop",
+    "answers": {
+      "answer_a": "File API",
+      "answer_b": "Drag and Drop API",
+      "answer_c": "Clipboard API",
+      "answer_d": "Web Workers"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The HTML Drag and Drop API enables dragging elements and files.",
+    "tags": ["html"],
+    "difficulty": "Hard"
+  },
+  {
+    "id": 60,
+    "question": "Which HTML feature provides offline access by storing resources locally?",
+    "description": "Offline support",
+    "answers": {
+      "answer_a": "LocalStorage",
+      "answer_b": "AppCache",
+      "answer_c": "Service Workers",
+      "answer_d": "Cookies"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Service Workers cache assets locally and enable offline functionality.",
+    "tags": ["html"],
+    "difficulty": "Hard"
   }
 ]
