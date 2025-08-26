@@ -1,452 +1,317 @@
 [
   {
     "id": 1,
-    "question": "Sample html Easy Question 1?",
+    "question": "What does the <p> tag represent in HTML?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q1",
-      "answer_b": "Option B for html Q1",
-      "answer_c": "Option C for html Q1",
-      "answer_d": "Option D for html Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Paragraph",
+      "answer_b": "Preformatted text",
+      "answer_c": "Page",
+      "answer_d": "Property"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Easy Q1.",
-    "tip": "Tip for html Easy Q1.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "The <p> tag defines a paragraph.",
+    "difficulty": "Easy",
+    "tags": ["HTML"]
   },
   {
     "id": 2,
-    "question": "Sample html Easy Question 2?",
+    "question": "Which attribute is used to provide alternative text for an image?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q2",
-      "answer_b": "Option B for html Q2",
-      "answer_c": "Option C for html Q2",
-      "answer_d": "Option D for html Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "title",
+      "answer_b": "alt",
+      "answer_c": "src",
+      "answer_d": "longdesc"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Easy Q2.",
-    "tip": "Tip for html Easy Q2.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "The alt attribute provides alternative text.",
+    "difficulty": "Easy",
+    "tags": ["HTML"]
   },
   {
     "id": 3,
-    "question": "Sample html Easy Question 3?",
+    "question": "Which HTML5 element is used to play audio files?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q3",
-      "answer_b": "Option B for html Q3",
-      "answer_c": "Option C for html Q3",
-      "answer_d": "Option D for html Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "<music>",
+      "answer_b": "<sound>",
+      "answer_c": "<audio>",
+      "answer_d": "<play>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Easy Q3.",
-    "tip": "Tip for html Easy Q3.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "The <audio> element is used for sound content.",
+    "difficulty": "Easy",
+    "tags": ["HTML"]
   },
   {
     "id": 4,
-    "question": "Sample html Easy Question 4?",
+    "question": "Which tag is used to define a table row?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q4",
-      "answer_b": "Option B for html Q4",
-      "answer_c": "Option C for html Q4",
-      "answer_d": "Option D for html Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "<td>",
+      "answer_b": "<tr>",
+      "answer_c": "<th>",
+      "answer_d": "<row>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Easy Q4.",
-    "tip": "Tip for html Easy Q4.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "The <tr> tag defines a table row.",
+    "difficulty": "Easy",
+    "tags": ["HTML"]
   },
   {
     "id": 5,
-    "question": "Sample html Easy Question 5?",
+    "question": "Which element is used to create a hyperlink?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q5",
-      "answer_b": "Option B for html Q5",
-      "answer_c": "Option C for html Q5",
-      "answer_d": "Option D for html Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "<a>",
+      "answer_b": "<link>",
+      "answer_c": "<href>",
+      "answer_d": "<hyper>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Easy Q5.",
-    "tip": "Tip for html Easy Q5.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Easy"
+    "explanation": "The <a> tag creates a hyperlink.",
+    "difficulty": "Easy",
+    "tags": ["HTML"]
   },
   {
     "id": 6,
-    "question": "Sample html Medium Question 1?",
+    "question": "What does the <canvas> element in HTML5 provide?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q1",
-      "answer_b": "Option B for html Q1",
-      "answer_c": "Option C for html Q1",
-      "answer_d": "Option D for html Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "2D drawing surface",
+      "answer_b": "Video playback",
+      "answer_c": "Image gallery",
+      "answer_d": "Audio player"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Medium Q1.",
-    "tip": "Tip for html Medium Q1.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Medium"
+    "explanation": "<canvas> provides a surface for graphics via JavaScript.",
+    "difficulty": "Medium",
+    "tags": ["HTML"]
   },
   {
     "id": 7,
-    "question": "Sample html Medium Question 2?",
+    "question": "Which HTML attribute specifies that an input field must be filled out?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q2",
-      "answer_b": "Option B for html Q2",
-      "answer_c": "Option C for html Q2",
-      "answer_d": "Option D for html Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "placeholder",
+      "answer_b": "validate",
+      "answer_c": "required",
+      "answer_d": "mandatory"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Medium Q2.",
-    "tip": "Tip for html Medium Q2.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Medium"
+    "explanation": "The 'required' attribute ensures input is not empty.",
+    "difficulty": "Medium",
+    "tags": ["HTML"]
   },
   {
     "id": 8,
-    "question": "Sample html Medium Question 3?",
+    "question": "Which tag is used to embed a document inside another HTML document?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q3",
-      "answer_b": "Option B for html Q3",
-      "answer_c": "Option C for html Q3",
-      "answer_d": "Option D for html Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "<iframe>",
+      "answer_b": "<embed>",
+      "answer_c": "<object>",
+      "answer_d": "<frame>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Medium Q3.",
-    "tip": "Tip for html Medium Q3.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Medium"
+    "explanation": "The <iframe> tag embeds external content.",
+    "difficulty": "Medium",
+    "tags": ["HTML"]
   },
   {
     "id": 9,
-    "question": "Sample html Medium Question 4?",
+    "question": "Which attribute is used with <form> to specify the script that processes the form?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q4",
-      "answer_b": "Option B for html Q4",
-      "answer_c": "Option C for html Q4",
-      "answer_d": "Option D for html Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "action",
+      "answer_b": "method",
+      "answer_c": "target",
+      "answer_d": "submit"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Medium Q4.",
-    "tip": "Tip for html Medium Q4.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Medium"
+    "explanation": "The 'action' attribute defines the script URL.",
+    "difficulty": "Medium",
+    "tags": ["HTML"]
   },
   {
     "id": 10,
-    "question": "Sample html Medium Question 5?",
+    "question": "What does the 'novalidate' attribute in a <form> element do?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q5",
-      "answer_b": "Option B for html Q5",
-      "answer_c": "Option C for html Q5",
-      "answer_d": "Option D for html Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Disables browser validation",
+      "answer_b": "Hides form inputs",
+      "answer_c": "Disables form submission",
+      "answer_d": "Resets all inputs"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Medium Q5.",
-    "tip": "Tip for html Medium Q5.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Medium"
+    "explanation": "novalidate disables default form validation.",
+    "difficulty": "Medium",
+    "tags": ["HTML"]
   },
   {
     "id": 11,
-    "question": "Sample html Hard Question 1?",
+    "question": "What does this code output?\n```html\n<!DOCTYPE html>\n<html>\n<body>\n<p id='demo'></p>\n<script>\ndocument.getElementById('demo').innerHTML = 2 + '2';\n</script>\n</body>\n</html>\n```",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q1",
-      "answer_b": "Option B for html Q1",
-      "answer_c": "Option C for html Q1",
-      "answer_d": "Option D for html Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "4",
+      "answer_b": "22",
+      "answer_c": "Error",
+      "answer_d": "NaN"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Hard Q1.",
-    "tip": "Tip for html Hard Q1.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Hard"
+    "explanation": "String concatenation happens, output is '22'.",
+    "difficulty": "Hard",
+    "tags": ["HTML", "JavaScript"]
   },
   {
     "id": 12,
-    "question": "Sample html Hard Question 2?",
+    "question": "Which attribute in <video> enables default controls?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q2",
-      "answer_b": "Option B for html Q2",
-      "answer_c": "Option C for html Q2",
-      "answer_d": "Option D for html Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "controls",
+      "answer_b": "play",
+      "answer_c": "default",
+      "answer_d": "autoplay"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Hard Q2.",
-    "tip": "Tip for html Hard Q2.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Hard"
+    "explanation": "The 'controls' attribute enables built-in playback controls.",
+    "difficulty": "Hard",
+    "tags": ["HTML"]
   },
   {
     "id": 13,
-    "question": "Sample html Hard Question 3?",
+    "question": "Which is NOT a semantic HTML element?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q3",
-      "answer_b": "Option B for html Q3",
-      "answer_c": "Option C for html Q3",
-      "answer_d": "Option D for html Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "<section>",
+      "answer_b": "<article>",
+      "answer_c": "<div>",
+      "answer_d": "<aside>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Hard Q3.",
-    "tip": "Tip for html Hard Q3.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Hard"
+    "explanation": "<div> is non-semantic.",
+    "difficulty": "Hard",
+    "tags": ["HTML"]
   },
   {
     "id": 14,
-    "question": "Sample html Hard Question 4?",
+    "question": "What does the <meta charset='UTF-8'> tag specify?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q4",
-      "answer_b": "Option B for html Q4",
-      "answer_c": "Option C for html Q4",
-      "answer_d": "Option D for html Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "The language of the page",
+      "answer_b": "The character encoding",
+      "answer_c": "The viewport settings",
+      "answer_d": "The content type"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Hard Q4.",
-    "tip": "Tip for html Hard Q4.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Hard"
+    "explanation": "It specifies the character encoding standard.",
+    "difficulty": "Hard",
+    "tags": ["HTML"]
   },
   {
     "id": 15,
-    "question": "Sample html Hard Question 5?",
+    "question": "What does this render?\n```html\n<!DOCTYPE html>\n<html>\n<head>\n<style>\np {color: red;}\n</style>\n</head>\n<body>\n<p>Hello</p>\n</body>\n</html>\n```",
     "description": null,
     "answers": {
-      "answer_a": "Option A for html Q5",
-      "answer_b": "Option B for html Q5",
-      "answer_c": "Option C for html Q5",
-      "answer_d": "Option D for html Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Hello in black",
+      "answer_b": "Hello in red",
+      "answer_c": "Error",
+      "answer_d": "Nothing"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for html Hard Q5.",
-    "tip": "Tip for html Hard Q5.",
-    "tags": [
-      "html"
-    ],
-    "category": "HTML",
-    "difficulty": "Hard"
+    "explanation": "The CSS applies red color to the paragraph.",
+    "difficulty": "Hard",
+    "tags": ["HTML", "CSS"]
   }
 ]
