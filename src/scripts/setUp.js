@@ -75,7 +75,7 @@ function ManageData() {
             warning.remove();
         }, 5000);
     } else {
-        let User = new Userdata(userName.value, userMajor.value, topicSel.value, diffLevel.value, NumberOfQA.value);
+        let User = new Userdata(userName.value, userMajor.value, topicSel.value, diffLevel.value, NumberOfQA.value, null);
         if (users.has(User.name)) {
             User.setData({ [diffLevel.id]: diffLevel.value, [topicSel.id]: topicSel.value, [NumberOfQA.id]: NumberOfQA.value })
         } else {

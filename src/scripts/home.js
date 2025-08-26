@@ -10,7 +10,8 @@ const suggestionModal = document.getElementById("modal-sugg");
 function setUserInfo() {
     try {
         let data = JSON.parse(localStorage.getItem("usersName"));
-        return new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs);
+        console.log(data);
+        return new Userdata(data.name, data.major, data.quizTopic, data.difficulty, data.NumofQs, data.map);
     } catch (err) {
         console.log(`problem catched :${err} , unfortunatelly we can't get the user yet `)
     }
@@ -355,14 +356,22 @@ function showCurrentQuestion(current) {
         }, 3000)
     }
 }
+function Addtogallery() {
+    OurUser.setGalleryData(OurUser.quizTopic, { "level": OurUser.difficulty, "number of questions taken": OurUser.NumofQs });
+    console.log(OurUser.map);
+    localStorage.setItem("usersName", JSON.stringify(OurUser));
+}
+console.log(OurUser.map)
 prev.addEventListener("click", () => {
     showPrevStep();
     showCurrentQuestion(currentItem);
 })
 next.addEventListener("click", (e) => {
     if (next.textContent == "submit") {
+        Addtogallery()
         ShowRightContent = true;
         showQuizorNot();
+
     } else {
         showNextStep();
         showCurrentQuestion(currentItem);
