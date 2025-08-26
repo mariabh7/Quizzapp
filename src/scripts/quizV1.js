@@ -42,25 +42,25 @@ export class Userdata {
 }
 export const users = new Map();
 export async function GetDataViaAPI(selectEl, ParentEL) {
-    try {
-        let res = await fetch("https://quizapi.io/api/v1/tags?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso");
-        let Data = await res.json();
-        try {
-            Data.forEach(element => {
-                let opt = document.createElement("option");
-                if (element.name != "Undefined") {
-                    opt.textContent = element.name;
-                    selectEl.appendChild(opt);
-                }
-            });
-        } catch {
-            let warning = document.createElement("p");
-            warning.textContent = "failed to retrieve topic data ! please try again later "
-            warning.className = " my-10 text-yellow-500 "
-            ParentEL.appendChild(warning);
-        }
+    // try {
+    //     let res = await fetch("https://quizapi.io/api/v1/tags?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso");
+    //     let Data = await res.json();
+    //     try {
+    //         Data.forEach(element => {
+    //             let opt = document.createElement("option");
+    //             if (element.name != "Undefined") {
+    //                 opt.textContent = element.name;
+    //                 selectEl.appendChild(opt);
+    //             }
+    //         });
+    //     } catch {
+    //         let warning = document.createElement("p");
+    //         warning.textContent = "failed to retrieve topic data ! please try again later "
+    //         warning.className = " my-10 text-yellow-500 "
+    //         ParentEL.appendChild(warning);
+    //     }
 
-    } catch {
-        console.log("problem loading topics");
-    }
+    // } catch {
+    //     console.log("problem loading topics");
+    // }
 }

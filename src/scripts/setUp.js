@@ -44,7 +44,7 @@ const topicSel = document.getElementById("Topic");
 const diffLevel = document.getElementById("diff");
 const NumberOfQA = document.getElementById("NumofQes");
 const ContainerInfo = document.getElementById("TechInfo");
-GetDataViaAPI(topicSel, ContainerInfo);
+// GetDataViaAPI(topicSel, ContainerInfo);
 NextButton.addEventListener("click", (e) => {
     e.preventDefault();
     if (NextButton.textContent === "submit") {

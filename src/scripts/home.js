@@ -24,10 +24,13 @@ let colorClasses = {
 const Sel = document.getElementById("Topic");
 const OurUser = setUserInfo();
 const levels = ["hard", "medium", "easy"];
+// current avaible topics 
+const topics = ["javascript", "html", "css"];
 const nums = [3, 5, 10, 15, 20];
 const selectDataMap = {
     diff: levels,
-    NumofQes: nums
+    NumofQes: nums,
+    Topic: topics
 };
 
 function UpdateDom() {
@@ -63,7 +66,6 @@ document.querySelectorAll("select").forEach((sel) => {
     sel.addEventListener("change", () => {
         OurUser.setData({ [sel.id]: sel.value });
         UpdateDom();
-
     });
 });
 
@@ -223,18 +225,31 @@ const startQuizz = document.getElementById("StartQuizz");
 const TakeQuiz = document.getElementById("TakeQuiz");
 const quizzTaken = document.getElementById("quizzTaken");
 let currentItem = 0;
+let data;
 async function GetQuestions() {
     try {
-        const res = await fetch(`https://quizapi.io/api/v1/questions?apiKey=y65cYlPTKSDaUdayGMs2iiRrJjfEUVHKdDTfHTso&difficulty=${OurUser?.difficulty}&limit=${OurUser?.NumofQs}&tags=${OurUser?.quizTopic}`);
+
+        const topic = OurUser?.quizTopic || "javascript";
+        const url = `https://raw.githubusercontent.com/mariabh7/Quizzapp/main/quizzes/${topic}.json`;
+
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("Failed to fetch questions from GitHub");
         const data = await res.json();
-        return data;
+
+        const difficulty = OurUser?.difficulty;
+        let filtered = data;
+        if (difficulty) {
+            filtered = data.filter(q => q.difficulty.toLowerCase() === difficulty.toLowerCase());
+        }
+        const limit = OurUser?.NumofQs || 5;
+        return filtered.slice(0, limit);
+
     } catch (err) {
-        console.log("no questions yet ");
+        console.log("No questions yet:", err);
+        return [];
     }
 }
-let data = JSON.parse(localStorage.getItem("data"));
 let ShowRightContent = true;
-
 function showQuizorNot() {
     TakeQuiz.classList.toggle("hidden", ShowRightContent);
     quizzTaken.classList.toggle("hidden", !ShowRightContent);
@@ -248,13 +263,23 @@ if (saved !== null) {
     showQuizorNot();
 
 }
-
+async function GetDataForQuiz() {
+    data = await GetQuestions();
+    showCurrentQuestion(currentItem);
+}
 startQuizz.addEventListener("click", () => {
+    GetDataForQuiz();
+    currentItem = 0;
     ShowRightContent = false;
     showQuizorNot();
 });
+// try {
+//     data = data ?? JSON.parse(localStorage.getItem("data"));
+// } catch (err) {
+//     console.log(err)
+// }
 function showNextStep() {
-    if (currentItem < data.length - 1) {
+    if (currentItem < data?.length - 1) {
         currentItem += 1;
     }
 
@@ -266,57 +291,70 @@ function showPrevStep() {
 
 }
 function escapeHTML(str) {
-    return str.replace(/</g, "&lt;")
+    return str?.replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
 }
 function ShowAns() {
     let map = new Map();
     return function AnswersSett(item, ParentEL) {
         const answers = item?.answers;
-        Object.entries(answers).forEach(([id, value]) => {
-            if (value !== null) {
-                let li = document.createElement("li");
-                li.textContent = value;
-                li.id = id;
-                if (map.get(`answer${currentItem}`) === value) {
-                    li.className = "answer-Active";
-                } else {
-                    li.className = "answer-li";
-                }
-                ParentEL.appendChild(li);
-                li.addEventListener("click", (event) => {
-                    li.parentElement.querySelectorAll("li").forEach(el => {
-                        el.classList.remove("answer-Active");
-                        el.classList.add("answer-li");
-                    });
-                    li.classList.remove("answer-li");
-                    li.classList.add("answer-Active");
+        if (answers) {
+            Object.entries(answers).forEach(([id, value]) => {
+                if (value !== null) {
+                    let li = document.createElement("li");
+                    li.textContent = value;
+                    li.id = id;
+                    if (map.get(`answer${currentItem}`) === value) {
+                        li.className = "answer-Active";
+                    } else {
+                        li.className = "answer-li";
+                    }
+                    ParentEL.appendChild(li);
+                    li.addEventListener("click", (event) => {
+                        li.parentElement.querySelectorAll("li").forEach(el => {
+                            el.classList.remove("answer-Active");
+                            el.classList.add("answer-li");
+                        });
+                        li.classList.remove("answer-li");
+                        li.classList.add("answer-Active");
 
-                    map.set(`answer${currentItem}`, li.textContent);
-                    console.log(map);
-                })
-            }
-        })
+                        map.set(`answer${currentItem}`, li.textContent);
+                        console.log(map);
+                    })
+                }
+            })
+        }
     }
 }
 const ShowSuggestedAnswers = ShowAns();
 function showCurrentQuestion(current) {
-    const item = data.find((cItem, index, array) => index == current);
-    ContentContainer.innerHTML = "";
-    let div = document.createElement("div");
-    div.innerHTML = `
+    if (data) {
+        const item = data.find((cItem, index, array) => index == current);
+        ContentContainer.innerHTML = "";
+        let div = document.createElement("div");
+        div.innerHTML = `
     <h3 class=" text-lg md:text-xl font-semibold first-letter:capitalize  text-blue-600 ">${currentItem + 1}- ${escapeHTML(item?.question)}</h3>
     <div><ul id="suggestedAnswers" class=" mt-4 md:mt-8 flex flex-col gap-5  md:gap-8 "></ul>
     </div>`
-    ShowSuggestedAnswers(item, div.querySelector("#suggestedAnswers"));
-    ContentContainer.appendChild(div);
-    if (currentItem == data.length - 1) {
-        next.textContent = "submit";
+        ShowSuggestedAnswers(item, div.querySelector("#suggestedAnswers"));
+        ContentContainer.appendChild(div);
+        if (currentItem == data?.length - 1) {
+            next.textContent = "submit";
+        } else {
+            next.textContent = "next";
+        }
     } else {
-        next.textContent = "next";
+        TakeQuiz.innerHTML = "";
+        let div = document.createElement("div");
+        div.innerHTML = `
+        <h3 class=" text-lg md:text-xl font-semibold first-letter:capitalize  text-blue-600 ">sorry we couldnt find any matching quizzes for your theme try again with another one  </div>`
+        TakeQuiz.appendChild(div);
+        setTimeout(() => {
+            ShowRightContent = true;
+            showQuizorNot();
+        }, 3000)
     }
 }
-
 prev.addEventListener("click", () => {
     showPrevStep();
     showCurrentQuestion(currentItem);
@@ -330,4 +368,3 @@ next.addEventListener("click", (e) => {
         showCurrentQuestion(currentItem);
     }
 })
-showCurrentQuestion(currentItem);
