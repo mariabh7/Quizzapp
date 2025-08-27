@@ -25,7 +25,7 @@ const Sel = document.getElementById("Topic");
 const OurUser = setUserInfo();
 const levels = ["hard", "medium", "easy"];
 // current avaible topics 
-const topics = ["javascript", "html", "css"];
+const topics = ["javascript", "html-5", "css"];
 const nums = [3, 5, 10, 15, 20];
 const selectDataMap = {
     diff: levels,
@@ -224,6 +224,7 @@ const ContentContainer = document.getElementById("QuizContent");
 const startQuizz = document.getElementById("StartQuizz");
 const TakeQuiz = document.getElementById("TakeQuiz");
 const quizzTaken = document.getElementById("quizzTaken");
+const holdQuizzes = document.getElementById("Qcontainer");
 let currentItem = 0;
 let data;
 let Gallery;
@@ -360,20 +361,71 @@ function showCurrentQuestion(current) {
 function Addtogallery() {
     OurUser.setGalleryData(OurUser.quizTopic, Gallery);
     localStorage.setItem("usersName", JSON.stringify(OurUser));
+    DisplayGallery(Gallery);
     console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
     if (OurUser.GetMap().size !== 0) {
-        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found element</span>`
+        quizzTaken.innerHTML = holdQuizzes;
     } else {
-        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found no element yet </span>`
+        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found element</span>`;
     }
 }
-function DisplayGallery() {
+function DisplayGallery(gal) {
     let div = document.createElement("div");
-    for (const [key, value] of OurUser.GetMap()) {
-        console.log(key, value);
-    }
+    div.innerHTML = `<div class="flex flex-col gap-8 py-4  border-2 border-gray-100 rounded-xl">
+                        <div class=" flex justify-center items-start w-full pb-2  border-b-2 border-gray-100 ">
+                            <img src="https://api.iconify.design/logos:${OurUser.quizTopic}.svg" class="w-10">
+                        </div>
+                        <div class="mx-3">
+                            <div class="flex flex-col justify-start gap-4 ">
+                                <div class="g-info">
+                                    <div class="w-6 h-6 rounded-full bg-[conic-gradient(#22c55e_${Math.floor((parseInt(score.textContent) / parseInt(OurUser.NumofQs) * 100))}%,#e5e7eb_0)] flex items-center justify-center">
+                                        <div  class="w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                                         </div>
+                                    </div>
+                                    <div class="flex text-sm  justify-start gap-1 ">
+                                                    <span class="text-gray-500">correct answers</span>
+                                                    <span>${Math.round((parseInt(score.textContent) / parseInt(OurUser.NumofQs) * 100))}</span>
+                                    </div>
+                                            </div>
+                                    <div class="g-info">
+                                                <div
+                                                    class="w-6 h-6 rounded-full  bg-[conic-gradient(#22c55e_${Math.floor((gal.size / parseInt(OurUser.NumofQs) * 100))}%,#e5e7eb_0)]  flex items-center justify-center">
+                                                    <div
+                                                        class="w-4 h-4 bg-white rounded-full flex items-center justify-center">
+                                                    </div>
+                                                </div>
+                                                <div class="flex text-sm  justify-start gap-1 ">
+                                                    <span class="text-gray-500">completions</span>
+                                                    <span>${Math.floor((gal.size / parseInt(OurUser.NumofQs) * 100))} </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="mx-3 text-gray-500 flex justify-between items-center gap-2">
+                                        <span>1 min ago</span>
+                                        <div class="flex justify-start gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.25"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M8 9h8" />
+                                                <path d="M8 13h6" />
+                                                <path
+                                                    d="M14 18h-1l-5 3v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4.5" />
+                                                <path d="M19 22v.01" />
+                                                <path
+                                                    d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
+                                            </svg>
+                                            <span>${OurUser.NumofQs} questions</span>
+                                        </div>
+                                    </div>
+                                </div>`
+    // for (const [key, value] of gal) {
+    //     console.log(key, value);
+    // }
+    holdQuizzes.appendChild(div);
 }
 function CalculateScore(QuizMap, quiztopic) {
     let lscore = parseInt(score.textContent);
@@ -386,6 +438,7 @@ function CalculateScore(QuizMap, quiztopic) {
             }
         }
         score.textContent = lscore;
+
     }
 }
 // UpdateGalleryDom();
