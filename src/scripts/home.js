@@ -307,12 +307,13 @@ function ShowAns() {
                     let li = document.createElement("li");
                     li.textContent = value;
                     li.id = id;
-                    if (map.get(`answer${currentItem}`) === value) {
+                    if (map.get(`${currentItem + 1}-answer`)?.[1] === value) {
                         li.className = "answer-Active";
                     } else {
                         li.className = "answer-li";
                     }
                     ParentEL.appendChild(li);
+
                     li.addEventListener("click", (event) => {
                         li.parentElement.querySelectorAll("li").forEach(el => {
                             el.classList.remove("answer-Active");
@@ -321,7 +322,7 @@ function ShowAns() {
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
 
-                        map.set(`${li.id}`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || item.answers[`answer_${item.correct_answer}`]}`]);
+                        map.set(`${currentItem + 1}-answer`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || answers[`answer_${item.correct_answer}`]}`]);
                         Gallery = map;
                     })
                 }
@@ -434,7 +435,6 @@ function CalculateScore(QuizMap, quiztopic) {
         for (let [key, value] of topicAnswers) {
             if (value[0] == 'true') {
                 lscore++;
-                console.log(lscore);
             }
         }
         score.textContent = lscore;
