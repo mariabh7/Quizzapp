@@ -33,7 +33,12 @@ see live demo at : https://mariacodes.net/quizzapp
 The quiz questions are sourced from a custom GitHub dataset (created with the help of CHATGPT), structured in the same format as [QuizAPI.io](https://quizapi.io/)
 to support dynamic quizzes by topic and difficulty.
 ## Contributing
-unfortunately the usage of quizzly is very limited as the number of request done isnt that high {50 / day } so if you know another Quizzapi   resource 
 Contributions are always welcome! 
+#### Timer Integration: 
+if you just  want to add a new language , just open the quizzes folder , add your NEW_LANGUAGE.json file
+after that, go to setup.html add the language as an option for the select element of the topic , 
+go to home.js and add the language you want to the topics array above .
+[ make sure that the NEW_LANGUAGE.json file is valid json otherwise that might lead to some problems ] .
+CONGRATULATION you added a new language  🎉🎉
 looking forward to any code review or fixes 
 
