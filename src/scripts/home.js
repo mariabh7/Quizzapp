@@ -227,6 +227,7 @@ const quizzTaken = document.getElementById("quizzTaken");
 let currentItem = 0;
 let data;
 let Gallery;
+const score = document.getElementById("score");
 async function GetQuestions() {
     try {
 
@@ -319,7 +320,7 @@ function ShowAns() {
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
 
-                        map.set(`${li.id}`, li.textContent);
+                        map.set(`${currentItem}-${li.id}`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || item.answers[`answer_${item.correct_answer}`]}`]);
                         Gallery = map;
                     })
                 }
@@ -353,7 +354,7 @@ function showCurrentQuestion(current) {
         setTimeout(() => {
             ShowRightContent = true;
             showQuizorNot();
-        }, 3000)
+        }, 5000)
     }
 }
 function Addtogallery() {
@@ -361,6 +362,34 @@ function Addtogallery() {
     localStorage.setItem("usersName", JSON.stringify(OurUser));
     console.log(OurUser.GetMap());
 }
+function UpdateGalleryDom() {
+    if (OurUser.GetMap().size !== 0) {
+        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found element</span>`
+    } else {
+        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found no element yet </span>`
+    }
+}
+function DisplayGallery() {
+    let div = document.createElement("div");
+    for (const [key, value] of OurUser.GetMap()) {
+        console.log(key, value);
+    }
+}
+function CalculateScore(QuizMap, quiztopic) {
+    let lscore = parseInt(score.textContent);
+    if (OurUser.GetMap().has(quiztopic)) {
+        let topicAnswers = QuizMap;
+        for (let [key, value] of topicAnswers) {
+            if (value[0] == 'true') {
+                lscore++;
+                console.log(lscore);
+            }
+        }
+        score.textContent = lscore;
+    }
+}
+// UpdateGalleryDom();
+
 prev.addEventListener("click", () => {
     showPrevStep();
     showCurrentQuestion(currentItem);
@@ -368,6 +397,7 @@ prev.addEventListener("click", () => {
 next.addEventListener("click", (e) => {
     if (next.textContent == "submit") {
         Addtogallery()
+        CalculateScore(Gallery, OurUser.quizTopic);
         ShowRightContent = true;
         showQuizorNot();
 

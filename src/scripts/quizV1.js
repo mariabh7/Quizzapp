@@ -67,7 +67,7 @@ export class Userdata {
         for (let item of flmap) {
             if (Array.isArray(item[1])) {
                 let innerEntry = new Map(item[1].values());
-                // Replace the inner map with [key, value]
+                // get map from [key, value]
                 item[1] = innerEntry;
             }
         }
