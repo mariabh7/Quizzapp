@@ -27,14 +27,13 @@ see live demo at : https://mariacodes.net/quizzapp
 
 ## Acknowledgements
 
-- [QuizAPI.io](https://quizapi.io/) — for providing the quiz questions and topics used in this app.
+- [QuizAPI.io](https://quizapi.io/) — as an inspiration for quiz questions json style   used in this app
 
 ## Data Source 
-This project uses the [QuizAPI.io](https://quizapi.io/) 
-API to fetch tech-related quiz questions.  
-The API provides multiple topics and difficulty levels, which are integrated into the app to generate dynamic quizzes.
+The quiz questions are sourced from a custom GitHub dataset (created with the help of CHATGPT), structured in the same format as [QuizAPI.io](https://quizapi.io/)
+to support dynamic quizzes by topic and difficulty.
 ## Contributing
 unfortunately the usage of quizzly is very limited as the number of request done isnt that high {50 / day } so if you know another Quizzapi   resource 
 Contributions are always welcome! 
-looking forward to any code review or fixes
+looking forward to any code review or fixes 
 
