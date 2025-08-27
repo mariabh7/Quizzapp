@@ -54,7 +54,8 @@ export class Userdata {
         return maps;
     }
     setGalleryData(topic, answer) {
-        if (this.map == null) {
+
+        if (this.map === null) {
             this.map = new Map();
         } else {
             this.map = this.GetMap();
@@ -63,15 +64,15 @@ export class Userdata {
         this.map = this.flattenMaps(this.map);
     }
     GetMap() {
-        let flmap = this.map;
-        for (let item of flmap) {
+        for (let item of this.map) {
             if (Array.isArray(item[1])) {
                 let innerEntry = new Map(item[1].values());
                 // get map from [key, value]
                 item[1] = innerEntry;
             }
         }
-        return new Map(flmap);
+
+        return new Map(this.map);
     }
 
 }

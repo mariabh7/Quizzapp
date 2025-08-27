@@ -23,6 +23,7 @@ let colorClasses = {
 };
 const Sel = document.getElementById("Topic");
 const OurUser = setUserInfo();
+console.log(OurUser);
 const levels = ["hard", "medium", "easy"];
 // current avaible topics 
 const topics = ["javascript", "html-5", "css-3"];
@@ -228,6 +229,8 @@ const holdQuizzes = document.getElementById("Qcontainer");
 let currentItem = 0;
 let data;
 let Gallery;
+let currentNum = 0;
+let SingleScore = 0;
 const score = document.getElementById("score");
 async function GetQuestions() {
     try {
@@ -245,6 +248,7 @@ async function GetQuestions() {
             filtered = data.filter(q => q.difficulty.toLowerCase() === difficulty.toLowerCase());
         }
         const limit = OurUser?.NumofQs || 5;
+        currentNum = limit;
         return filtered.slice(0, limit);
 
     } catch (err) {
@@ -273,6 +277,7 @@ async function GetDataForQuiz() {
 startQuizz.addEventListener("click", () => {
     GetDataForQuiz();
     currentItem = 0;
+    SingleScore = 0;
     ShowRightContent = false;
     showQuizorNot();
 });
@@ -321,13 +326,14 @@ function ShowAns() {
                         });
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
-
                         map.set(`${currentItem + 1}-answer`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || answers[`answer_${item.correct_answer}`]}`]);
                         Gallery = map;
+
                     })
                 }
             })
         }
+
     }
 }
 const ShowSuggestedAnswers = ShowAns();
@@ -359,11 +365,30 @@ function showCurrentQuestion(current) {
         }, 5000)
     }
 }
+function CalculateScore(QuizMap, quiztopic) {
+    let lscore = parseInt(score.textContent);
+    if (OurUser.GetMap().has(quiztopic)) {
+        let topicAnswers = QuizMap;
+        for (let [key, value] of topicAnswers) {
+            if (value[0] == 'true') {
+                SingleScore++;
+                lscore++;
+            }
+        }
+        QuizMap.set("score", SingleScore);
+        console.log(QuizMap.get("score"))
+        score.textContent = lscore;
+
+    }
+}
 function Addtogallery() {
+    CalculateScore(Gallery, OurUser.quizTopic);
+    Gallery.set("NumofQs", currentNum);
     OurUser.setGalleryData(OurUser.quizTopic, Gallery);
     localStorage.setItem("usersName", JSON.stringify(OurUser));
-    DisplayGallery(Gallery);
-    console.log(OurUser.GetMap());
+    // DisplayGallery(Gallery);
+    // console.log(Gallery);
+    // console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
     if (OurUser.GetMap().size !== 0) {
@@ -372,41 +397,43 @@ function UpdateGalleryDom() {
         quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found element</span>`;
     }
 }
-function DisplayGallery(gal) {
+function DisplayGallery(gal, key) {
     let div = document.createElement("div");
-    div.innerHTML = `<div class="flex h-full flex-col gap-8 py-4  border-2 border-gray-100 rounded-xl">
-                        <div class=" flex justify-center h-20 items-start w-full pb-2  border-b-2 border-gray-100 ">
-                            <img src="https://api.iconify.design/logos:${OurUser.quizTopic}.svg" class="w-10">
+    let name = key ?? OurUser.quizTopic;
+    console.log(gal.get("score"));
+    div.innerHTML = `<div class="flex h-full flex-col gap-4 md:gap-8 py-2 md:py-4  border-2 border-gray-100 rounded-xl">
+                        <div class=" flex justify-center h-10 md:h-20 items-start w-full pb-2  border-b-2 border-gray-100 ">
+                            <img src="https://api.iconify.design/logos:${name}.svg" class=" w-6 md:w-10">
                         </div>
                         <div class="mx-3">
-                            <div class="flex flex-col justify-start gap-4 ">
+                            <div class="flex flex-col justify-start  gap-2 md:gap-4 ">
                                 <div class="g-info">
-                                    <div class="w-6 h-6 rounded-full bg-[conic-gradient(#22c55e_${Math.floor((parseInt(score.textContent) / parseInt(OurUser.NumofQs) * 100))}%,#e5e7eb_0)] flex items-center justify-center">
+                                    <div  class=" prog w-6 h-6 rounded-full flex items-center justify-center">
                                         <div  class="w-4 h-4 bg-white rounded-full flex items-center justify-center">
                                          </div>
                                     </div>
-                                    <div class="flex text-sm  justify-start gap-1 ">
+                                    <div class="flex  text-sm  justify-start gap-1 ">
                                                     <span class="text-gray-500">correct answers</span>
-                                                    <span>${Math.round((parseInt(score.textContent) / parseInt(OurUser.NumofQs) * 100))}</span>
+                                                    <span>${Math.round((gal.get("score") / gal.get("NumofQs") * 100))}%</span>
                                     </div>
                                             </div>
                                     <div class="g-info">
-                                                <div
-                                                    class="w-6 h-6 rounded-full  bg-[conic-gradient(#22c55e_${Math.floor((gal.size / parseInt(OurUser.NumofQs) * 100))}%,#e5e7eb_0)]  flex items-center justify-center">
+                                                <div 
+                                                    class=" prog2 w-6 h-6 rounded-full   flex items-center justify-center">
                                                     <div
                                                         class="w-4 h-4 bg-white rounded-full flex items-center justify-center">
                                                     </div>
                                                 </div>
-                                                <div class="flex text-sm  justify-start gap-1 ">
+                                                <div class="flex text-sm   justify-start gap-1 ">
                                                     <span class="text-gray-500">completions</span>
-                                                    <span>${Math.floor((gal.size / parseInt(OurUser.NumofQs) * 100))} </span>
+                                                    <span>${Math.floor((((gal.size - 2) / gal.get("NumofQs")) * 100))}% </span>
                                                 </div>
                                             </div>
 
                                         </div>
                                     </div>
-                                    <div class="mx-3 text-gray-500 flex justify-between items-center gap-2">
-                                        <span>1 min ago</span>
+                                    <div class=" mx-3 text-gray-500 flex justify-between md:items-center gap-2">
+                                        
                                         <div class="flex justify-start gap-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
                                                 viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.25"
@@ -419,27 +446,20 @@ function DisplayGallery(gal) {
                                                 <path
                                                     d="M19 19a2.003 2.003 0 0 0 .914 -3.782a1.98 1.98 0 0 0 -2.414 .483" />
                                             </svg>
-                                            <span>${OurUser.NumofQs} questions</span>
+                                            <span>${gal.get("NumofQs")} questions</span>
                                         </div>
+                                        <span>1 min ago</span>
                                     </div>
                                 </div>`
     // for (const [key, value] of gal) {
     //     console.log(key, value);
     // }
-    holdQuizzes.appendChild(div);
-}
-function CalculateScore(QuizMap, quiztopic) {
-    let lscore = parseInt(score.textContent);
-    if (OurUser.GetMap().has(quiztopic)) {
-        let topicAnswers = QuizMap;
-        for (let [key, value] of topicAnswers) {
-            if (value[0] == 'true') {
-                lscore++;
-            }
-        }
-        score.textContent = lscore;
+    div.querySelector(".prog").style.background =
+        `conic-gradient(#22c55e ${Math.floor((gal.get("score") / gal.get("NumofQs") * 100))}%, #e5e7eb 0)`;
+    div.querySelector(".prog2").style.background =
+        `conic-gradient(#22c55e ${Math.floor(((gal.size - 2) / gal.get("NumofQs") * 100))}%, #e5e7eb 0)`;
 
-    }
+    holdQuizzes.appendChild(div);
 }
 // UpdateGalleryDom();
 
@@ -449,8 +469,7 @@ prev.addEventListener("click", () => {
 })
 next.addEventListener("click", (e) => {
     if (next.textContent == "submit") {
-        Addtogallery()
-        CalculateScore(Gallery, OurUser.quizTopic);
+        Addtogallery();
         ShowRightContent = true;
         showQuizorNot();
 
