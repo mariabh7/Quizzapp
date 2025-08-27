@@ -25,7 +25,7 @@ const Sel = document.getElementById("Topic");
 const OurUser = setUserInfo();
 const levels = ["hard", "medium", "easy"];
 // current avaible topics 
-const topics = ["javascript", "html-5", "css"];
+const topics = ["javascript", "html-5", "css-3"];
 const nums = [3, 5, 10, 15, 20];
 const selectDataMap = {
     diff: levels,
@@ -321,7 +321,7 @@ function ShowAns() {
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
 
-                        map.set(`${currentItem}-${li.id}`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || item.answers[`answer_${item.correct_answer}`]}`]);
+                        map.set(`${li.id}`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || item.answers[`answer_${item.correct_answer}`]}`]);
                         Gallery = map;
                     })
                 }
@@ -373,8 +373,8 @@ function UpdateGalleryDom() {
 }
 function DisplayGallery(gal) {
     let div = document.createElement("div");
-    div.innerHTML = `<div class="flex flex-col gap-8 py-4  border-2 border-gray-100 rounded-xl">
-                        <div class=" flex justify-center items-start w-full pb-2  border-b-2 border-gray-100 ">
+    div.innerHTML = `<div class="flex h-full flex-col gap-8 py-4  border-2 border-gray-100 rounded-xl">
+                        <div class=" flex justify-center h-20 items-start w-full pb-2  border-b-2 border-gray-100 ">
                             <img src="https://api.iconify.design/logos:${OurUser.quizTopic}.svg" class="w-10">
                         </div>
                         <div class="mx-3">
