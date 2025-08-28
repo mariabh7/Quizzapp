@@ -22,7 +22,7 @@ This app combines flexibility, variety, and performance tracking to create an en
 
 ## Demo
 
-see live demo at : https://mariacodes.net/quizzapp
+see live demo at : https://mariacodes.net/quiz.html
 
 
 ## Acknowledgements
