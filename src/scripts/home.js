@@ -230,7 +230,6 @@ let currentItem = 0;
 let data;
 let Gallery;
 let currentNum = 0;
-let SingleScore = 0;
 const score = document.getElementById("score");
 async function GetQuestions() {
     try {
@@ -272,13 +271,12 @@ if (saved !== null) {
 }
 async function GetDataForQuiz() {
     data = await GetQuestions();
+    ShowRightContent = false;
     showCurrentQuestion(currentItem);
 }
 startQuizz.addEventListener("click", () => {
     GetDataForQuiz();
     currentItem = 0;
-    SingleScore = 0;
-    ShowRightContent = false;
     showQuizorNot();
 });
 // try {
@@ -365,29 +363,24 @@ function showCurrentQuestion(current) {
         }, 5000)
     }
 }
-function CalculateScore(QuizMap, quiztopic) {
-    let lscore = parseInt(score.textContent);
-    if (OurUser.GetMap().has(quiztopic)) {
-        let topicAnswers = QuizMap;
-        for (let [key, value] of topicAnswers) {
-            if (value[0] == 'true') {
-                SingleScore++;
-                lscore++;
-            }
-        }
-        QuizMap.set("score", SingleScore);
-        console.log(QuizMap.get("score"))
-        score.textContent = lscore;
+function CalculateScore(QuizMap) {
+    let lscore = 0
 
+    let topicAnswers = QuizMap;
+    for (let [key, value] of topicAnswers) {
+        if (value[0] == 'true') {
+            lscore++;
+        }
     }
+    Gallery.set("score", lscore);
 }
 function Addtogallery() {
-    CalculateScore(Gallery, OurUser.quizTopic);
+    CalculateScore(Gallery);
     Gallery.set("NumofQs", currentNum);
     OurUser.setGalleryData(OurUser.quizTopic, Gallery);
     localStorage.setItem("usersName", JSON.stringify(OurUser));
-    // DisplayGallery(Gallery);
-    // console.log(Gallery);
+    DisplayGallery(Gallery);
+    console.log(Gallery);
     // console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
