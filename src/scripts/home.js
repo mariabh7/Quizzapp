@@ -255,7 +255,7 @@ async function GetQuestions() {
         return [];
     }
 }
-let ShowRightContent = true;
+let ShowRightContent;
 function showQuizorNot() {
     TakeQuiz.classList.toggle("hidden", ShowRightContent);
     quizzTaken.classList.toggle("hidden", !ShowRightContent);
@@ -375,6 +375,7 @@ function CalculateScoreAndSet(QuizMap) {
             lscore++;
         }
     }
+    score.textContent = parseInt(score.textContent) + lscore;
     Gallery.set("score", lscore);
     Gallery.set("NumofQs", currentNum);
     Gallery.set("time", new Date());
@@ -382,15 +383,17 @@ function CalculateScoreAndSet(QuizMap) {
 function Addtogallery() {
     CalculateScoreAndSet(Gallery);
     OurUser.setGalleryData(OurUser.quizTopic, Gallery);
+    localStorage.setItem("totalscore", parseInt(score.textContent));
     localStorage.setItem("usersName", JSON.stringify(OurUser));
     DisplayGallery(Gallery);
     console.log(Gallery);
     console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
+    score.textContent = localStorage.getItem("totalscore") || 0;
+    ShowRightContent = true;
+    showQuizorNot();
     if (OurUser.map !== null) {
-        ShowRightContent = true;
-        showQuizorNot();
         let map = OurUser.GetMap();
         for (let [key, value] of map) {
             DisplayGallery(value, key);
