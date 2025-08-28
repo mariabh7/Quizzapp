@@ -8,6 +8,7 @@ export class Userdata {
         this.difficulty = difficulty;
         this.NumofQs = parseInt(NumofQs);
         this.map = map;
+        this.counter = 0;
     }
     setData({ diff = this.difficulty, Topic = this.quizTopic, NumofQes = this.NumofQs } = {}) {
         this.difficulty = diff;
@@ -54,13 +55,18 @@ export class Userdata {
         return maps;
     }
     setGalleryData(topic, answer) {
-
+        this.counter = this.counter + 1;
         if (this.map === null) {
             this.map = new Map();
         } else {
             this.map = this.GetMap();
         }
-        this.map.set(topic, answer);
+        if (this.map.has(topic)) {
+
+            this.map.set(`${topic}-${this.counter}`, answer);
+        } else {
+            this.map.set(topic, answer);
+        }
         this.map = this.flattenMaps(this.map);
     }
     GetMap() {
@@ -99,4 +105,14 @@ export async function GetDataViaAPI(selectEl, ParentEL) {
     // } catch {
     //     console.log("problem loading topics");
     // }
+}
+export function timeAgo(date) {
+    const now = new Date();
+    const diff = Math.floor((now - date) / 1000); // in seconds
+
+    const rtf = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
+    if (diff < 60) return rtf.format(-diff, "second");
+    if (diff < 3600) return rtf.format(-Math.floor(diff / 60), "minute");
+    if (diff < 86400) return rtf.format(-Math.floor(diff / 3600), "hour");
+    return rtf.format(-Math.floor(diff / 86400), "day");
 }

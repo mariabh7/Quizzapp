@@ -1,5 +1,5 @@
 // JS
-import { Userdata, GetDataViaAPI } from "./quizV1.js";
+import { Userdata, GetDataViaAPI, timeAgo } from "./quizV1.js";
 
 const name = document.getElementById("GetName");
 const topiVal = document.getElementById("topic");
@@ -263,12 +263,12 @@ function showQuizorNot() {
 }
 
 // restore state if exists
-const saved = localStorage.getItem("ShowRightContent");
-if (saved !== null) {
-    ShowRightContent = saved === "true";
-    showQuizorNot();
+// const saved = localStorage.getItem("ShowRightContent");
+// if (saved !== null) {
+//     ShowRightContent = saved === "true";
+//     showQuizorNot();
 
-}
+// }
 async function GetDataForQuiz() {
     data = await GetQuestions();
     ShowRightContent = false;
@@ -367,7 +367,7 @@ function showCurrentQuestion(current) {
         }, 5000)
     }
 }
-function CalculateScore(QuizMap) {
+function CalculateScoreAndSet(QuizMap) {
     let lscore = 0
     let topicAnswers = QuizMap;
     for (let [key, value] of topicAnswers) {
@@ -377,25 +377,39 @@ function CalculateScore(QuizMap) {
     }
     Gallery.set("score", lscore);
     Gallery.set("NumofQs", currentNum);
+    Gallery.set("time", new Date());
 }
 function Addtogallery() {
-    CalculateScore(Gallery);
+    CalculateScoreAndSet(Gallery);
     OurUser.setGalleryData(OurUser.quizTopic, Gallery);
     localStorage.setItem("usersName", JSON.stringify(OurUser));
     DisplayGallery(Gallery);
     console.log(Gallery);
+    console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
-    if (OurUser.GetMap().size !== 0) {
-        quizzTaken.innerHTML = holdQuizzes;
+    if (OurUser.map !== null) {
+        ShowRightContent = true;
+        showQuizorNot();
+        let map = OurUser.GetMap();
+        for (let [key, value] of map) {
+            DisplayGallery(value, key);
+        }
     } else {
-        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-luckiest tracking-widest ">found element</span>`;
+        quizzTaken.innerHTML = `<span class="capitalize text-2xl font-mono tracking-widest ">you haven't take any quiz yet</span>`;
     }
 }
+UpdateGalleryDom()
 function DisplayGallery(gal, key) {
     let div = document.createElement("div");
     let name = key ?? OurUser.quizTopic;
-    console.log(gal.get("score"));
+    let count = Array.from(name).filter((lets) => lets === '-');
+    if (count.length === 2) {
+        let k = Array.from(name);
+        k.splice(k.length - 2, 2);
+        name = k.join('');
+    }
+    let Itemtime = new Date(gal.get("time"));
     div.innerHTML = `<div class="flex h-full flex-col gap-4 md:gap-8 py-2 md:py-4  border-2 border-gray-100 rounded-xl">
                         <div class=" flex justify-center h-10 md:h-20 items-start w-full pb-2  border-b-2 border-gray-100 ">
                             <img src="https://api.iconify.design/logos:${name}.svg" class=" w-6 md:w-10">
@@ -421,7 +435,7 @@ function DisplayGallery(gal, key) {
                                                 </div>
                                                 <div class="flex text-sm   justify-start gap-1 ">
                                                     <span class="text-gray-500">completions</span>
-                                                    <span>${Math.floor((((gal.size - 2) / gal.get("NumofQs")) * 100))}% </span>
+                                                    <span>${Math.floor((((gal.size - 3) / gal.get("NumofQs")) * 100))}% </span>
                                                 </div>
                                             </div>
 
@@ -443,21 +457,23 @@ function DisplayGallery(gal, key) {
                                             </svg>
                                             <span>${gal.get("NumofQs")} questions</span>
                                         </div>
-                                        <span>1 min ago</span>
+                                        <span class="time">${timeAgo(Itemtime)}</span>
                                     </div>
                                 </div>`
     // for (const [key, value] of gal) {
     //     console.log(key, value);
     // }
+    setInterval(() => {
+        div.querySelector(".time").textContent = timeAgo(Itemtime);
+    }, 10000)
     div.querySelector(".prog").style.background =
         `conic-gradient(#22c55e ${Math.floor((gal.get("score") / gal.get("NumofQs") * 100))}%, #e5e7eb 0)`;
     div.querySelector(".prog2").style.background =
-        `conic-gradient(#22c55e ${Math.floor(((gal.size - 2) / gal.get("NumofQs") * 100))}%, #e5e7eb 0)`;
+        `conic-gradient(#22c55e ${Math.floor(((gal.size - 3) / gal.get("NumofQs") * 100))}%, #e5e7eb 0)`;
 
     holdQuizzes.appendChild(div);
 }
 // UpdateGalleryDom();
-
 prev.addEventListener("click", () => {
     showPrevStep();
     showCurrentQuestion(currentItem);
@@ -467,7 +483,6 @@ next.addEventListener("click", (e) => {
         Addtogallery();
         ShowRightContent = true;
         showQuizorNot();
-
     } else {
         showNextStep();
         showCurrentQuestion(currentItem);
