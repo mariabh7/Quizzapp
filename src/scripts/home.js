@@ -272,12 +272,16 @@ if (saved !== null) {
 async function GetDataForQuiz() {
     data = await GetQuestions();
     ShowRightContent = false;
+    showQuizorNot();
+    if (Gallery?.size != 0) {
+        Gallery?.clear();
+    }
     showCurrentQuestion(currentItem);
 }
 startQuizz.addEventListener("click", () => {
     GetDataForQuiz();
+
     currentItem = 0;
-    showQuizorNot();
 });
 // try {
 //     data = data ?? JSON.parse(localStorage.getItem("data"));
@@ -325,11 +329,11 @@ function ShowAns() {
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
                         map.set(`${currentItem + 1}-answer`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || answers[`answer_${item.correct_answer}`]}`]);
-                        Gallery = map;
 
                     })
                 }
             })
+            Gallery = map;
         }
 
     }
@@ -365,7 +369,6 @@ function showCurrentQuestion(current) {
 }
 function CalculateScore(QuizMap) {
     let lscore = 0
-
     let topicAnswers = QuizMap;
     for (let [key, value] of topicAnswers) {
         if (value[0] == 'true') {
@@ -373,15 +376,14 @@ function CalculateScore(QuizMap) {
         }
     }
     Gallery.set("score", lscore);
+    Gallery.set("NumofQs", currentNum);
 }
 function Addtogallery() {
     CalculateScore(Gallery);
-    Gallery.set("NumofQs", currentNum);
     OurUser.setGalleryData(OurUser.quizTopic, Gallery);
     localStorage.setItem("usersName", JSON.stringify(OurUser));
     DisplayGallery(Gallery);
     console.log(Gallery);
-    // console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
     if (OurUser.GetMap().size !== 0) {
@@ -407,7 +409,7 @@ function DisplayGallery(gal, key) {
                                     </div>
                                     <div class="flex  text-sm  justify-start gap-1 ">
                                                     <span class="text-gray-500">correct answers</span>
-                                                    <span>${Math.round((gal.get("score") / gal.get("NumofQs") * 100))}%</span>
+                                                    <span>${Math.floor((gal.get("score") / gal.get("NumofQs") * 100))}%</span>
                                     </div>
                                             </div>
                                     <div class="g-info">
