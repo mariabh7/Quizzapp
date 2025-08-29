@@ -407,7 +407,7 @@ function DisplayGallery(gal, key) {
     let div = document.createElement("div");
     let name = key ?? OurUser.quizTopic;
     let count = Array.from(name).filter((lets) => lets === '-');
-    if (count.length === 2) {
+    if (count.length === 2 || ( count.length === 1 name.contains('javascript') ) ) {
         let k = Array.from(name);
         k.splice(k.length - 2, 2);
         name = k.join('');
