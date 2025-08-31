@@ -1,452 +1,1318 @@
 [
   {
     "id": 1,
-    "question": "Sample c Easy Question 1?",
+    "question": "Which of the following is the correct file extension for a C program?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q1",
-      "answer_b": "Option B for c Q1",
-      "answer_c": "Option C for c Q1",
-      "answer_d": "Option D for c Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": ".cpp",
+      "answer_b": ".c",
+      "answer_c": ".java",
+      "answer_d": ".cs"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Easy Q1.",
-    "tip": "Tip for c Easy Q1.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
+    "explanation": "C source code files use the .c extension.",
+    "tags": ["c", "basics"],
+    "category": "C",
     "difficulty": "Easy"
   },
   {
     "id": 2,
-    "question": "Sample c Easy Question 2?",
+    "question": "Which function is used to print output in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q2",
-      "answer_b": "Option B for c Q2",
-      "answer_c": "Option C for c Q2",
-      "answer_d": "Option D for c Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "scanf()",
+      "answer_b": "printf()",
+      "answer_c": "cin",
+      "answer_d": "System.out.println()"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Easy Q2.",
-    "tip": "Tip for c Easy Q2.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
+    "explanation": "The printf() function is used to display output in C.",
+    "tags": ["c", "io"],
+    "category": "C",
     "difficulty": "Easy"
   },
   {
     "id": 3,
-    "question": "Sample c Easy Question 3?",
+    "question": "Which symbol is used to end a statement in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q3",
-      "answer_b": "Option B for c Q3",
-      "answer_c": "Option C for c Q3",
-      "answer_d": "Option D for c Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": ".",
+      "answer_b": ";",
+      "answer_c": ":",
+      "answer_d": ","
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Easy Q3.",
-    "tip": "Tip for c Easy Q3.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
+    "explanation": "Every statement in C must end with a semicolon (;).",
+    "tags": ["c", "syntax"],
+    "category": "C",
     "difficulty": "Easy"
   },
   {
     "id": 4,
-    "question": "Sample c Easy Question 4?",
+    "question": "Which function is used to take input from the user in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q4",
-      "answer_b": "Option B for c Q4",
-      "answer_c": "Option C for c Q4",
-      "answer_d": "Option D for c Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "input()",
+      "answer_b": "cin",
+      "answer_c": "scanf()",
+      "answer_d": "gets()"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Easy Q4.",
-    "tip": "Tip for c Easy Q4.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
+    "explanation": "The scanf() function is commonly used for input in C.",
+    "tags": ["c", "io"],
+    "category": "C",
     "difficulty": "Easy"
   },
   {
     "id": 5,
-    "question": "Sample c Easy Question 5?",
+    "question": "Which keyword is used to declare a variable in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q5",
-      "answer_b": "Option B for c Q5",
-      "answer_c": "Option C for c Q5",
-      "answer_d": "Option D for c Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "let",
+      "answer_b": "int",
+      "answer_c": "define",
+      "answer_d": "var"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Easy Q5.",
-    "tip": "Tip for c Easy Q5.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
+    "explanation": "In C, variables are declared with data type keywords like int, float, char, etc.",
+    "tags": ["c", "variables"],
+    "category": "C",
     "difficulty": "Easy"
   },
   {
     "id": 6,
-    "question": "Sample c Medium Question 1?",
+    "question": "What is the default return type of the main() function in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q1",
-      "answer_b": "Option B for c Q1",
-      "answer_c": "Option C for c Q1",
-      "answer_d": "Option D for c Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "int",
+      "answer_b": "void",
+      "answer_c": "float",
+      "answer_d": "char"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Medium Q1.",
-    "tip": "Tip for c Medium Q1.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Medium"
+    "explanation": "The default return type of main() is int in C.",
+    "tags": ["c", "main"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 7,
-    "question": "Sample c Medium Question 2?",
+    "question": "Which of the following is NOT a valid C data type?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q2",
-      "answer_b": "Option B for c Q2",
-      "answer_c": "Option C for c Q2",
-      "answer_d": "Option D for c Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "int",
+      "answer_b": "float",
+      "answer_c": "real",
+      "answer_d": "char"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Medium Q2.",
-    "tip": "Tip for c Medium Q2.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Medium"
+    "explanation": "real is not a valid C data type.",
+    "tags": ["c", "datatypes"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 8,
-    "question": "Sample c Medium Question 3?",
+    "question": "Which header file is required for using printf() and scanf()?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q3",
-      "answer_b": "Option B for c Q3",
-      "answer_c": "Option C for c Q3",
-      "answer_d": "Option D for c Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "stdlib.h",
+      "answer_b": "stdio.h",
+      "answer_c": "math.h",
+      "answer_d": "string.h"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Medium Q3.",
-    "tip": "Tip for c Medium Q3.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Medium"
+    "explanation": "Both printf() and scanf() are defined in stdio.h.",
+    "tags": ["c", "headers"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 9,
-    "question": "Sample c Medium Question 4?",
+    "question": "Which operator is used for assignment in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q4",
-      "answer_b": "Option B for c Q4",
-      "answer_c": "Option C for c Q4",
-      "answer_d": "Option D for c Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "==",
+      "answer_b": "=",
+      "answer_c": "!=",
+      "answer_d": ":="
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Medium Q4.",
-    "tip": "Tip for c Medium Q4.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Medium"
+    "explanation": "The assignment operator in C is '='.",
+    "tags": ["c", "operators"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 10,
-    "question": "Sample c Medium Question 5?",
+    "question": "Which keyword is used to define constants in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q5",
-      "answer_b": "Option B for c Q5",
-      "answer_c": "Option C for c Q5",
-      "answer_d": "Option D for c Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "const",
+      "answer_b": "define",
+      "answer_c": "#define",
+      "answer_d": "static"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Medium Q5.",
-    "tip": "Tip for c Medium Q5.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Medium"
+    "explanation": "Constants in C are often defined using #define or the const keyword.",
+    "tags": ["c", "constants"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 11,
-    "question": "Sample c Hard Question 1?",
+    "question": "Which format specifier is used to print integers in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q1",
-      "answer_b": "Option B for c Q1",
-      "answer_c": "Option C for c Q1",
-      "answer_d": "Option D for c Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "%c",
+      "answer_b": "%d",
+      "answer_c": "%s",
+      "answer_d": "%f"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Hard Q1.",
-    "tip": "Tip for c Hard Q1.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Hard"
+    "explanation": "%d is used to print integers in C.",
+    "tags": ["c", "format-specifiers"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 12,
-    "question": "Sample c Hard Question 2?",
+    "question": "What is the size of an int in most C compilers (32-bit system)?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q2",
-      "answer_b": "Option B for c Q2",
-      "answer_c": "Option C for c Q2",
-      "answer_d": "Option D for c Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "2 bytes",
+      "answer_b": "4 bytes",
+      "answer_c": "8 bytes",
+      "answer_d": "1 byte"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Hard Q2.",
-    "tip": "Tip for c Hard Q2.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Hard"
+    "explanation": "On most 32-bit systems, int is 4 bytes.",
+    "tags": ["c", "datatypes"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 13,
-    "question": "Sample c Hard Question 3?",
+    "question": "Which operator is used to get the address of a variable in C?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q3",
-      "answer_b": "Option B for c Q3",
-      "answer_c": "Option C for c Q3",
-      "answer_d": "Option D for c Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "&",
+      "answer_b": "*",
+      "answer_c": "@",
+      "answer_d": "#"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Hard Q3.",
-    "tip": "Tip for c Hard Q3.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Hard"
+    "explanation": "The '&' operator gives the memory address of a variable.",
+    "tags": ["c", "pointers"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 14,
-    "question": "Sample c Hard Question 4?",
+    "question": "What is the output of printf(\"%d\", 5+3);?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q4",
-      "answer_b": "Option B for c Q4",
-      "answer_c": "Option C for c Q4",
-      "answer_d": "Option D for c Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "53",
+      "answer_b": "8",
+      "answer_c": "5+3",
+      "answer_d": "Error"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Hard Q4.",
-    "tip": "Tip for c Hard Q4.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
-    "difficulty": "Hard"
+    "explanation": "5+3 evaluates to 8, which is printed by printf.",
+    "tags": ["c", "operators"],
+    "category": "C",
+    "difficulty": "Easy"
   },
   {
     "id": 15,
-    "question": "Sample c Hard Question 5?",
+    "question": "Which loop in C is guaranteed to run at least once?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for c Q5",
-      "answer_b": "Option B for c Q5",
-      "answer_c": "Option C for c Q5",
-      "answer_d": "Option D for c Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "for loop",
+      "answer_b": "while loop",
+      "answer_c": "do-while loop",
+      "answer_d": "nested loop"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The do-while loop executes the block at least once before checking the condition.",
+    "tags": ["c", "loops"],
+    "category": "C",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Which keyword is used to exit from a loop in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "exit",
+      "answer_b": "continue",
+      "answer_c": "break",
+      "answer_d": "return"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The break keyword exits from the loop immediately.",
+    "tags": ["c", "loops"],
+    "category": "C",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Which function is used to find the length of a string in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "strlen()",
+      "answer_b": "strlength()",
+      "answer_c": "size()",
+      "answer_d": "len()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The strlen() function returns the length of a string.",
+    "tags": ["c", "strings"],
+    "category": "C",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "Which of these is the correct comment in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "# This is a comment",
+      "answer_b": "// This is a comment",
+      "answer_c": "<!-- Comment -->",
+      "answer_d": "% Comment"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for c Hard Q5.",
-    "tip": "Tip for c Hard Q5.",
-    "tags": [
-      "c"
-    ],
-    "category": "C Programming",
+    "explanation": "C supports single-line comments using // and multi-line comments using /* */.",
+    "tags": ["c", "comments"],
+    "category": "C",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "What will be the value of x after this code? int x = 5; x++;",
+    "description": null,
+    "answers": {
+      "answer_a": "4",
+      "answer_b": "5",
+      "answer_c": "6",
+      "answer_d": "Error"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "x++ increments the value of x by 1, making it 6.",
+    "tags": ["c", "operators"],
+    "category": "C",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Which escape character is used to print a new line in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "\\t",
+      "answer_b": "\\n",
+      "answer_c": "\\r",
+      "answer_d": "\\0"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "\\n is used to insert a new line in C output.",
+    "tags": ["c", "escape-sequences"],
+    "category": "C",
+    "difficulty": "Easy"
+  },{
+    "id": 21,
+    "question": "What is the difference between malloc() and calloc() in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "malloc initializes memory with zeros, calloc does not",
+      "answer_b": "calloc initializes memory with zeros, malloc does not",
+      "answer_c": "Both malloc and calloc initialize memory with zeros",
+      "answer_d": "Neither malloc nor calloc allocate memory dynamically"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "calloc() initializes allocated memory to zero, while malloc() leaves it uninitialized.",
+    "tags": ["c", "memory"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "What is the size of an empty structure in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "0 bytes",
+      "answer_b": "1 byte",
+      "answer_c": "Depends on the compiler",
+      "answer_d": "Undefined in C"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "An empty structure in C occupies 1 byte to ensure that distinct objects have different addresses.",
+    "tags": ["c", "struct"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "What is the output of sizeof('A') in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "1",
+      "answer_b": "2",
+      "answer_c": "4",
+      "answer_d": "Depends on the implementation"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "In C, character constants like 'A' are of type int, so sizeof('A') is typically 4 bytes.",
+    "tags": ["c", "sizeof"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "Which storage class in C makes a variable retain its value between function calls?",
+    "description": null,
+    "answers": {
+      "answer_a": "auto",
+      "answer_b": "static",
+      "answer_c": "register",
+      "answer_d": "extern"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The static storage class allows a variable to retain its value across function calls.",
+    "tags": ["c", "storage-classes"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "What will happen if you call free() on a pointer that was not allocated with malloc/calloc/realloc?",
+    "description": null,
+    "answers": {
+      "answer_a": "The memory is released safely",
+      "answer_b": "Compilation error",
+      "answer_c": "Undefined behavior",
+      "answer_d": "The program will terminate immediately"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Calling free() on memory not allocated dynamically results in undefined behavior.",
+    "tags": ["c", "memory"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "Which keyword is used to define a constant in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "const",
+      "answer_b": "#define",
+      "answer_c": "constant",
+      "answer_d": "static"
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Both const and #define can be used to define constants in C.",
+    "tags": ["c", "constants"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 27,
+    "question": "Which operator has the highest precedence in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "++ (increment)",
+      "answer_b": "() (function call)",
+      "answer_c": "* (multiplication)",
+      "answer_d": "&& (logical AND)"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The function call operator () has the highest precedence among the listed operators.",
+    "tags": ["c", "operators"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "question": "What is the output of the expression (5 > 2) ? (10 : 20) in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "10",
+      "answer_b": "20",
+      "answer_c": "true",
+      "answer_d": "false"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Since 5 > 2 is true, the ternary operator returns 10.",
+    "tags": ["c", "operators"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "Which function is used to move the file pointer to a specific location in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "fseek",
+      "answer_b": "rewind",
+      "answer_c": "ftell",
+      "answer_d": "fpos"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "fseek() is used to move the file pointer to a specific position.",
+    "tags": ["c", "file-handling"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "What is the return type of the main() function in C by standard?",
+    "description": null,
+    "answers": {
+      "answer_a": "int",
+      "answer_b": "void",
+      "answer_c": "char",
+      "answer_d": "depends on compiler"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "By C standard, the main() function should return int.",
+    "tags": ["c", "functions"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 31,
+    "question": "What will happen if you declare two global variables with the same name in different files and compile them together?",
+    "description": null,
+    "answers": {
+      "answer_a": "They will be treated as separate variables",
+      "answer_b": "They will cause a linker error",
+      "answer_c": "They will overwrite each other",
+      "answer_d": "They will cause a runtime error"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Two global variables with the same name in different files cause a linker error unless one is declared extern.",
+    "tags": ["c", "linking"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 32,
+    "question": "Which function is used to dynamically change the size of allocated memory?",
+    "description": null,
+    "answers": {
+      "answer_a": "malloc",
+      "answer_b": "calloc",
+      "answer_c": "realloc",
+      "answer_d": "resize"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "realloc() is used to resize previously allocated memory blocks.",
+    "tags": ["c", "memory"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 33,
+    "question": "What is the default value of an uninitialized static variable in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "0",
+      "answer_b": "Garbage value",
+      "answer_c": "NULL",
+      "answer_d": "Depends on the compiler"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Uninitialized static variables are automatically initialized to zero.",
+    "tags": ["c", "variables"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 34,
+    "question": "Which loop in C guarantees at least one execution of its body?",
+    "description": null,
+    "answers": {
+      "answer_a": "for loop",
+      "answer_b": "while loop",
+      "answer_c": "do-while loop",
+      "answer_d": "none of the above"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The do-while loop checks its condition after executing the loop body, guaranteeing one execution.",
+    "tags": ["c", "loops"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 35,
+    "question": "What will sizeof(short int) + sizeof(long int) typically evaluate to on a 64-bit system?",
+    "description": null,
+    "answers": {
+      "answer_a": "6",
+      "answer_b": "8",
+      "answer_c": "10",
+      "answer_d": "Depends on the system"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "The sizes of short and long ints are implementation-dependent, so the result varies.",
+    "tags": ["c", "sizeof"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of the volatile keyword in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "It tells the compiler that a variable may change at any time",
+      "answer_b": "It makes the variable constant",
+      "answer_c": "It stores the variable in CPU register",
+      "answer_d": "It prevents memory leaks"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "volatile tells the compiler not to optimize accesses because the variable may change outside the program's control.",
+    "tags": ["c", "keywords"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 37,
+    "question": "Which operator is used to access a member of a structure through a pointer?",
+    "description": null,
+    "answers": {
+      "answer_a": ". (dot operator)",
+      "answer_b": "-> (arrow operator)",
+      "answer_c": "* (dereference operator)",
+      "answer_d": ":: (scope resolution)"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The arrow operator (->) is used to access structure members via a pointer.",
+    "tags": ["c", "struct"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 38,
+    "question": "Which header file is required for using memset() and memcpy() in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "stdio.h",
+      "answer_b": "stdlib.h",
+      "answer_c": "string.h",
+      "answer_d": "memory.h"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Both memset() and memcpy() are declared in string.h.",
+    "tags": ["c", "header-files"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 39,
+    "question": "What is the output of printf(\"%d\", printf(\"Hello\"));?",
+    "description": null,
+    "answers": {
+      "answer_a": "5",
+      "answer_b": "Hello5",
+      "answer_c": "Hello",
+      "answer_d": "Compilation error"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The inner printf prints 'Hello' and returns 5, which is then printed by the outer printf, so the output is Hello5.",
+    "tags": ["c", "printf"],
+    "category": "C",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 40,
+    "question": "What is the purpose of the restrict keyword in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "It prevents pointer arithmetic",
+      "answer_b": "It indicates a pointer is the only reference to that memory",
+      "answer_c": "It restricts the scope of variables",
+      "answer_d": "It marks a variable as constant"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "restrict tells the compiler that the pointer is the only reference to that memory, allowing optimizations.",
+    "tags": ["c", "keywords"],
+    "category": "C",
+    "difficulty": "Medium"
+  },{
+    "id": 41,
+    "question": "What will happen if you attempt to modify a string literal in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "It will modify successfully",
+      "answer_b": "It will cause undefined behavior",
+      "answer_c": "It will print garbage values",
+      "answer_d": "It will always crash with a segmentation fault"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "String literals are stored in read-only memory in C. Modifying them causes undefined behavior.",
+    "tags": ["c", "strings"],
+    "category": "C",
     "difficulty": "Hard"
-  }
-]
+  },
+  {
+    "id": 42,
+    "question": "What does the 'restrict' keyword in C indicate?",
+    "description": null,
+    "answers": {
+      "answer_a": "The pointer is constant",
+      "answer_b": "The pointer cannot be NULL",
+      "answer_c": "The pointer is the only way to access the object it points to",
+      "answer_d": "The pointer is allocated on the stack"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "'restrict' tells the compiler that the pointer is the sole reference to the object it points to, allowing for optimizations.",
+    "tags": ["c", "pointers", "optimization"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 43,
+    "question": "Which of the following is true about 'volatile' in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "Prevents compiler from optimizing reads/writes",
+      "answer_b": "Declares a constant variable",
+      "answer_c": "Forces a variable to be allocated in cache",
+      "answer_d": "Marks a variable as thread-local"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "'volatile' prevents the compiler from optimizing away accesses, ensuring each read/write happens as written.",
+    "tags": ["c", "keywords"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 44,
+    "question": "What is the output of 'printf(\"%zu\", sizeof('A'));' in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "1",
+      "answer_b": "2",
+      "answer_c": "4",
+      "answer_d": "Depends on the system"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "In C, a character literal like 'A' has type int, so sizeof('A') is usually sizeof(int), often 4 bytes.",
+    "tags": ["c", "sizeof", "characters"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 45,
+    "question": "Why is using 'gets()' unsafe in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "It cannot read input",
+      "answer_b": "It doesn't check buffer boundaries",
+      "answer_c": "It only works with wide characters",
+      "answer_d": "It returns NULL always"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "'gets()' is unsafe because it reads input without checking buffer size, leading to buffer overflows.",
+    "tags": ["c", "strings", "security"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 46,
+    "question": "What happens if 'main()' in C is declared without a return type?",
+    "description": null,
+    "answers": {
+      "answer_a": "It defaults to int in C89 but is invalid in modern C",
+      "answer_b": "It defaults to void",
+      "answer_c": "It will not compile in any version of C",
+      "answer_d": "It will implicitly return 1"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "In old C standards (C89), no type meant int, but in modern C it's invalid and must be declared explicitly.",
+    "tags": ["c", "main"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 47,
+    "question": "What will be the result of 'int x = 5 / 0;' in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "x will be 0",
+      "answer_b": "x will be infinity",
+      "answer_c": "Compile-time error",
+      "answer_d": "Undefined behavior at runtime"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "Division by zero with integers in C results in undefined behavior at runtime.",
+    "tags": ["c", "operators"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 48,
+    "question": "What does the 'inline' keyword in C suggest?",
+    "description": null,
+    "answers": {
+      "answer_a": "The function must always be inlined",
+      "answer_b": "The function may be inlined as a hint to the compiler",
+      "answer_c": "The function is recursive",
+      "answer_d": "The function is only accessible within a single file"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "'inline' is a hint that a function may be expanded inline, but compilers are not required to do so.",
+    "tags": ["c", "functions"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 49,
+    "question": "Which of the following is true about flexible array members in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "They must be the last member of a struct",
+      "answer_b": "They can appear anywhere in a struct",
+      "answer_c": "They require static allocation",
+      "answer_d": "They are deprecated in C99"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Flexible array members must be the last element in a struct and allow variable-sized structures.",
+    "tags": ["c", "structs"],
+    "category": "C",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 50,
+    "question": "What is 'undefined behavior' in C?",
+    "description": null,
+    "answers": {
+      "answer_a": "Behavior explicitly defined by the compiler",
+      "answer_b": "Behavior not specified by the C standard",
+      "answer_c": "Behavior that always results in program termination",
+      "answer_d": "Behavior that only occurs with hardware issues"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Undefined behavior is when the C standard imposes no requirements, leading to unpredictable results.",
+    "tags": ["c", "standards"],
+    "category": "C",
+    "difficulty": "Hard"
+  },{
+  "id": 51,
+  "question": "What will be the output of the following C code?\n\n#include <stdio.h>\nint main() {\n   int a = 5;\n   printf(\"%d\", a+++a);\n   return 0;\n}",
+  "description": null,
+  "answers": {
+    "answer_a": "10",
+    "answer_b": "11",
+    "answer_c": "Undefined behavior",
+    "answer_d": "Compiler Error"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "false",
+    "answer_c_correct": "true",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The expression a+++a is undefined behavior in C due to unsequenced modification and access of 'a'.",
+  "tags": ["C", "operators"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 52,
+  "question": "In C, what happens if you free the same pointer twice?",
+  "description": null,
+  "answers": {
+    "answer_a": "The program terminates safely",
+    "answer_b": "Memory leak occurs",
+    "answer_c": "Undefined behavior",
+    "answer_d": "Compiler error"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "false",
+    "answer_c_correct": "true",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Calling free() twice on the same pointer results in undefined behavior.",
+  "tags": ["C", "memory"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 53,
+  "question": "Which of the following correctly describes 'restrict' keyword in C99?",
+  "description": null,
+  "answers": {
+    "answer_a": "It restricts variable scope",
+    "answer_b": "It tells the compiler that the pointer is the only reference to that memory block",
+    "answer_c": "It prevents pointer arithmetic",
+    "answer_d": "It enforces constant data"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "'restrict' keyword is a promise that the pointer is the sole reference to that memory, allowing compiler optimizations.",
+  "tags": ["C", "pointers", "C99"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 54,
+  "question": "What will happen if you call printf with more format specifiers than arguments?\nExample: printf(\"%d %d\", 10);",
+  "description": null,
+  "answers": {
+    "answer_a": "It prints garbage for the missing arguments",
+    "answer_b": "It causes a segmentation fault always",
+    "answer_c": "Undefined behavior",
+    "answer_d": "Compiler error"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "false",
+    "answer_c_correct": "true",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Mismatched format specifiers and arguments in printf result in undefined behavior.",
+  "tags": ["C", "I/O"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 55,
+  "question": "Which of the following describes a 'dangling pointer'?",
+  "description": null,
+  "answers": {
+    "answer_a": "Pointer not initialized at all",
+    "answer_b": "Pointer pointing to a freed or deleted memory location",
+    "answer_c": "Pointer to a constant variable",
+    "answer_d": "Pointer to a global variable"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "A dangling pointer is one that references a memory location that has already been freed.",
+  "tags": ["C", "pointers", "memory"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 56,
+  "question": "What is the size of an empty struct in C?",
+  "description": null,
+  "answers": {
+    "answer_a": "0 bytes",
+    "answer_b": "1 byte",
+    "answer_c": "Depends on compiler",
+    "answer_d": "Not allowed in C"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "true"
+  },
+  "explanation": "Empty structs are not allowed in C (unlike in C++).",
+  "tags": ["C", "structs"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 57,
+  "question": "What will happen if you declare two global variables with the same name in different C files and link them together?",
+  "description": null,
+  "answers": {
+    "answer_a": "Compiler error",
+    "answer_b": "Linker error: multiple definition",
+    "answer_c": "They both coexist without issue",
+    "answer_d": "Undefined behavior at runtime"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Multiple global variables with the same name in different translation units cause linker errors unless declared 'extern'.",
+  "tags": ["C", "linker"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 58,
+  "question": "Which of the following is NOT a valid storage class in C?",
+  "description": null,
+  "answers": {
+    "answer_a": "auto",
+    "answer_b": "register",
+    "answer_c": "thread_local",
+    "answer_d": "static"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "false",
+    "answer_c_correct": "true",
+    "answer_d_correct": "false"
+  },
+  "explanation": "'thread_local' is a C11 feature, not available in standard C before C11. In traditional ANSI C, it's invalid.",
+  "tags": ["C", "storage-class"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 59,
+  "question": "Which of these is true about 'volatile' keyword in C?",
+  "description": null,
+  "answers": {
+    "answer_a": "It prevents variable modification",
+    "answer_b": "It tells the compiler not to optimize reads/writes of the variable",
+    "answer_c": "It enforces constant initialization",
+    "answer_d": "It restricts variable scope"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "'volatile' tells the compiler that the variable may change outside program control and prevents unwanted optimizations.",
+  "tags": ["C", "volatile"],
+  "category": "C",
+  "difficulty": "Hard"
+},
+{
+  "id": 60,
+  "question": "What will the following code output?\n\n#include <stdio.h>\nint main() {\n    const int a = 10;\n    int *p = (int*)&a;\n    *p = 20;\n    printf(\"%d\", a);\n    return 0;\n}",
+  "description": null,
+  "answers": {
+    "answer_a": "10",
+    "answer_b": "20",
+    "answer_c": "Compiler Error",
+    "answer_d": "Undefined behavior"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "true"
+  },
+  "explanation": "Modifying a const object via pointer casting leads to undefined behavior, even if it appears to work on some compilers.",
+  "tags": ["C", "const", "pointers"],
+  "category": "C",
+  "difficulty": "Hard"
+}]
