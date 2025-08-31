@@ -1,13 +1,13 @@
 [
   {
-    "id": 21,
-    "question": "What does the 'float' property do in CSS?",
+    "id": 1,
+    "question": "What does CSS stand for?",
     "description": null,
     "answers": {
-      "answer_a": "Floats an element to the left or right of its container",
-      "answer_b": "Centers an element vertically",
-      "answer_c": "Makes text bold",
-      "answer_d": "Increases element width"
+      "answer_a": "Cascading Style Sheets",
+      "answer_b": "Creative Style System",
+      "answer_c": "Colorful Style Syntax",
+      "answer_d": "Computer Style Sheets"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -16,18 +16,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
+    "explanation": "CSS stands for Cascading Style Sheets.",
     "tags": ["css"],
-    "difficulty": "easy"
+    "category": "CSS",
+    "difficulty": "Easy"
   },
   {
-    "id": 22,
-    "question": "Which CSS property is used to control the transparency of an element?",
+    "id": 2,
+    "question": "Which property is used to change the text color in CSS?",
     "description": null,
     "answers": {
-      "answer_a": "visibility",
-      "answer_b": "opacity",
-      "answer_c": "filter",
-      "answer_d": "alpha"
+      "answer_a": "font-color",
+      "answer_b": "color",
+      "answer_c": "text-style",
+      "answer_d": "background-color"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -36,18 +38,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
+    "explanation": "The 'color' property is used to set the text color.",
     "tags": ["css"],
-    "difficulty": "easy"
+    "category": "CSS",
+    "difficulty": "Easy"
   },
   {
-    "id": 23,
-    "question": "Which CSS selector targets all `<p>` elements inside a `<div>`?",
+    "id": 3,
+    "question": "Which CSS property controls the size of text?",
     "description": null,
     "answers": {
-      "answer_a": "div p",
-      "answer_b": "div > p",
-      "answer_c": "p div",
-      "answer_d": "div+p"
+      "answer_a": "font-size",
+      "answer_b": "text-size",
+      "answer_c": "size",
+      "answer_d": "font-weight"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -56,16 +60,413 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
+    "explanation": "The 'font-size' property controls the size of text.",
     "tags": ["css"],
-    "difficulty": "easy"
+    "category": "CSS",
+    "difficulty": "Easy"
   },
   {
-    "id": 24,
-    "question": "Which property sets the space between letters?",
+    "id": 4,
+    "question": "Which CSS property is used to change the background color?",
     "description": null,
     "answers": {
-      "answer_a": "line-height",
-      "answer_b": "letter-spacing",
+      "answer_a": "bgcolor",
+      "answer_b": "background-color",
+      "answer_c": "color-background",
+      "answer_d": "background-style"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'background-color' property sets the background color.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 5,
+    "question": "Which CSS property makes text bold?",
+    "description": null,
+    "answers": {
+      "answer_a": "font-weight",
+      "answer_b": "bold",
+      "answer_c": "font-style",
+      "answer_d": "text-bold"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'font-weight' property controls text thickness, and 'bold' is a common value.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "Which property is used to center text horizontally?",
+    "description": null,
+    "answers": {
+      "answer_a": "text-align",
+      "answer_b": "text-center",
+      "answer_c": "align",
+      "answer_d": "horizontal-align"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'text-align: center;' property centers text horizontally.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "question": "Which property changes the font type of text?",
+    "description": null,
+    "answers": {
+      "answer_a": "font-family",
+      "answer_b": "font-type",
+      "answer_c": "text-font",
+      "answer_d": "font-style"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'font-family' property defines the typeface of the text.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "Which CSS property controls the spacing between lines of text?",
+    "description": null,
+    "answers": {
+      "answer_a": "letter-spacing",
+      "answer_b": "line-height",
+      "answer_c": "word-spacing",
+      "answer_d": "margin"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'line-height' property sets the spacing between lines of text.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 9,
+    "question": "Which CSS property adds space inside an element, between its content and border?",
+    "description": null,
+    "answers": {
+      "answer_a": "margin",
+      "answer_b": "padding",
+      "answer_c": "border-spacing",
+      "answer_d": "spacing"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Padding adds space inside the element, between content and border.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Which CSS property is used to add space outside of an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "margin",
+      "answer_b": "padding",
+      "answer_c": "spacing",
+      "answer_d": "border"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'margin' property creates space outside of an element.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },{
+    "id": 11,
+    "question": "Which CSS property is used to change the background color of an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "background-color",
+      "answer_b": "color",
+      "answer_c": "bg-color",
+      "answer_d": "background-style"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'background-color' property sets the background color of an element.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "Which CSS property controls the size of text?",
+    "description": null,
+    "answers": {
+      "answer_a": "font-size",
+      "answer_b": "text-size",
+      "answer_c": "font-style",
+      "answer_d": "text-weight"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'font-size' property controls the size of text.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 13,
+    "question": "Which CSS property is used to make text bold?",
+    "description": null,
+    "answers": {
+      "answer_a": "font-weight",
+      "answer_b": "font-bold",
+      "answer_c": "text-style",
+      "answer_d": "font-style"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'font-weight' property controls how bold or light text appears.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "Which CSS property is used to center text horizontally?",
+    "description": null,
+    "answers": {
+      "answer_a": "text-align",
+      "answer_b": "align-text",
+      "answer_c": "center-text",
+      "answer_d": "justify-content"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'text-align' property aligns text horizontally, including centering.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "Which property is used to add space inside an element, between the content and the border?",
+    "description": null,
+    "answers": {
+      "answer_a": "padding",
+      "answer_b": "margin",
+      "answer_c": "border-spacing",
+      "answer_d": "spacing"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Padding adds space inside an element, between content and border.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Which property adds space outside of an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "margin",
+      "answer_b": "padding",
+      "answer_c": "spacing",
+      "answer_d": "outline"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Margin adds space outside an element, creating gaps between elements.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Which CSS property is used to change the text color of an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "color",
+      "answer_b": "text-color",
+      "answer_c": "font-color",
+      "answer_d": "foreground"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'color' property changes the text color of an element.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "Which CSS property changes the shape of the corners of an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "border-radius",
+      "answer_b": "corner-shape",
+      "answer_c": "border-style",
+      "answer_d": "outline-radius"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'border-radius' property changes the shape of element corners.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "Which CSS property controls whether text is underlined, overlined, or struck through?",
+    "description": null,
+    "answers": {
+      "answer_a": "text-decoration",
+      "answer_b": "text-style",
+      "answer_c": "font-decoration",
+      "answer_d": "text-transform"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'text-decoration' property sets underline, overline, or line-through styles.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Which CSS property is used to change the typeface of text?",
+    "description": null,
+    "answers": {
+      "answer_a": "font-family",
+      "answer_b": "font-style",
+      "answer_c": "text-type",
+      "answer_d": "font-weight"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'font-family' property specifies the typeface of text.",
+    "tags": ["css"],
+    "category": "CSS",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 21,
+    "question": "What does the z-index property control in CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "The transparency of an element",
+      "answer_b": "The stacking order of elements",
+      "answer_c": "The zoom level of an element",
+      "answer_d": "The size of the element's border"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The z-index property determines the stacking order of elements on the z-axis.",
+    "tags": ["css", "positioning"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Which CSS property controls the space between lines of text?",
+    "description": null,
+    "answers": {
+      "answer_a": "letter-spacing",
+      "answer_b": "line-height",
       "answer_c": "word-spacing",
       "answer_d": "text-indent"
     },
@@ -76,298 +477,86 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "tags": ["css"],
-    "difficulty": "easy"
+    "explanation": "The line-height property defines the vertical spacing between lines of text.",
+    "tags": ["css", "typography"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "What does the 'em' unit in CSS depend on?",
+    "description": null,
+    "answers": {
+      "answer_a": "The root element’s font size",
+      "answer_b": "The parent element’s font size",
+      "answer_c": "The browser’s default font size",
+      "answer_d": "The viewport width"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The em unit is relative to the font size of the element’s parent.",
+    "tags": ["css", "units"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "Which CSS function is used to apply a 2D or 3D transformation to an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "translate()",
+      "answer_b": "rotate()",
+      "answer_c": "transform",
+      "answer_d": "skew()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The transform property is used to apply transformations like translate(), rotate(), and scale().",
+    "tags": ["css", "transform"],
+    "category": "CSS",
+    "difficulty": "Medium"
   },
   {
     "id": 25,
-    "question": "Which CSS rule correctly makes text italic?",
+    "question": "What is the difference between relative and absolute positioning in CSS?",
     "description": null,
     "answers": {
-      "answer_a": "font-weight: italic;",
-      "answer_b": "text-style: italic;",
-      "answer_c": "font-style: italic;",
-      "answer_d": "style: italic;"
+      "answer_a": "Relative is based on viewport, absolute is based on parent",
+      "answer_b": "Relative moves relative to its normal position, absolute is positioned relative to the nearest positioned ancestor",
+      "answer_c": "Relative ignores parent, absolute ignores child",
+      "answer_d": "They are exactly the same"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "tags": ["css"],
-    "difficulty": "easy"
+    "explanation": "Relative keeps the element in the flow but shifts it, while absolute positions relative to the nearest positioned ancestor.",
+    "tags": ["css", "positioning"],
+    "category": "CSS",
+    "difficulty": "Medium"
   },
   {
     "id": 26,
-    "question": "What is the default value of the position property in CSS?",
-    "description": null,
-    "answers": {
-      "answer_a": "absolute",
-      "answer_b": "relative",
-      "answer_c": "static",
-      "answer_d": "fixed"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 27,
-    "question": "Which of the following creates a flex container?",
-    "description": null,
-    "answers": {
-      "answer_a": "display: inline;",
-      "answer_b": "display: flex;",
-      "answer_c": "position: flex;",
-      "answer_d": "flex: container;"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 28,
-    "question": "Which property defines the order of flex items?",
-    "description": null,
-    "answers": {
-      "answer_a": "flex-direction",
-      "answer_b": "align-items",
-      "answer_c": "order",
-      "answer_d": "flex-order"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 29,
-    "question": "How do you apply a CSS rule only if the screen width is less than 600px?",
-    "description": null,
-    "answers": {
-      "answer_a": "@screen(max-width:600px)",
-      "answer_b": "@media(max-width:600px)",
-      "answer_c": "@responsive(max-width:600px)",
-      "answer_d": "@query(max-width:600px)"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 30,
-    "question": "What does 'z-index' control?",
-    "description": null,
-    "answers": {
-      "answer_a": "Font size",
-      "answer_b": "Element stacking order",
-      "answer_c": "Background color",
-      "answer_d": "Line height"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 31,
-    "question": "Which CSS property is NOT inherited by default?",
-    "description": null,
-    "answers": {
-      "answer_a": "color",
-      "answer_b": "font-size",
-      "answer_c": "margin",
-      "answer_d": "font-family"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 32,
-    "question": "Which unit is relative to the width of the viewport?",
-    "description": null,
-    "answers": {
-      "answer_a": "em",
-      "answer_b": "px",
-      "answer_c": "vw",
-      "answer_d": "rem"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 33,
-    "question": "How can you create a CSS variable?",
-    "description": null,
-    "answers": {
-      "answer_a": "--main-color: red;",
-      "answer_b": "$main-color: red;",
-      "answer_c": "var-main-color: red;",
-      "answer_d": "@main-color: red;"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 34,
-    "question": "What does 'inherit' do when used as a CSS value?",
-    "description": null,
-    "answers": {
-      "answer_a": "Sets the property to its initial value",
-      "answer_b": "Hides the property",
-      "answer_c": "Takes the value from the parent element",
-      "answer_d": "Removes the property"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 35,
-    "question": "Which pseudo-class selects the first child element of a parent?",
-    "description": null,
-    "answers": {
-      "answer_a": ":nth-child(1)",
-      "answer_b": ":first",
-      "answer_c": ":first-child",
-      "answer_d": ":child(1)"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 36,
-    "question": "How can you animate elements in CSS?",
-    "description": null,
-    "answers": {
-      "answer_a": "Using @motion",
-      "answer_b": "Using @keyframes",
-      "answer_c": "Using @frameset",
-      "answer_d": "Using @steps"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 37,
-    "question": "Which CSS property is used to make a grid container?",
-    "description": null,
-    "answers": {
-      "answer_a": "display: grid;",
-      "answer_b": "grid: container;",
-      "answer_c": "position: grid;",
-      "answer_d": "flex: grid;"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 38,
-    "question": "Which property defines the number of columns in a CSS grid?",
-    "description": null,
-    "answers": {
-      "answer_a": "grid-template-columns",
-      "answer_b": "grid-columns",
-      "answer_c": "columns-template",
-      "answer_d": "col-template"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "tags": ["css"],
-    "difficulty": "medium"
-  },
-  {
-    "id": 39,
-    "question": "Which property controls how extra text is displayed when it overflows?",
+    "question": "Which CSS property is used to control text overflow with ellipsis?",
     "description": null,
     "answers": {
       "answer_a": "text-overflow",
-      "answer_b": "overflow-text",
-      "answer_c": "overflow",
-      "answer_d": "clip-text"
+      "answer_b": "overflow",
+      "answer_c": "clip-path",
+      "answer_d": "word-wrap"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -376,18 +565,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "tags": ["css"],
-    "difficulty": "medium"
+    "explanation": "The text-overflow property allows you to show ellipsis (…) when text is clipped.",
+    "tags": ["css", "text"],
+    "category": "CSS",
+    "difficulty": "Medium"
   },
   {
-    "id": 40,
-    "question": "Which CSS function is used to apply a linear gradient?",
+    "id": 27,
+    "question": "Which of these pseudo-classes selects an element when a user hovers over it?",
     "description": null,
     "answers": {
-      "answer_a": "gradient()",
-      "answer_b": "linear-gradient()",
-      "answer_c": "radial-gradient()",
-      "answer_d": "color-gradient()"
+      "answer_a": ":active",
+      "answer_b": ":hover",
+      "answer_c": ":focus",
+      "answer_d": ":visited"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -396,18 +587,305 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "tags": ["css"],
-    "difficulty": "medium"
+    "explanation": ":hover applies when a user places the cursor over an element.",
+    "tags": ["css", "selectors"],
+    "category": "CSS",
+    "difficulty": "Medium"
   },
   {
+    "id": 28,
+    "question": "What does the CSS 'min-width' property do?",
+    "description": null,
+    "answers": {
+      "answer_a": "Sets the smallest possible font size",
+      "answer_b": "Sets the minimum width an element can shrink to",
+      "answer_c": "Sets the default width",
+      "answer_d": "Overrides max-width"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The min-width property sets the minimum width an element is allowed to shrink to.",
+    "tags": ["css", "responsive"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "Which CSS property allows smooth transitions when properties change?",
+    "description": null,
+    "answers": {
+      "answer_a": "transform",
+      "answer_b": "transition",
+      "answer_c": "animation",
+      "answer_d": "timing-function"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The transition property enables smooth changes between property values.",
+    "tags": ["css", "animations"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "In Flexbox, what does 'justify-content: space-between' do?",
+    "description": null,
+    "answers": {
+      "answer_a": "Puts all items in the center",
+      "answer_b": "Adds equal space between items, with no space at the ends",
+      "answer_c": "Adds space before the first item and after the last",
+      "answer_d": "Distributes items evenly including edges"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "'space-between' distributes items with equal spacing between them but not at the edges.",
+    "tags": ["css", "flexbox"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 31,
+    "question": "Which property is required for CSS Grid to work?",
+    "description": null,
+    "answers": {
+      "answer_a": "display: grid",
+      "answer_b": "grid-template",
+      "answer_c": "grid-area",
+      "answer_d": "grid-gap"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The 'display: grid' property is required to initialize a grid container.",
+    "tags": ["css", "grid"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 32,
+    "question": "What is the default position value of HTML elements in CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "absolute",
+      "answer_b": "static",
+      "answer_c": "relative",
+      "answer_d": "inherit"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "By default, elements have position: static.",
+    "tags": ["css", "positioning"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 33,
+    "question": "Which CSS property controls the spacing between characters?",
+    "description": null,
+    "answers": {
+      "answer_a": "letter-spacing",
+      "answer_b": "line-height",
+      "answer_c": "word-spacing",
+      "answer_d": "text-indent"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The letter-spacing property sets space between characters.",
+    "tags": ["css", "typography"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 34,
+    "question": "Which property specifies how an element is displayed when it overflows its container?",
+    "description": null,
+    "answers": {
+      "answer_a": "clip",
+      "answer_b": "overflow",
+      "answer_c": "display",
+      "answer_d": "position"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The overflow property controls how content behaves when it exceeds its container.",
+    "tags": ["css", "layout"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 35,
+    "question": "Which of these is NOT a valid value for the display property?",
+    "description": null,
+    "answers": {
+      "answer_a": "inline-block",
+      "answer_b": "flex",
+      "answer_c": "inline-flex",
+      "answer_d": "float"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "float is a separate property, not a value for display.",
+    "tags": ["css", "display"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 36,
+    "question": "Which shorthand property can set margin values in CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "padding",
+      "answer_b": "margin",
+      "answer_c": "border",
+      "answer_d": "outline"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The margin shorthand sets top, right, bottom, and left margins.",
+    "tags": ["css", "box-model"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 37,
+    "question": "What does the CSS 'object-fit' property control?",
+    "description": null,
+    "answers": {
+      "answer_a": "The fit of background images",
+      "answer_b": "The resizing of replaced elements like images or videos",
+      "answer_c": "The alignment of inline objects",
+      "answer_d": "The scaling of font icons"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "object-fit specifies how an image or video should resize to fit its container.",
+    "tags": ["css", "media"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 38,
+    "question": "In CSS, what is the difference between absolute units and relative units?",
+    "description": null,
+    "answers": {
+      "answer_a": "Absolute units scale with the viewport, relative do not",
+      "answer_b": "Absolute units are fixed, relative units depend on parent or root",
+      "answer_c": "Relative units are always smaller",
+      "answer_d": "They are identical"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Absolute units (px, cm) are fixed, while relative units (%, em, rem) depend on parent or root values.",
+    "tags": ["css", "units"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 39,
+    "question": "What does the property 'align-items: center' do in Flexbox?",
+    "description": null,
+    "answers": {
+      "answer_a": "Aligns items horizontally in the center",
+      "answer_b": "Aligns items vertically in the center",
+      "answer_c": "Aligns items to the top",
+      "answer_d": "Aligns items to the bottom"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "align-items controls vertical alignment of items within a flex container.",
+    "tags": ["css", "flexbox"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 40,
+    "question": "Which CSS property is used to apply multiple background images?",
+    "description": null,
+    "answers": {
+      "answer_a": "background-image with comma-separated values",
+      "answer_b": "multi-background",
+      "answer_c": "background-group",
+      "answer_d": "background-stack"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Multiple background images can be applied using background-image with comma-separated URLs.",
+    "tags": ["css", "background"],
+    "category": "CSS",
+    "difficulty": "Medium"
+  },{
     "id": 41,
     "question": "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
     "description": null,
     "answers": {
-      "answer_a": "Relative positions element based on its normal flow, absolute positions it relative to nearest positioned ancestor, fixed is relative to viewport, sticky toggles between relative and fixed depending on scroll.",
-      "answer_b": "All position elements relative to viewport.",
-      "answer_c": "Absolute and fixed are identical.",
-      "answer_d": "Relative and sticky are identical."
+      "answer_a": "Relative positions relative to itself, absolute relative to nearest positioned ancestor, fixed relative to viewport, sticky toggles between relative and fixed",
+      "answer_b": "Relative and sticky are the same",
+      "answer_c": "Absolute always positions relative to the viewport",
+      "answer_d": "Fixed positions relative to parent element"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -416,45 +894,42 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "Relative shifts based on normal flow, absolute on nearest ancestor, fixed stays at viewport, sticky is hybrid.",
-    "tip": null,
-    "tags": ["css"],
+    "explanation": "Relative, absolute, fixed, and sticky each have different reference contexts. Sticky is unique because it behaves like relative until a threshold is reached, then behaves like fixed.",
+    "tags": ["css", "positioning"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 42,
-    "question": "Which CSS feature allows different styles depending on device width, height, or orientation?",
+    "question": "Which CSS property is used to create a stacking context besides z-index?",
     "description": null,
     "answers": {
-      "answer_a": "Transitions",
-      "answer_b": "Animations",
-      "answer_c": "Media Queries",
-      "answer_d": "Pseudo-classes"
+      "answer_a": "opacity less than 1",
+      "answer_b": "transform",
+      "answer_c": "filter",
+      "answer_d": "all of the above"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "false",
-      "answer_c_correct": "true",
-      "answer_d_correct": "false"
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
     },
-    "correct_answer": "answer_c",
-    "explanation": "Media queries let you apply conditional styles depending on device characteristics.",
-    "tags": ["css"],
+    "explanation": "Properties like transform, filter, perspective, and opacity < 1 create new stacking contexts besides z-index.",
+    "tags": ["css", "stacking-context"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 43,
-    "question": "What does the CSS property 'will-change' do?",
+    "question": "In CSS Grid, what does the minmax() function allow you to do?",
     "description": null,
     "answers": {
-      "answer_a": "Defines which property is likely to change so browser can optimize rendering",
-      "answer_b": "Applies hardware acceleration",
-      "answer_c": "Forces repaint",
-      "answer_d": "Delays style calculation"
+      "answer_a": "Set a grid track size with a minimum and maximum value",
+      "answer_b": "Only apply grid-template-columns with percentages",
+      "answer_c": "Limit grid items by viewport width",
+      "answer_d": "Automatically calculate track size based on parent height"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -463,20 +938,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "It’s a performance hint telling browsers to prepare optimizations for expected changes.",
-    "tags": ["css"],
+    "explanation": "minmax() defines a grid track that grows within a min and max value, allowing flexibility in layout.",
+    "tags": ["css", "grid"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 44,
-    "question": "How does 'contain' property in CSS improve performance?",
+    "question": "What is the difference between auto-fill and auto-fit in CSS Grid?",
+    "description": null,
     "answers": {
-      "answer_a": "By isolating an element’s rendering from the rest of the page",
-      "answer_b": "By compressing stylesheets",
-      "answer_c": "By removing unused CSS",
-      "answer_d": "By forcing GPU compositing"
+      "answer_a": "auto-fill keeps empty tracks while auto-fit collapses them",
+      "answer_b": "auto-fill collapses empty tracks while auto-fit keeps them",
+      "answer_c": "They are identical in behavior",
+      "answer_d": "They only work with flexbox"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -485,20 +960,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "CSS contain limits the scope of an element, allowing browsers to skip work outside it.",
-    "tags": ["css"],
+    "explanation": "auto-fill creates as many tracks as will fit, even if empty, while auto-fit collapses unused tracks.",
+    "tags": ["css", "grid"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 45,
-    "question": "What’s the difference between translate3d and translate in CSS transforms?",
+    "question": "What does the contain property in CSS do?",
+    "description": null,
     "answers": {
-      "answer_a": "translate3d uses GPU acceleration and allows Z-axis movement",
-      "answer_b": "They are identical",
-      "answer_c": "translate only works in Firefox",
-      "answer_d": "translate3d is deprecated"
+      "answer_a": "Restricts an element's size, layout, and style calculations to improve performance",
+      "answer_b": "Prevents overflow from being visible",
+      "answer_c": "Is a shorthand for overflow properties",
+      "answer_d": "Forces absolute positioning context"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -507,20 +982,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "translate3d(x,y,z) can use hardware acceleration and adds depth movement.",
-    "tags": ["css"],
+    "explanation": "The contain property is used for CSS Containment to optimize rendering performance by limiting scope of styles, layout, and painting.",
+    "tags": ["css", "performance"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 46,
-    "question": "Which CSS function allows defining variables with fallback values?",
+    "question": "What is the difference between inline, inline-block, and block elements in CSS?",
+    "description": null,
     "answers": {
-      "answer_a": "var()",
-      "answer_b": "calc()",
-      "answer_c": "env()",
-      "answer_d": "clamp()"
+      "answer_a": "Inline ignores width/height, block takes full width, inline-block respects width/height but stays inline",
+      "answer_b": "Inline and block behave the same",
+      "answer_c": "Inline-block always creates a new line",
+      "answer_d": "Block ignores margins"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -529,20 +1004,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "var(--property, fallback) lets you define CSS custom properties with defaults.",
-    "tags": ["css"],
+    "explanation": "Inline elements don’t respect width/height, block elements take up full width, inline-block behaves like inline but allows width/height.",
+    "tags": ["css", "layout"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 47,
-    "question": "What is the difference between 'em' and 'rem' units?",
+    "question": "Which CSS pseudo-class allows you to style elements based on a parent state?",
+    "description": null,
     "answers": {
-      "answer_a": "em is relative to parent font-size, rem is relative to root (html) font-size",
-      "answer_b": "They are identical",
-      "answer_c": "rem only works in Chrome",
-      "answer_d": "em is deprecated"
+      "answer_a": ":has()",
+      "answer_b": ":is()",
+      "answer_c": ":where()",
+      "answer_d": ":not()"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -551,20 +1026,129 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "em cascades with parent font-size, rem remains consistent with root.",
-    "tags": ["css"],
+    "explanation": ":has() allows selecting an element if it contains or matches a child selector, effectively letting you style based on parent context.",
+    "tags": ["css", "selectors"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 48,
-    "question": "Which CSS property allows you to create a grid layout?",
+    "question": "What’s the difference between rem and em units in CSS?",
+    "description": null,
     "answers": {
-      "answer_a": "grid-template",
-      "answer_b": "display: grid",
-      "answer_c": "grid-auto-flow",
-      "answer_d": "grid-row"
+      "answer_a": "rem is relative to root font-size, em is relative to the parent element's font-size",
+      "answer_b": "rem is relative to parent font-size, em is always fixed",
+      "answer_c": "em ignores parent font-size",
+      "answer_d": "rem is only for margins"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "em units are relative to the parent element’s font size, while rem is relative to the root element’s font size.",
+    "tags": ["css", "units"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 49,
+    "question": "What is subgrid in CSS Grid?",
+    "description": null,
+    "answers": {
+      "answer_a": "A feature that lets grid items inherit grid tracks from the parent grid",
+      "answer_b": "A nested grid layout independent of the parent",
+      "answer_c": "A way to merge multiple grids",
+      "answer_d": "A shorthand for repeat()"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Subgrid allows child elements to align with the grid lines of the parent container.",
+    "tags": ["css", "grid"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 50,
+    "question": "Which CSS property controls how flex items shrink or grow?",
+    "description": null,
+    "answers": {
+      "answer_a": "flex",
+      "answer_b": "align-items",
+      "answer_c": "justify-content",
+      "answer_d": "order"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The flex shorthand defines grow, shrink, and basis properties for flex items.",
+    "tags": ["css", "flexbox"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },{
+    "id": 51,
+    "question": "What is the primary difference between relative and absolute length units in CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "Relative units scale based on another value, while absolute units are fixed",
+      "answer_b": "Absolute units depend on the parent element size",
+      "answer_c": "Relative units are only valid in flexbox layouts",
+      "answer_d": "There is no real difference between them"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Relative units like em or rem scale based on other values, while absolute units like px or cm remain fixed.",
+    "tags": ["css", "units"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 52,
+    "question": "Which CSS property creates a new stacking context?",
+    "description": null,
+    "answers": {
+      "answer_a": "opacity less than 1",
+      "answer_b": "position: relative",
+      "answer_c": "z-index without positioning",
+      "answer_d": "overflow: auto"
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "A new stacking context is created by elements with opacity less than 1 or with certain properties like overflow set to a value other than visible.",
+    "tags": ["css", "stacking"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 53,
+    "question": "What happens when both transform and will-change are applied to an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "The browser always ignores will-change",
+      "answer_b": "The element will be promoted to its own rendering layer",
+      "answer_c": "It prevents z-index from working",
+      "answer_d": "It disables hardware acceleration"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -573,196 +1157,20 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "Setting display: grid enables CSS Grid Layout.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 49,
-    "question": "What is the difference between 'minmax()' and 'clamp()'?",
-    "answers": {
-      "answer_a": "minmax() is for grid track sizing, clamp() for general CSS values",
-      "answer_b": "Both are identical",
-      "answer_c": "clamp() is only for grid",
-      "answer_d": "minmax() works only in flexbox"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "minmax() applies in Grid, clamp() works for any numeric CSS property.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 50,
-    "question": "How does 'backface-visibility' work in CSS?",
-    "answers": {
-      "answer_a": "Determines whether the back side of a transformed element is visible",
-      "answer_b": "Controls opacity of background",
-      "answer_c": "Controls z-index stacking",
-      "answer_d": "Hides background image"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "It lets you hide/show the back side of 3D transformed elements.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 51,
-    "question": "What’s the difference between 'inline', 'inline-block', and 'block' elements?",
-    "answers": {
-      "answer_a": "Inline flows inside text, inline-block keeps inline but allows block features, block takes full width",
-      "answer_b": "All take full width",
-      "answer_c": "Inline-block and block are the same",
-      "answer_d": "Inline-block is deprecated"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "Inline flows with text, inline-block combines inline flow with block box, block takes full line.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 52,
-    "question": "What is the difference between relative and absolute units in CSS?",
-    "answers": {
-      "answer_a": "Relative depend on another value (like font-size), absolute have fixed measurement (px, cm, in)",
-      "answer_b": "They are identical",
-      "answer_c": "Absolute is responsive",
-      "answer_d": "Relative works only in grid"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "Relative units scale with context, absolute stay fixed.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 53,
-    "question": "What is the difference between CSS specificity and inheritance?",
-    "answers": {
-      "answer_a": "Specificity determines which rule wins, inheritance means properties cascade from parent",
-      "answer_b": "They are identical",
-      "answer_c": "Specificity applies only in inline styles",
-      "answer_d": "Inheritance only applies to IDs"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "Specificity compares selectors, inheritance passes styles to children.",
-    "tags": ["css"],
+    "explanation": "Using transform with will-change can promote the element to its own rendering layer, improving performance in some cases.",
+    "tags": ["css", "performance"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 54,
-    "question": "How does the CSS cascade order work?",
+    "question": "In CSS Grid, what does the value 'minmax(200px, 1fr)' mean?",
+    "description": null,
     "answers": {
-      "answer_a": "Browser default < External < Internal < Inline, with specificity and importance overriding",
-      "answer_b": "Inline < Internal < External",
-      "answer_c": "Cascade is random",
-      "answer_d": "Specificity has no effect"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "Cascade considers origin, specificity, and importance.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 55,
-    "question": "What is the difference between CSS Grid and Flexbox?",
-    "answers": {
-      "answer_a": "Grid is 2D (rows+columns), Flexbox is 1D (row or column)",
-      "answer_b": "They are identical",
-      "answer_c": "Flexbox is 3D",
-      "answer_d": "Grid works only with floats"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "Grid is for two-dimensional layouts, Flexbox for one-dimensional alignment.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 56,
-    "question": "What is the default position value in CSS?",
-    "answers": {
-      "answer_a": "static",
-      "answer_b": "relative",
-      "answer_c": "absolute",
-      "answer_d": "inherit"
-    },
-    "multiple_correct_answers": "false",
-    "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false"
-    },
-    "correct_answer": "answer_a",
-    "explanation": "By default, elements are positioned 'static'.",
-    "tags": ["css"],
-    "category": "CSS",
-    "difficulty": "Hard"
-  },
-  {
-    "id": 57,
-    "question": "Which pseudo-class selects elements currently being clicked?",
-    "answers": {
-      "answer_a": ":focus",
-      "answer_b": ":hover",
-      "answer_c": ":active",
-      "answer_d": ":checked"
+      "answer_a": "The track will be fixed at 200px",
+      "answer_b": "The track will shrink to 200px and grow up to 1fr",
+      "answer_c": "The track will be at least 200px wide and at most share available space proportionally",
+      "answer_d": "The track cannot exceed 200px"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -771,42 +1179,108 @@
       "answer_c_correct": "true",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_c",
-    "explanation": ":active applies while an element is being activated by the user.",
-    "tags": ["css"],
+    "explanation": "minmax(200px, 1fr) sets a track with a minimum of 200px but can grow proportionally with other fr units.",
+    "tags": ["css", "grid"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 55,
+    "question": "Which of the following pseudo-classes can be used to style an input when it is invalid?",
+    "description": null,
+    "answers": {
+      "answer_a": ":error",
+      "answer_b": ":invalid",
+      "answer_c": ":wrong",
+      "answer_d": ":not-valid"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The :invalid pseudo-class targets input elements that fail validation.",
+    "tags": ["css", "forms"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "question": "What is the effect of setting 'contain: layout paint' on an element?",
+    "description": null,
+    "answers": {
+      "answer_a": "It isolates the element’s layout and painting from the rest of the page",
+      "answer_b": "It removes the element from the rendering tree",
+      "answer_c": "It disables animations inside the element",
+      "answer_d": "It forces the element to act as a flex container"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The contain property improves performance by restricting layout, paint, or size calculations of an element to itself.",
+    "tags": ["css", "containment"],
+    "category": "CSS",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 57,
+    "question": "What is the difference between ::before and :before in modern CSS?",
+    "description": null,
+    "answers": {
+      "answer_a": "They are identical; ::before is the current standard",
+      "answer_b": ":before is for backward compatibility with IE8 and older",
+      "answer_c": "::before works only with flexbox",
+      "answer_d": "There is no ::before in CSS"
+    },
+    "multiple_correct_answers": "true",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Both notations work, but the double-colon (::before) is the standard syntax. :before is kept for older browser compatibility.",
+    "tags": ["css", "selectors"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 58,
-    "question": "What’s the difference between relative and absolute paths in CSS url()?",
+    "question": "What does 'aspect-ratio: 16 / 9;' do in CSS?",
+    "description": null,
     "answers": {
-      "answer_a": "Relative is based on CSS file location, absolute starts from root or full URL",
-      "answer_b": "They are identical",
-      "answer_c": "Absolute is required for images",
-      "answer_d": "Relative is deprecated"
+      "answer_a": "Sets the width to always be 16px and height to 9px",
+      "answer_b": "Ensures the element maintains a 16:9 width-to-height ratio",
+      "answer_c": "Only applies to images and videos",
+      "answer_d": "Has no effect without a defined width"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "Relative depends on CSS file location, absolute ignores that.",
-    "tags": ["css"],
+    "explanation": "The aspect-ratio property enforces a consistent width-to-height proportion for the element.",
+    "tags": ["css", "layout"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 59,
-    "question": "Which CSS property can prevent an element from shrinking inside a flex container?",
+    "question": "How does the 'isolation: isolate' property affect an element?",
+    "description": null,
     "answers": {
-      "answer_a": "flex-shrink: 0",
-      "answer_b": "flex-grow: 0",
-      "answer_c": "min-width: auto",
-      "answer_d": "flex-basis: auto"
+      "answer_a": "It creates a new stacking context for the element",
+      "answer_b": "It disables blending modes inside the element",
+      "answer_c": "It forces the element to ignore z-index",
+      "answer_d": "It makes the element position: absolute"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
@@ -815,32 +1289,30 @@
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "flex-shrink: 0 prevents the item from shrinking.",
-    "tags": ["css"],
+    "explanation": "isolation: isolate ensures the element starts a new stacking context, preventing blend modes from affecting elements outside it.",
+    "tags": ["css", "stacking"],
     "category": "CSS",
     "difficulty": "Hard"
   },
   {
     "id": 60,
-    "question": "What is the difference between inline styles and external CSS?",
+    "question": "Which CSS function allows you to use trigonometric functions for animations?",
+    "description": null,
     "answers": {
-      "answer_a": "Inline applies to one element, external applies site-wide",
-      "answer_b": "They are identical",
-      "answer_c": "Inline is always faster",
-      "answer_d": "External is deprecated"
+      "answer_a": "math()",
+      "answer_b": "sin() and cos() in calc()",
+      "answer_c": "env()",
+      "answer_d": "trig()"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "true",
-      "answer_b_correct": "false",
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
       "answer_c_correct": "false",
       "answer_d_correct": "false"
     },
-    "correct_answer": "answer_a",
-    "explanation": "Inline styles target a single element; external CSS allows consistent site-wide styling.",
-    "tags": ["css"],
+    "explanation": "The CSS Values and Units Module allows trigonometric functions like sin(), cos(), and tan() inside calc() for advanced animations.",
+    "tags": ["css", "math", "animation"],
     "category": "CSS",
     "difficulty": "Hard"
-  }
-]
+  }]
