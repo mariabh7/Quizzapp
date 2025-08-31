@@ -403,19 +403,40 @@ function UpdateGalleryDom() {
     }
 }
 UpdateGalleryDom()
+function showDetails(parent, gal) {
+    for (let [key, value] of gal) {
+        if (key !== "score" && key !== "time" && key !== "NumofQs") {
+            let div = document.createElement("div");
+            div.innerHTML = `
+                          <h3>${key[0]}- ${value[1]}</h3>
+                          <p>- your answer : <span class="myAnswer">${value[2]}</span>
+                           </p>
+                           <p>- correct answer: <span class="systemAnswer">${value[3]}</span></p>
+                           `
+            div.classList.add("ques");
+            if (value[0] === "true") {
+                div.querySelector(".myAnswer").classList.add("text-green-600");
+            } else {
+                div.querySelector(".myAnswer").classList.add("text-red-600");
+            }
+            parent.appendChild(div);
+        }
+
+    }
+}
 function DisplayGallery(gal, key) {
     let div = document.createElement("div");
     let name = key ?? OurUser.quizTopic;
     let count = Array.from(name).filter((lets) => lets === '-');
-    if (count.length === 2 || ( count.length === 1 name.contains('javascript') ) ) {
+    if (count.length === 2 || (count.length === 1 && name.includes('javascript'))) {
         let k = Array.from(name);
         k.splice(k.length - 2, 2);
         name = k.join('');
     }
     let Itemtime = new Date(gal.get("time"));
     div.innerHTML = `<div class="flex h-full flex-col gap-4 md:gap-8 py-2 md:py-4  border-2 border-gray-100 rounded-xl">
-                        <div class=" flex justify-center h-10 md:h-20 items-start w-full pb-2  border-b-2 border-gray-100 ">
-                            <img src="https://api.iconify.design/logos:${name}.svg" class=" w-6 md:w-10">
+                        <div class=" flex justify-center h-10 md:h-16 items-start w-full pb-2  border-b-2 border-gray-100 ">
+                            <img src="https://api.iconify.design/logos:${name}.svg" alt="${name}" class=" w-6 md:w-10">
                         </div>
                         <div class="mx-3">
                             <div class="flex flex-col justify-start  gap-2 md:gap-4 ">
@@ -462,10 +483,38 @@ function DisplayGallery(gal, key) {
                                         </div>
                                         <span class="time">${timeAgo(Itemtime)}</span>
                                     </div>
-                                </div>`
+                                </div> 
+                            <div class=" QnA-modal hidden">
+                                <div class="fixed inset-0 bg-slate-100   flex justify-center items-center">
+                                    <div
+                                        class="bg-white qs py-9 rounded-xl flex flex-col w-[90%] md:w-[80%] lg:w-[60%]  justify-start items-start gap-5 ">
+                                        <div
+                                            class="flex justify-center h-10 md:h-max items-start w-full pb-2  border-b-2 border-gray-100 ">
+                                            <img src="https://api.iconify.design/logos:${name}.svg" class="w-[40px]">
+                                        </div>
+                                        <div
+                                            class="py-5 qContainer px-3 md:px-5 flex w-full overflow-x-scroll capitalize font-sans gap-20 justify-between ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
     // for (const [key, value] of gal) {
     //     console.log(key, value);
     // }
+    let QCont = div.querySelector(".QnA-modal");
+    let Qcont2 = div.querySelector(".qContainer");
+    div.addEventListener("click", () => {
+        QCont.classList.remove("hidden");
+        showDetails(Qcont2, gal);
+
+    })
+    document.addEventListener("click", (event) => {
+        if (QCont.contains(event.target) && event.target !== div.querySelector(".qs")) {
+            QCont.classList.add("hidden");
+        }
+    })
+
+    console.log(gal);
     setInterval(() => {
         div.querySelector(".time").textContent = timeAgo(Itemtime);
     }, 10000)
