@@ -1,452 +1,1320 @@
 [
   {
     "id": 1,
-    "question": "Sample nextjs Easy Question 1?",
+    "question": "What is Next.js primarily used for?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q1",
-      "answer_b": "Option B for nextjs Q1",
-      "answer_c": "Option C for nextjs Q1",
-      "answer_d": "Option D for nextjs Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Server-side rendering and React framework",
+      "answer_b": "Database management",
+      "answer_c": "Styling websites",
+      "answer_d": "Mobile app development"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Easy Q1.",
-    "tip": "Tip for nextjs Easy Q1.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "Next.js is a React framework mainly used for server-side rendering, static site generation, and building full-stack applications.",
+    "tags": ["nextjs"],
     "category": "Next.js",
     "difficulty": "Easy"
   },
   {
     "id": 2,
-    "question": "Sample nextjs Easy Question 2?",
+    "question": "Which company created Next.js?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q2",
-      "answer_b": "Option B for nextjs Q2",
-      "answer_c": "Option C for nextjs Q2",
-      "answer_d": "Option D for nextjs Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Facebook",
+      "answer_b": "Google",
+      "answer_c": "Vercel",
+      "answer_d": "Microsoft"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Easy Q2.",
-    "tip": "Tip for nextjs Easy Q2.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "Next.js was created and is maintained by Vercel.",
+    "tags": ["nextjs"],
     "category": "Next.js",
     "difficulty": "Easy"
   },
   {
     "id": 3,
-    "question": "Sample nextjs Easy Question 3?",
+    "question": "Which command is used to create a new Next.js app?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q3",
-      "answer_b": "Option B for nextjs Q3",
-      "answer_c": "Option C for nextjs Q3",
-      "answer_d": "Option D for nextjs Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "npx create-react-app my-app",
+      "answer_b": "npx create-next-app my-app",
+      "answer_c": "npm init next-app",
+      "answer_d": "next create my-app"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Easy Q3.",
-    "tip": "Tip for nextjs Easy Q3.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "The official way is using `npx create-next-app my-app`.",
+    "tags": ["nextjs"],
     "category": "Next.js",
     "difficulty": "Easy"
   },
   {
     "id": 4,
-    "question": "Sample nextjs Easy Question 4?",
+    "question": "What is the default folder for Next.js pages?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q4",
-      "answer_b": "Option B for nextjs Q4",
-      "answer_c": "Option C for nextjs Q4",
-      "answer_d": "Option D for nextjs Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "components",
+      "answer_b": "pages",
+      "answer_c": "src",
+      "answer_d": "routes"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Easy Q4.",
-    "tip": "Tip for nextjs Easy Q4.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "In Next.js, all files inside the `pages` folder automatically become routes.",
+    "tags": ["nextjs", "routing"],
     "category": "Next.js",
     "difficulty": "Easy"
   },
   {
     "id": 5,
-    "question": "Sample nextjs Easy Question 5?",
+    "question": "Which file is used to customize the root HTML structure in Next.js?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q5",
-      "answer_b": "Option B for nextjs Q5",
-      "answer_c": "Option C for nextjs Q5",
-      "answer_d": "Option D for nextjs Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "_document.js",
+      "answer_b": "_app.js",
+      "answer_c": "index.js",
+      "answer_d": "layout.js"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Easy Q5.",
-    "tip": "Tip for nextjs Easy Q5.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "_document.js is used to customize the root HTML structure.",
+    "tags": ["nextjs", "document"],
     "category": "Next.js",
     "difficulty": "Easy"
   },
   {
     "id": 6,
-    "question": "Sample nextjs Medium Question 1?",
+    "question": "Which file is used to initialize global styles and state in Next.js?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q1",
-      "answer_b": "Option B for nextjs Q1",
-      "answer_c": "Option C for nextjs Q1",
-      "answer_d": "Option D for nextjs Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "_app.js",
+      "answer_b": "_document.js",
+      "answer_c": "index.js",
+      "answer_d": "global.js"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Medium Q1.",
-    "tip": "Tip for nextjs Medium Q1.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "_app.js allows customization of the App component and is often used for global styles and context providers.",
+    "tags": ["nextjs", "app"],
     "category": "Next.js",
-    "difficulty": "Medium"
+    "difficulty": "Easy"
   },
   {
     "id": 7,
-    "question": "Sample nextjs Medium Question 2?",
+    "question": "What is the default port for running a Next.js app locally?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q2",
-      "answer_b": "Option B for nextjs Q2",
-      "answer_c": "Option C for nextjs Q2",
-      "answer_d": "Option D for nextjs Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "8080",
+      "answer_b": "4000",
+      "answer_c": "3000",
+      "answer_d": "5000"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
-      "answer_b_correct": "true",
-      "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Medium Q2.",
-    "tip": "Tip for nextjs Medium Q2.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "By default, Next.js apps run on `http://localhost:3000`.",
+    "tags": ["nextjs", "server"],
     "category": "Next.js",
-    "difficulty": "Medium"
+    "difficulty": "Easy"
   },
   {
     "id": 8,
-    "question": "Sample nextjs Medium Question 3?",
+    "question": "Which function is used for server-side rendering in Next.js?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q3",
-      "answer_b": "Option B for nextjs Q3",
-      "answer_c": "Option C for nextjs Q3",
-      "answer_d": "Option D for nextjs Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "getStaticProps",
+      "answer_b": "getServerSideProps",
+      "answer_c": "getInitialProps",
+      "answer_d": "useEffect"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Medium Q3.",
-    "tip": "Tip for nextjs Medium Q3.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "getServerSideProps runs on the server at request time for SSR.",
+    "tags": ["nextjs", "data-fetching"],
     "category": "Next.js",
-    "difficulty": "Medium"
+    "difficulty": "Easy"
   },
   {
     "id": 9,
-    "question": "Sample nextjs Medium Question 4?",
+    "question": "Which function is used for static site generation in Next.js?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q4",
-      "answer_b": "Option B for nextjs Q4",
-      "answer_c": "Option C for nextjs Q4",
-      "answer_d": "Option D for nextjs Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "getServerSideProps",
+      "answer_b": "getStaticProps",
+      "answer_c": "useEffect",
+      "answer_d": "getInitialProps"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Medium Q4.",
-    "tip": "Tip for nextjs Medium Q4.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "getStaticProps is used to fetch data at build time for static site generation.",
+    "tags": ["nextjs", "data-fetching"],
     "category": "Next.js",
-    "difficulty": "Medium"
+    "difficulty": "Easy"
   },
   {
     "id": 10,
-    "question": "Sample nextjs Medium Question 5?",
+    "question": "Which Next.js component is used for client-side navigation?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q5",
-      "answer_b": "Option B for nextjs Q5",
-      "answer_c": "Option C for nextjs Q5",
-      "answer_d": "Option D for nextjs Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "<a>",
+      "answer_b": "<Link>",
+      "answer_c": "<Router>",
+      "answer_d": "<Navigate>"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Medium Q5.",
-    "tip": "Tip for nextjs Medium Q5.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "Next.js provides a built-in <Link> component for client-side navigation.",
+    "tags": ["nextjs", "routing"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 11,
+    "question": "Which command starts the Next.js development server?",
+    "description": null,
+    "answers": {
+      "answer_a": "npm run start",
+      "answer_b": "npm run dev",
+      "answer_c": "npm build",
+      "answer_d": "npm serve"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The development server is started with `npm run dev`.",
+    "tags": ["nextjs", "server"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "Which file is the entry point of a Next.js app?",
+    "description": null,
+    "answers": {
+      "answer_a": "index.js inside pages folder",
+      "answer_b": "index.html",
+      "answer_c": "_app.js",
+      "answer_d": "main.js"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The default entry point is `pages/index.js`.",
+    "tags": ["nextjs"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 13,
+    "question": "Which Next.js file is used for API routes?",
+    "description": null,
+    "answers": {
+      "answer_a": "pages/api",
+      "answer_b": "pages/routes",
+      "answer_c": "api",
+      "answer_d": "server"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "All files inside `pages/api` are treated as API endpoints.",
+    "tags": ["nextjs", "api"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "What is the default build command for Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": "npm run build",
+      "answer_b": "npm run dev",
+      "answer_c": "npm build",
+      "answer_d": "next run build"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The build command is `npm run build` or `yarn build`.",
+    "tags": ["nextjs", "build"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "Which folder in Next.js is commonly used to store reusable UI components?",
+    "description": null,
+    "answers": {
+      "answer_a": "components",
+      "answer_b": "pages",
+      "answer_c": "api",
+      "answer_d": "styles"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Reusable UI parts are usually placed in a `components` folder.",
+    "tags": ["nextjs", "components"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Which Next.js feature allows pre-rendering pages at build time?",
+    "description": null,
+    "answers": {
+      "answer_a": "Server-side rendering",
+      "answer_b": "Static site generation",
+      "answer_c": "Client-side rendering",
+      "answer_d": "Dynamic imports"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Static Site Generation (SSG) pre-renders pages at build time.",
+    "tags": ["nextjs", "rendering"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Which command exports a static version of a Next.js site?",
+    "description": null,
+    "answers": {
+      "answer_a": "next export",
+      "answer_b": "next build",
+      "answer_c": "next deploy",
+      "answer_d": "npm run static"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Running `next export` generates a static version of the site.",
+    "tags": ["nextjs", "export"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "Which Next.js feature allows automatic optimization of images?",
+    "description": null,
+    "answers": {
+      "answer_a": "next/image",
+      "answer_b": "next/img",
+      "answer_c": "next/photo",
+      "answer_d": "next/picture"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The `next/image` component automatically optimizes images.",
+    "tags": ["nextjs", "image"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "What does ISR stand for in Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": "Incremental Static Rendering",
+      "answer_b": "Instant Static Rendering",
+      "answer_c": "Initial Server Rendering",
+      "answer_d": "Integrated Static Rendering"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "ISR stands for Incremental Static Regeneration, a feature to update static pages after build.",
+    "tags": ["nextjs", "ISR"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Which file stores environment variables in Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": ".env.local",
+      "answer_b": "config.js",
+      "answer_c": "variables.json",
+      "answer_d": ".settings"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Environment variables are usually stored in `.env.local` in Next.js projects.",
+    "tags": ["nextjs", "environment"],
+    "category": "Next.js",
+    "difficulty": "Easy"
+  },{
+    "id": 21,
+    "question": "Which Next.js feature allows updating static pages after deployment?",
+    "description": null,
+    "answers": {
+      "answer_a": "Server-side rendering",
+      "answer_b": "Incremental Static Regeneration (ISR)",
+      "answer_c": "Client-side rendering",
+      "answer_d": "Dynamic imports"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "ISR allows static pages to be regenerated in the background while serving cached versions.",
+    "tags": ["nextjs", "ISR"],
     "category": "Next.js",
     "difficulty": "Medium"
   },
   {
-    "id": 11,
-    "question": "Sample nextjs Hard Question 1?",
+    "id": 22,
+    "question": "Which Next.js folder is used in the App Router (Next.js 13+) for defining routes?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q1",
-      "answer_b": "Option B for nextjs Q1",
-      "answer_c": "Option C for nextjs Q1",
-      "answer_d": "Option D for nextjs Q1",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "pages",
+      "answer_b": "routes",
+      "answer_c": "app",
+      "answer_d": "src/routes"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The App Router uses the `app/` directory for defining routes and layouts.",
+    "tags": ["nextjs", "routing"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "Which Next.js function is used to define dynamic routes with parameters in the Pages Router?",
+    "description": null,
+    "answers": {
+      "answer_a": "getStaticProps",
+      "answer_b": "getServerSideProps",
+      "answer_c": "getStaticPaths",
+      "answer_d": "useRouter"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "getStaticPaths is used with getStaticProps to generate dynamic routes at build time.",
+    "tags": ["nextjs", "routing"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "In Next.js App Router, which file defines the default layout for a route?",
+    "description": null,
+    "answers": {
+      "answer_a": "page.js",
+      "answer_b": "layout.js",
+      "answer_c": "_app.js",
+      "answer_d": "index.js"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Hard Q1.",
-    "tip": "Tip for nextjs Hard Q1.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "Each folder in the App Router can include a `layout.js` file to define layouts.",
+    "tags": ["nextjs", "app-router"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "Which hook is used to access route parameters in Next.js Pages Router?",
+    "description": null,
+    "answers": {
+      "answer_a": "useParams",
+      "answer_b": "useRoute",
+      "answer_c": "useRouter",
+      "answer_d": "usePathname"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "useRouter from next/router is used to access query parameters in Pages Router.",
+    "tags": ["nextjs", "hooks"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "Which hook replaces useRouter for route parameters in Next.js App Router?",
+    "description": null,
+    "answers": {
+      "answer_a": "useParams",
+      "answer_b": "useRoute",
+      "answer_c": "useSearchParams",
+      "answer_d": "usePathname"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "In the App Router, route parameters are accessed via useParams.",
+    "tags": ["nextjs", "app-router"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 27,
+    "question": "Which middleware file does Next.js use by default?",
+    "description": null,
+    "answers": {
+      "answer_a": "server.js",
+      "answer_b": "middleware.js",
+      "answer_c": "_middleware.js",
+      "answer_d": "next.config.js"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The file `middleware.js` in the root or inside a folder is used for middleware logic.",
+    "tags": ["nextjs", "middleware"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "question": "Which package does Next.js recommend for handling authentication?",
+    "description": null,
+    "answers": {
+      "answer_a": "next-auth",
+      "answer_b": "passport.js",
+      "answer_c": "jsonwebtoken",
+      "answer_d": "auth0-js"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "next-auth is the recommended package for authentication with Next.js.",
+    "tags": ["nextjs", "auth"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "Which Next.js component optimizes scripts automatically?",
+    "description": null,
+    "answers": {
+      "answer_a": "<script>",
+      "answer_b": "<Head>",
+      "answer_c": "<Script>",
+      "answer_d": "<OptimizeScript>"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The <Script> component optimizes loading of third-party scripts.",
+    "tags": ["nextjs", "performance"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "How can you enable TypeScript in a Next.js project?",
+    "description": null,
+    "answers": {
+      "answer_a": "Install TypeScript and restart dev server",
+      "answer_b": "Rename .js files to .ts only",
+      "answer_c": "Enable it in next.config.js",
+      "answer_d": "TypeScript is enabled by default"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Installing TypeScript and restarting the dev server will auto-generate a tsconfig.json.",
+    "tags": ["nextjs", "typescript"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 31,
+    "question": "What does next/head allow you to do?",
+    "description": null,
+    "answers": {
+      "answer_a": "Define API endpoints",
+      "answer_b": "Customize the document head",
+      "answer_c": "Optimize scripts",
+      "answer_d": "Manage layouts"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The next/head component allows modifying the <head> of a page, like title and meta tags.",
+    "tags": ["nextjs", "seo"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 32,
+    "question": "Which command analyzes a Next.js production build bundle?",
+    "description": null,
+    "answers": {
+      "answer_a": "next analyze",
+      "answer_b": "ANALYZE=true next build",
+      "answer_c": "next bundle",
+      "answer_d": "npm run check"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Setting ANALYZE=true with next build allows analyzing bundle size.",
+    "tags": ["nextjs", "performance"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 33,
+    "question": "Which Next.js feature helps split code into smaller bundles automatically?",
+    "description": null,
+    "answers": {
+      "answer_a": "Tree-shaking",
+      "answer_b": "Dynamic imports",
+      "answer_c": "Webpack",
+      "answer_d": "Hot reloading"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Dynamic imports help in code splitting and loading components on demand.",
+    "tags": ["nextjs", "performance"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 34,
+    "question": "Which environment variables are exposed to the browser in Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": "All .env variables",
+      "answer_b": "Only variables prefixed with NEXT_PUBLIC_",
+      "answer_c": "Only .env.production variables",
+      "answer_d": "None, unless in next.config.js"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Next.js only exposes environment variables prefixed with NEXT_PUBLIC_.",
+    "tags": ["nextjs", "env"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 35,
+    "question": "Which Next.js feature allows caching server responses at the edge?",
+    "description": null,
+    "answers": {
+      "answer_a": "Middleware",
+      "answer_b": "Edge Functions",
+      "answer_c": "ISR",
+      "answer_d": "Static Generation"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Edge Functions allow executing server-side code closer to the user and caching responses.",
+    "tags": ["nextjs", "edge"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 36,
+    "question": "What is the purpose of next/font?",
+    "description": null,
+    "answers": {
+      "answer_a": "Optimize fonts automatically",
+      "answer_b": "Add custom CSS",
+      "answer_c": "Render icons",
+      "answer_d": "Load images"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "next/font optimizes and loads Google Fonts or local fonts efficiently.",
+    "tags": ["nextjs", "fonts"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 37,
+    "question": "Which function in Next.js App Router is used for streaming server rendering?",
+    "description": null,
+    "answers": {
+      "answer_a": "generateStaticParams",
+      "answer_b": "getServerSideProps",
+      "answer_c": "React Suspense with Server Components",
+      "answer_d": "useEffect"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "App Router supports React Suspense and Server Components for streaming SSR.",
+    "tags": ["nextjs", "app-router"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 38,
+    "question": "Which file is used to configure Next.js settings?",
+    "description": null,
+    "answers": {
+      "answer_a": "next.config.js",
+      "answer_b": "config.json",
+      "answer_c": "settings.js",
+      "answer_d": "webpack.config.js"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "next.config.js is the main configuration file for customizing Next.js behavior.",
+    "tags": ["nextjs", "config"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 39,
+    "question": "Which Next.js file in App Router can define metadata like title and description?",
+    "description": null,
+    "answers": {
+      "answer_a": "layout.js",
+      "answer_b": "metadata.js",
+      "answer_c": "page.js",
+      "answer_d": "head.js"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "head.js (or the metadata export) is used in the App Router for defining metadata.",
+    "tags": ["nextjs", "seo"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 40,
+    "question": "Which caching mechanism does Next.js use by default for getServerSideProps?",
+    "description": null,
+    "answers": {
+      "answer_a": "No caching, runs on each request",
+      "answer_b": "Static cache",
+      "answer_c": "ISR cache",
+      "answer_d": "Edge cache"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "getServerSideProps executes on every request without caching by default.",
+    "tags": ["nextjs", "data-fetching"],
+    "category": "Next.js",
+    "difficulty": "Medium"
+  },{
+    "id": 41,
+    "question": "In Next.js, what problem does React Server Components aim to solve?",
+    "description": null,
+    "answers": {
+      "answer_a": "Reducing bundle size by executing components on the server",
+      "answer_b": "Allowing multiple root elements in a component",
+      "answer_c": "Simplifying CSS imports",
+      "answer_d": "Handling static file optimization"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "React Server Components (RSC) in Next.js reduce bundle size by running logic on the server and sending serialized results to the client.",
+    "tags": ["nextjs", "server-components"],
     "category": "Next.js",
     "difficulty": "Hard"
   },
   {
-    "id": 12,
-    "question": "Sample nextjs Hard Question 2?",
+    "id": 42,
+    "question": "What is the key difference between Next.js middleware and API routes?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q2",
-      "answer_b": "Option B for nextjs Q2",
-      "answer_c": "Option C for nextjs Q2",
-      "answer_d": "Option D for nextjs Q2",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "Middleware runs before rendering and API routes handle requests explicitly",
+      "answer_b": "Middleware runs only at build time",
+      "answer_c": "API routes can manipulate headers while middleware cannot",
+      "answer_d": "Middleware can only be used for logging"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Hard Q2.",
-    "tip": "Tip for nextjs Hard Q2.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "Middleware executes before a request is processed by Next.js, while API routes define endpoints that explicitly handle requests.",
+    "tags": ["nextjs", "middleware", "api"],
     "category": "Next.js",
     "difficulty": "Hard"
   },
   {
-    "id": 13,
-    "question": "Sample nextjs Hard Question 3?",
+    "id": 43,
+    "question": "How does Next.js optimize performance when using Incremental Static Regeneration (ISR)?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q3",
-      "answer_b": "Option B for nextjs Q3",
-      "answer_c": "Option C for nextjs Q3",
-      "answer_d": "Option D for nextjs Q3",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "By regenerating static pages in the background without blocking the request",
+      "answer_b": "By preloading all pages at runtime",
+      "answer_c": "By forcing full server-side rendering every request",
+      "answer_d": "By caching only API routes"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Hard Q3.",
-    "tip": "Tip for nextjs Hard Q3.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "ISR allows regeneration of static pages in the background after the revalidation period, avoiding blocking incoming requests.",
+    "tags": ["nextjs", "isr"],
     "category": "Next.js",
     "difficulty": "Hard"
   },
   {
-    "id": 14,
-    "question": "Sample nextjs Hard Question 4?",
+    "id": 44,
+    "question": "What does the `app/` directory introduce in Next.js 13?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q4",
-      "answer_b": "Option B for nextjs Q4",
-      "answer_c": "Option C for nextjs Q4",
-      "answer_d": "Option D for nextjs Q4",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "A file-system-based routing system with server components",
+      "answer_b": "A new API routing layer",
+      "answer_c": "A dedicated folder for images",
+      "answer_d": "A directory only for middleware files"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
-      "answer_a_correct": "false",
-      "answer_b_correct": "true",
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Hard Q4.",
-    "tip": "Tip for nextjs Hard Q4.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "The `app/` directory introduces a new file-based router built with server components, layouts, and streaming support.",
+    "tags": ["nextjs", "app-router"],
     "category": "Next.js",
     "difficulty": "Hard"
   },
   {
-    "id": 15,
-    "question": "Sample nextjs Hard Question 5?",
+    "id": 45,
+    "question": "Why is streaming important in Next.js rendering?",
     "description": null,
     "answers": {
-      "answer_a": "Option A for nextjs Q5",
-      "answer_b": "Option B for nextjs Q5",
-      "answer_c": "Option C for nextjs Q5",
-      "answer_d": "Option D for nextjs Q5",
-      "answer_e": null,
-      "answer_f": null
+      "answer_a": "It allows sending parts of the UI to the client as soon as they are ready",
+      "answer_b": "It improves CSS-in-JS compilation",
+      "answer_c": "It enables only client-side routing",
+      "answer_d": "It preloads all API responses at once"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Streaming enables faster rendering by progressively sending parts of the UI to the client instead of waiting for the whole page.",
+    "tags": ["nextjs", "rendering", "streaming"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 46,
+    "question": "What does Next.js use to enable edge functions?",
+    "description": null,
+    "answers": {
+      "answer_a": "V8 isolates running close to the user",
+      "answer_b": "Traditional Node.js runtime",
+      "answer_c": "Dedicated WebSocket servers",
+      "answer_d": "Client-side Web Workers"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Next.js edge functions use V8 isolates deployed at the edge, allowing fast, low-latency execution near the user.",
+    "tags": ["nextjs", "edge", "functions"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 47,
+    "question": "What happens when you use `dynamic = 'force-dynamic'` in Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": "The page is always server-rendered on each request",
+      "answer_b": "The page is always statically regenerated",
+      "answer_c": "The page runs entirely on the client",
+      "answer_d": "The page is cached indefinitely"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`dynamic = 'force-dynamic'` forces the page to be rendered dynamically on every request.",
+    "tags": ["nextjs", "dynamic-rendering"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 48,
+    "question": "What advantage does React's Suspense bring to Next.js 13?",
+    "description": null,
+    "answers": {
+      "answer_a": "It allows asynchronous components with loading states",
+      "answer_b": "It optimizes Tailwind CSS compilation",
+      "answer_c": "It prevents re-renders after hydration",
+      "answer_d": "It caches all client requests forever"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Suspense enables components to wait for data or code before rendering, improving loading experiences.",
+    "tags": ["nextjs", "suspense"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 49,
+    "question": "In Next.js, why would you use `generateStaticParams` in the app router?",
+    "description": null,
+    "answers": {
+      "answer_a": "To pre-generate dynamic routes at build time",
+      "answer_b": "To force all routes to be client-rendered",
+      "answer_c": "To disable static optimization",
+      "answer_d": "To stream API responses directly"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "`generateStaticParams` provides parameters for dynamic routes so they can be pre-rendered at build time.",
+    "tags": ["nextjs", "routing"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 50,
+    "question": "What caching strategy does Next.js use with fetch in server components by default?",
+    "description": null,
+    "answers": {
+      "answer_a": "It caches indefinitely unless revalidated",
+      "answer_b": "It never caches responses",
+      "answer_c": "It caches only on the client side",
+      "answer_d": "It always revalidates on every request"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "By default, fetch in Next.js server components caches indefinitely unless you set revalidation options.",
+    "tags": ["nextjs", "fetch", "caching"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },[
+  {
+    "id": 51,
+    "question": "In Next.js, what happens if both getStaticProps and getServerSideProps are exported from the same page?",
+    "description": null,
+    "answers": {
+      "answer_a": "Both will run sequentially",
+      "answer_b": "getServerSideProps takes priority and getStaticProps is ignored",
+      "answer_c": "getStaticProps takes priority and getServerSideProps is ignored",
+      "answer_d": "Next.js will throw a build error"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "Next.js throws a build error if both getStaticProps and getServerSideProps are exported from the same page.",
+    "tags": ["nextjs", "data-fetching"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 52,
+    "question": "What is the purpose of the next/script component in Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": "To defer or load third-party scripts optimally",
+      "answer_b": "To replace getStaticProps",
+      "answer_c": "To bundle scripts only for development",
+      "answer_d": "To configure Babel plugins dynamically"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The next/script component optimizes third-party script loading with strategies like beforeInteractive, afterInteractive, and lazyOnload.",
+    "tags": ["nextjs", "performance"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 53,
+    "question": "How does Next.js implement Middleware internally?",
+    "description": null,
+    "answers": {
+      "answer_a": "It runs inside a Service Worker",
+      "answer_b": "It uses Edge Functions running on V8 isolates",
+      "answer_c": "It executes directly in the Node.js server",
+      "answer_d": "It is executed during build-time optimization"
     },
     "multiple_correct_answers": "false",
     "correct_answers": {
       "answer_a_correct": "false",
       "answer_b_correct": "true",
       "answer_c_correct": "false",
-      "answer_d_correct": "false",
-      "answer_e_correct": "false",
-      "answer_f_correct": "false"
+      "answer_d_correct": "false"
     },
-    "correct_answer": "answer_b",
-    "explanation": "This is the explanation for nextjs Hard Q5.",
-    "tip": "Tip for nextjs Hard Q5.",
-    "tags": [
-      "nextjs"
-    ],
+    "explanation": "Next.js Middleware runs at the Edge, implemented on V8 isolates, enabling faster request-time modifications close to the user.",
+    "tags": ["nextjs", "middleware"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 54,
+    "question": "Which of the following is NOT true about Incremental Static Regeneration (ISR) in Next.js?",
+    "description": null,
+    "answers": {
+      "answer_a": "It allows updating static pages without a full rebuild",
+      "answer_b": "It can revalidate content based on time intervals",
+      "answer_c": "It works only with getServerSideProps",
+      "answer_d": "It can regenerate a page on-demand using revalidate API"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "ISR works with getStaticProps, not getServerSideProps, and enables revalidation by time interval or API calls.",
+    "tags": ["nextjs", "isr"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 55,
+    "question": "What does the rewrites configuration in next.config.js do?",
+    "description": null,
+    "answers": {
+      "answer_a": "Redirects users to another route with 3xx status",
+      "answer_b": "Rewrites the path before resolving the request without changing the URL",
+      "answer_c": "Generates a static HTML page",
+      "answer_d": "Removes query parameters from incoming requests"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Rewrites map incoming request paths to different destinations without changing the visible URL to the client.",
+    "tags": ["nextjs", "routing"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "question": "In Next.js, how can you prevent a page from being statically optimized?",
+    "description": null,
+    "answers": {
+      "answer_a": "Add getStaticProps",
+      "answer_b": "Add getServerSideProps",
+      "answer_c": "Disable ISR in next.config.js",
+      "answer_d": "Wrap the page with <NoStatic /> component"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Exporting getServerSideProps disables automatic static optimization and ensures the page is always server-rendered.",
+    "tags": ["nextjs", "ssr"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 57,
+    "question": "What is a key advantage of using next/image over the standard <img> tag?",
+    "description": null,
+    "answers": {
+      "answer_a": "Automatic image optimization and responsive resizing",
+      "answer_b": "Faster JSX compilation",
+      "answer_c": "Automatic conversion of images to WebP and SVG",
+      "answer_d": "Serverless function deployment"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "next/image provides automatic image optimization, responsive sizes, and lazy loading for performance benefits.",
+    "tags": ["nextjs", "images"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 58,
+    "question": "What does the experimental appDir option in Next.js enable?",
+    "description": null,
+    "answers": {
+      "answer_a": "The new App Router architecture using React Server Components",
+      "answer_b": "Customizing the root document",
+      "answer_c": "Faster builds by disabling SWC",
+      "answer_d": "Automatic API route generation"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The appDir option enables the App Router with React Server Components and layouts in the /app directory.",
+    "tags": ["nextjs", "app-router"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 59,
+    "question": "How does Next.js handle dynamic API routes like /api/[id].js?",
+    "description": null,
+    "answers": {
+      "answer_a": "By compiling them into a single serverless function",
+      "answer_b": "By mapping the dynamic part to req.query automatically",
+      "answer_c": "By ignoring them in production builds",
+      "answer_d": "By running them only at build time"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Dynamic API routes automatically map dynamic parameters to req.query, e.g. /api/123 → req.query.id = '123'.",
+    "tags": ["nextjs", "api"],
+    "category": "Next.js",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 60,
+    "question": "Which Next.js feature allows caching of SSR pages at the CDN edge for improved performance?",
+    "description": null,
+    "answers": {
+      "answer_a": "Middleware",
+      "answer_b": "Incremental Static Regeneration",
+      "answer_c": "Server Actions",
+      "answer_d": "Next.js Edge SSR caching"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "true"
+    },
+    "explanation": "Next.js supports caching SSR responses at the CDN edge for faster delivery and scalability.",
+    "tags": ["nextjs", "edge"],
     "category": "Next.js",
     "difficulty": "Hard"
   }
-]
+  ]
