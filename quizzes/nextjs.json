@@ -1096,7 +1096,7 @@
     "tags": ["nextjs", "fetch", "caching"],
     "category": "Next.js",
     "difficulty": "Hard"
-  },[
+  },
   {
     "id": 51,
     "question": "In Next.js, what happens if both getStaticProps and getServerSideProps are exported from the same page?",
