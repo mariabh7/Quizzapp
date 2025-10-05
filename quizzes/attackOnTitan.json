@@ -1,1 +1,441 @@
+[
+  {
+    "id": 1,
+    "question": "Why did humanity initially believe the Walls had protected them for over a century?",
+    "description": null,
+    "answers": {
+      "answer_a": "Because the Titans disappeared naturally",
+      "answer_b": "Because Titans couldn’t cross water",
+      "answer_c": "Because their memories were altered",
+      "answer_d": "Because of the military’s strength"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The Founding Titan erased the memories of the Eldians inside the Walls, making them believe Titans had been kept out for a century.",
+    "tags": ["aot", "psychology"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "question": "Why did Eren decide to join the Scout Regiment instead of the Military Police?",
+    "description": null,
+    "answers": {
+      "answer_a": "He wanted to live inside Wall Sina",
+      "answer_b": "He wanted to protect Mikasa",
+      "answer_c": "He wanted revenge and freedom outside the Walls",
+      "answer_d": "He wanted to become an officer"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Eren’s decision was fueled by his hatred of Titans and desire to explore the outside world.",
+    "tags": ["aot", "motives"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+ {
+    "id": 3,
+    "question": "Who killed Eren’s mother?",
+    "description": null,
+    "answers": {
+      "answer_a": "Armored Titan",
+      "answer_b": "Colossal Titan",
+      "answer_c": "Smiling Titan",
+      "answer_d": "Beast Titan"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The Smiling Titan crushed and devoured Carla Yeager in Shiganshina.",
+    "tags": ["aot", "story"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 4,
+    "question": "Why were the Titans inside the Walls not immediately discovered by humanity?",
+    "description": null,
+    "answers": {
+      "answer_a": "They were disguised as humans",
+      "answer_b": "They were dormant and sealed within the structure",
+      "answer_c": "They were too small to detect",
+      "answer_d": "They were hidden underground"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The Titans forming the Walls were hardened and dormant, making them indistinguishable from stone.",
+    "tags": ["aot", "mystery"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 5,
+    "question": "Why was the fall of Wall Maria particularly devastating beyond loss of territory?",
+    "description": null,
+    "answers": {
+      "answer_a": "It caused food shortages and economic collapse",
+      "answer_b": "It killed all military leaders",
+      "answer_c": "It destroyed the royal palace",
+      "answer_d": "It revealed Titans’ true nature"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The loss of Wall Maria forced a massive population inward, overwhelming resources and causing famine.",
+    "tags": ["aot", "society"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "question": "What does the Survey Corps’ insignia, the 'Wings of Freedom', symbolize?",
+    "description": null,
+    "answers": {
+      "answer_a": "Protection of the Walls",
+      "answer_b": "The monarchy’s authority",
+      "answer_c": "Humanity’s desire for freedom",
+      "answer_d": "Military superiority"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "It represents the dream of escaping confinement and reclaiming human freedom.",
+    "tags": ["aot", "symbolism"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+{
+    "id": 7,
+    "question": "What is Levi Ackerman most known for?",
+    "description": null,
+    "answers": {
+      "answer_a": "Being talkative",
+      "answer_b": "Being the strongest soldier",
+      "answer_c": "Being a cook",
+      "answer_d": "Being a noble"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Levi is humanity’s strongest soldier, feared even by Titans.",
+    "tags": ["aot", "characters"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "Why was Armin often underestimated during training?",
+    "description": null,
+    "answers": {
+      "answer_a": "He was physically weaker",
+      "answer_b": "He was too talkative",
+      "answer_c": "He disobeyed orders",
+      "answer_d": "He doubted the Titans’ existence"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Armin’s small build made others overlook his intelligence and leadership potential.",
+    "tags": ["aot", "characters"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 9,
+    "question": "Why is Levi’s obsession with cleanliness considered symbolic?",
+    "description": null,
+    "answers": {
+      "answer_a": "It represents control amid chaos",
+      "answer_b": "It shows he dislikes his squad",
+      "answer_c": "It reflects military discipline",
+      "answer_d": "It’s a form of trauma from childhood"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Levi’s cleanliness mirrors his need for order in a world filled with blood and disorder.",
+    "tags": ["aot", "psychology"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 10,
+    "question": "Why were Titans not considered a coordinated threat early in the series?",
+    "description": null,
+    "answers": {
+      "answer_a": "They couldn’t speak or think strategically",
+      "answer_b": "They were afraid of sunlight",
+      "answer_c": "They worked for humanity",
+      "answer_d": "They were too few in number"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Titans were thought to be mindless creatures lacking intelligence, hiding the existence of human-controlled Titans.",
+    "tags": ["aot", "tactics"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },{
+    "id": 11,
+    "question": "What was the main reason the Military Police preferred to stay inside the inner Walls?",
+    "description": null,
+    "answers": {
+      "answer_a": "They wanted to protect civilians directly",
+      "answer_b": "They feared Titans and preferred safety",
+      "answer_c": "They were forbidden to leave by the king",
+      "answer_d": "They lacked the equipment to fight Titans"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The Military Police valued personal safety and comfort over risking their lives outside the Walls.",
+    "tags": ["aot", "organizations"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 12,
+    "question": "Why did Hange Zoë treat Titans differently from most soldiers?",
+    "description": null,
+    "answers": {
+      "answer_a": "They saw Titans as fascinating research subjects",
+      "answer_b": "They feared Titans too much to fight them",
+      "answer_c": "They secretly sympathized with Titans",
+      "answer_d": "They wanted to become one"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Hange’s curiosity about Titans led to crucial discoveries about their biology and nature.",
+    "tags": ["aot", "science"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 13,
+    "question": "What does the existence of the Walls imply about humanity’s real enemy?",
+    "description": null,
+    "answers": {
+      "answer_a": "It was nature itself",
+      "answer_b": "It was Titans alone",
+      "answer_c": "It was human control and isolation",
+      "answer_d": "It was divine punishment"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The Walls symbolize oppression and ignorance, built by humans to confine themselves while thinking they were safe.",
+    "tags": ["aot", "symbolism"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "Why did Eren’s father inject him with a mysterious serum?",
+    "description": null,
+    "answers": {
+      "answer_a": "To save him from death",
+      "answer_b": "To make him a Titan shifter",
+      "answer_c": "To test his scientific experiment",
+      "answer_d": "To heal a disease"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Grisha Yeager injected Eren with the Titan serum to pass down the Founding and Attack Titans to him.",
+    "tags": ["aot", "story"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 15,
+    "question": "Why was the secret of the Titans’ human origin kept hidden by the government?",
+    "description": null,
+    "answers": {
+      "answer_a": "To prevent panic and rebellion",
+      "answer_b": "To protect the royal family’s pride",
+      "answer_c": "Because no one believed the truth",
+      "answer_d": "Because it was forgotten over time"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The monarchy suppressed knowledge of human-made Titans to maintain power and control through fear.",
+    "tags": ["aot", "politics"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Why did Annie Leonhart struggle emotionally despite her strength?",
+    "description": null,
+    "answers": {
+      "answer_a": "She was loyal to Marley but questioned her mission",
+      "answer_b": "She envied Mikasa’s popularity",
+      "answer_c": "She was afraid of Titans",
+      "answer_d": "She wanted to rule Paradis"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Annie was torn between her duty to Marley and her growing sense of guilt toward the people she fought with.",
+    "tags": ["aot", "psychology"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 17,
+    "question": "Why was Historia Reiss forced to live under a false identity as 'Krista Lenz'?",
+    "description": null,
+    "answers": {
+      "answer_a": "Because she was wanted for crimes",
+      "answer_b": "Because her royal bloodline was dangerous to expose",
+      "answer_c": "Because she wanted to join the Scouts secretly",
+      "answer_d": "Because her family disowned her for being weak"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Historia’s royal lineage made her a political threat to the false king, so her identity was hidden for safety.",
+    "tags": ["aot", "politics"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 18,
+    "question": "Why was Ymir’s story significant to understanding the Titan curse?",
+    "description": null,
+    "answers": {
+      "answer_a": "She was the first to be turned into a Titan",
+      "answer_b": "She proved Titans could revert to humans",
+      "answer_c": "She connected the modern world to ancient Eldia",
+      "answer_d": "She invented the 3D Maneuver Gear"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "false",
+      "answer_c_correct": "true",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Ymir’s past revealed the origin of Titans and the deep history of Eldia’s power and guilt.",
+    "tags": ["aot", "history"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 19,
+    "question": "Why did Reiner develop a split personality during his mission on Paradis?",
+    "description": null,
+    "answers": {
+      "answer_a": "Because of brainwashing from Marley",
+      "answer_b": "Because of trauma and guilt over killing innocents",
+      "answer_c": "Because of his Titan powers’ side effects",
+      "answer_d": "Because of Eren’s influence"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Reiner’s fractured identity shows the psychological toll of betraying friends while trying to justify his mission.",
+    "tags": ["aot", "psychology"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 20,
+    "question": "Why did Eren smile when he saw the ocean for the first time?",
+    "description": null,
+    "answers": {
+      "answer_a": "He was finally free and satisfied",
+      "answer_b": "He realized the world beyond was full of enemies",
+      "answer_c": "He remembered his mother’s dream",
+      "answer_d": "He saw Marleyan ships approaching"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "false",
+      "answer_b_correct": "true",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Eren’s smile was bittersweet — he saw the ocean, but also the truth that real freedom still lay beyond countless enemies.",
+    "tags": ["aot", "themes"],
+    "category": "Attack on Titan",
+    "difficulty": "Easy"
+  },
 
