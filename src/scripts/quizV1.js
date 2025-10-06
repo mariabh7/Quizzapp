@@ -85,7 +85,7 @@ export class Userdata {
 export const users = new Map();
 export async function GetDataViaAPI(selectEl, ParentEL) {
     // try {
-    //     let res = await fetch("https://quizapi.io/api/v1/tags?apiKey=JjfEUVHKdDTfHTso");
+    //     let res = await fetch("");
     //     let Data = await res.json();
     //     try {
     //         Data.forEach(element => {
