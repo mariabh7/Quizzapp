@@ -437,5 +437,442 @@
     "tags": ["aot", "themes"],
     "category": "Attack on Titan",
     "difficulty": "Easy"
+  },{
+    "id": 21,
+    "question": "How did Ymir Fritz’s continued servitude to the royal bloodline reflect the central theme of 'freedom'?",
+    "description": null,
+    "answers": {
+      "answer_a": "It showed how power doesn’t guarantee true freedom",
+      "answer_b": "It proved Titans could never disobey their masters",
+      "answer_c": "It demonstrated the will of the Founding Titan",
+      "answer_d": "It symbolized her hatred for humanity"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Despite holding all Titan power, Ymir was mentally enslaved by love and obedience — a contrast to Eren’s pursuit of freedom.",
+    "tags": ["ymir", "freedom", "themes"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
   },
-
+  {
+    "id": 22,
+    "question": "What strategic role did Onyankopon play within the alliance against Eren?",
+    "description": null,
+    "answers": {
+      "answer_a": "He served as the only skilled pilot for Marleyan aircraft",
+      "answer_b": "He acted as Zeke’s informant",
+      "answer_c": "He provided Eldian genetic data",
+      "answer_d": "He was the first to defect from Marley"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Onyankopon was crucial because he was the only pilot able to operate Marley’s airship, enabling the alliance’s attack.",
+    "tags": ["onyankopon", "alliance", "strategy"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 23,
+    "question": "Why did Jean Kirstein emerge as a natural leader later in the series?",
+    "description": null,
+    "answers": {
+      "answer_a": "He balanced morality with pragmatism in decision-making",
+      "answer_b": "He had superior combat strength",
+      "answer_c": "He inherited Erwin’s title",
+      "answer_d": "He was chosen by Levi directly"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Jean’s realism and empathy made him capable of leading in morally gray situations, echoing Erwin’s balance of heart and logic.",
+    "tags": ["jean", "leadership", "morality"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "Why did Eren send the letters through the Jaegerists before attacking Marley?",
+    "description": null,
+    "answers": {
+      "answer_a": "To synchronize his plan with his allies inside Paradis",
+      "answer_b": "To alert the world’s militaries",
+      "answer_c": "To taunt Marley’s officials",
+      "answer_d": "To mislead the Survey Corps"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Eren secretly coordinated with Floch and the Jaegerists to prepare the island’s internal coup and align timing with his assault.",
+    "tags": ["eren", "jaegerists", "strategy"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "What does Mikasa’s decision at the end of the series symbolize?",
+    "description": null,
+    "answers": {
+      "answer_a": "Letting go of her attachment to Eren and choosing peace",
+      "answer_b": "Her failure to follow Eren’s ideology",
+      "answer_c": "Eren’s total victory",
+      "answer_d": "Her commitment to protect Paradis militarily"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Mikasa killing Eren reflected her emotional liberation and acceptance of peace beyond obsession.",
+    "tags": ["mikasa", "ending", "symbolism"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 26,
+    "question": "Why was Eren able to influence his father's actions in the past?",
+    "description": null,
+    "answers": {
+      "answer_a": "Because the Attack Titan allows memories to move forward and backward in time",
+      "answer_b": "Because Eren had royal blood",
+      "answer_c": "Through Ymir’s will",
+      "answer_d": "Because Zeke helped him enter the Coordinate"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "The Attack Titan’s unique ability lets its holders access memories from future inheritors, allowing Eren to guide Grisha’s choices.",
+    "tags": ["attack_titan", "eren", "grisha"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 27,
+    "question": "What was the narrative purpose of Sasha’s death in the story?",
+    "description": null,
+    "answers": {
+      "answer_a": "To show the cost of war and loss of innocence in the new generation",
+      "answer_b": "To motivate Gabi’s redemption arc",
+      "answer_c": "To make Levi question his loyalty",
+      "answer_d": "To prove Eren’s cruelty"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Sasha’s death symbolized the fading purity of the original scouts and the brutal consequences of Eren’s war escalation.",
+    "tags": ["sasha", "themes", "war"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "question": "How did Marley’s propaganda shape Eldians’ identity both inside and outside the walls?",
+    "description": null,
+    "answers": {
+      "answer_a": "By convincing them they were devils and deserved punishment",
+      "answer_b": "By glorifying Titan warfare",
+      "answer_c": "By erasing the existence of Paradis",
+      "answer_d": "By teaching Titans were divine"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Marley’s propaganda instilled guilt and inferiority in Eldians, maintaining control through psychological manipulation.",
+    "tags": ["marley", "eldians", "propaganda"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "What was the hidden irony behind Eren’s idea of 'freedom'?",
+    "description": null,
+    "answers": {
+      "answer_a": "He became enslaved by his own predetermined future",
+      "answer_b": "He gained total peace through violence",
+      "answer_c": "He achieved the Founding Titan’s goal",
+      "answer_d": "He freed Paradis from Titans permanently"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Eren fought for freedom but was ultimately bound by the very future he foresaw, becoming a prisoner of destiny.",
+    "tags": ["eren", "freedom", "irony"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "Why did Floch remain loyal to Eren until his death?",
+    "description": null,
+    "answers": {
+      "answer_a": "He believed Eren’s plan was the only way to secure Paradis’s survival",
+      "answer_b": "He was secretly controlled by Zeke",
+      "answer_c": "He feared Levi’s leadership",
+      "answer_d": "He sought revenge for Erwin’s death"
+    },
+    "multiple_correct_answers": "false",
+    "correct_answers": {
+      "answer_a_correct": "true",
+      "answer_b_correct": "false",
+      "answer_c_correct": "false",
+      "answer_d_correct": "false"
+    },
+    "explanation": "Floch saw Eren’s extreme plan as the only realistic solution to guarantee Paradis’s dominance and freedom.",
+    "tags": ["floch", "eren", "ideology"],
+    "category": "Attack on Titan",
+    "difficulty": "Medium"
+  },{
+  "id": 31,
+  "question": "What was the primary reason Eren allowed himself to be captured in Marley?",
+  "description": null,
+  "answers": {
+    "answer_a": "To rescue Zeke from imprisonment",
+    "answer_b": "To gather information and destabilize Marley from within",
+    "answer_c": "To make peace with the Marleyan people",
+    "answer_d": "To surrender and end the war"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren infiltrated Marley to gather intel, manipulate events, and create chaos as part of his larger plan.",
+  "tags": ["eren", "marley", "strategy"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 32,
+  "question": "Why did Zeke choose euthanasia as his ultimate plan?",
+  "description": null,
+  "answers": {
+    "answer_a": "He believed ending the Eldian bloodline was the only way to stop suffering",
+    "answer_b": "He wanted to punish Marley",
+    "answer_c": "He sought to gain control over Eren",
+    "answer_d": "He misunderstood Ymir’s powers"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Zeke’s warped morality led him to believe sterilizing all Eldians would bring lasting peace by ending Titan inheritance.",
+  "tags": ["zeke", "plan", "euthanasia"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 33,
+  "question": "What did the basement reveal fundamentally change about the world?",
+  "description": null,
+  "answers": {
+    "answer_a": "That Titans came from outer space",
+    "answer_b": "That humanity existed beyond the walls and the world was much larger",
+    "answer_c": "That Grisha was a Marleyan spy",
+    "answer_d": "That Eren was not human"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The basement’s secrets shattered the illusion of a contained world and revealed the global scale of conflict and oppression.",
+  "tags": ["basement", "truth", "world"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 34,
+  "question": "What was Historia’s main motivation for becoming queen?",
+  "description": null,
+  "answers": {
+    "answer_a": "To gain political power over the military",
+    "answer_b": "To protect her people and ensure freedom from royal manipulation",
+    "answer_c": "To avenge her family’s death",
+    "answer_d": "To follow Erwin’s orders"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Historia accepted the crown to break her family’s cycle of control and protect the Eldian people on her own terms.",
+  "tags": ["historia", "leadership", "royalty"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 35,
+  "question": "What was the symbolic meaning of Eren’s repeated dream about the key to the basement?",
+  "description": null,
+  "answers": {
+    "answer_a": "It represented his father’s expectations",
+    "answer_b": "It symbolized the hidden truth and Eren’s destiny to uncover it",
+    "answer_c": "It was a random memory fragment",
+    "answer_d": "It foreshadowed Eren’s death"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The basement key dream symbolized knowledge and truth — Eren’s journey from ignorance to awareness of humanity’s reality.",
+  "tags": ["eren", "symbolism", "dream"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 36,
+  "question": "Why did Armin’s survival cause tension within the Survey Corps after the battle with the Colossal Titan?",
+  "description": null,
+  "answers": {
+    "answer_a": "Some believed Erwin should have been revived instead",
+    "answer_b": "Armin lost his memory after transformation",
+    "answer_c": "Levi disobeyed direct orders",
+    "answer_d": "Eren objected to using Titan serum"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The moral dilemma of saving Armin over Erwin divided the Corps and questioned leadership priorities.",
+  "tags": ["armin", "erwin", "decision"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 37,
+  "question": "How did Eren manipulate Ymir Fritz in the Paths?",
+  "description": null,
+  "answers": {
+    "answer_a": "By convincing her she had free will and didn’t need to obey royal bloodlines",
+    "answer_b": "By taking full control of her powers forcefully",
+    "answer_c": "By using Zeke’s command over her",
+    "answer_d": "By merging their consciousness"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren appealed to Ymir’s desire for freedom, breaking her submission to royal control and triggering the Rumbling.",
+  "tags": ["paths", "eren", "ymir"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 38,
+  "question": "What did Levi mean when he said he’d make the 'choice that Erwin couldn’t'?",
+  "description": null,
+  "answers": {
+    "answer_a": "He chose compassion over strategic sacrifice",
+    "answer_b": "He abandoned the mission",
+    "answer_c": "He refused to fight Eren",
+    "answer_d": "He joined Marley"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Levi honored Erwin’s humanity by letting him rest in peace and reviving Armin instead — an act of mercy Erwin would never take.",
+  "tags": ["levi", "erwin", "morality"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 39,
+  "question": "Why did Reiner struggle with severe guilt throughout the series?",
+  "description": null,
+  "answers": {
+    "answer_a": "He betrayed his friends and destroyed innocent lives",
+    "answer_b": "He envied Eren’s powers",
+    "answer_c": "He was secretly ordered to kill Bertholdt",
+    "answer_d": "He was aware of Zeke’s manipulation"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Reiner’s dual identity — as both soldier and warrior — tore him apart psychologically, causing intense guilt over his actions in Paradis.",
+  "tags": ["reiner", "guilt", "psychology"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+},
+{
+  "id": 40,
+  "question": "What was the deeper message behind Eren’s destruction of the world?",
+  "description": null,
+  "answers": {
+    "answer_a": "The cycle of hatred and freedom’s cost",
+    "answer_b": "The supremacy of Eldians over humans",
+    "answer_c": "The futility of love and loyalty",
+    "answer_d": "The inevitability of destiny"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren’s final act represents the paradox of freedom — destroying the world to escape its chains, showing that peace often requires tragedy.",
+  "tags": ["eren", "theme", "freedom"],
+  "category": "Attack on Titan",
+  "difficulty": "Medium"
+}]
