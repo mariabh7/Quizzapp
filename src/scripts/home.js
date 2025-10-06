@@ -26,7 +26,7 @@ const OurUser = setUserInfo();
 console.log(OurUser);
 const levels = ["hard", "medium", "easy"];
 // current avaible topics 
-const topics = ["javascript", "html-5", "css-3"];
+const topics = ["javascript", "html-5", "css-3", "c", "nextjs" , "attackOnTitan"];
 const nums = [3, 5, 10, 15, 20];
 const selectDataMap = {
     diff: levels,
@@ -127,7 +127,7 @@ class Timer {
         this.displayTime = time;
         this.minInput = minutes;
         this.secInput = seconds;
-        this.ClockEndaudio = new Audio("/Quizapp/public/mixkit-clock-bells-hour-signal-1069.wav");
+        this.ClockEndaudio = new Audio("mixkit-clock-bells-hour-signal-1069.wav");
     }
 
     updateDisplay() {
@@ -328,7 +328,7 @@ function ShowAns() {
                         });
                         li.classList.remove("answer-li");
                         li.classList.add("answer-Active");
-                        map.set(`${currentItem + 1}-answer`, [item.correct_answers[`${li.id}_correct`], li.textContent, `${item.explanation || answers[`answer_${item.correct_answer}`]}`]);
+                        map.set(`${currentItem + 1}-answer`, [item.correct_answers[`${li.id}_correct`], item?.question, li.textContent, `${item.explanation || answers[`answer_${item.correct_answer}`]}`]);
 
                     })
                 }
@@ -386,8 +386,6 @@ function Addtogallery() {
     localStorage.setItem("totalscore", parseInt(score.textContent));
     localStorage.setItem("usersName", JSON.stringify(OurUser));
     DisplayGallery(Gallery);
-    console.log(Gallery);
-    console.log(OurUser.GetMap());
 }
 function UpdateGalleryDom() {
     score.textContent = localStorage.getItem("totalscore") || 0;
@@ -409,9 +407,9 @@ function showDetails(parent, gal) {
             let div = document.createElement("div");
             div.innerHTML = `
                           <h3>${key[0]}- ${value[1]}</h3>
-                          <p>- your answer : <span class="myAnswer">${value[2]}</span>
+                          <p>- your answer : <span class="myAnswer">${ escapeHTML(value[2])}</span>
                            </p>
-                           <p>- correct answer: <span class="systemAnswer">${value[3]}</span></p>
+                           <p>- correct answer: <span class="systemAnswer">${ escapeHTML(value[3])}</span></p>
                            `
             div.classList.add("ques");
             if (value[0] === "true") {
@@ -436,7 +434,7 @@ function DisplayGallery(gal, key) {
     let Itemtime = new Date(gal.get("time"));
     div.innerHTML = `<div class="flex h-full flex-col gap-4 md:gap-8 py-2 md:py-4  border-2 border-gray-100 rounded-xl">
                         <div class=" flex justify-center h-10 md:h-16 items-start w-full pb-2  border-b-2 border-gray-100 ">
-                            <img src="https://api.iconify.design/logos:${name}.svg" alt="${name}" class=" w-6 md:w-10">
+                            ${name.includes("attackOnTitan") ? `<img src="https://api.iconify.design/logos:${name}.svg" alt="${name}" class=" w-6 md:w-10"></img>` : `<p class="capitalize"> attack on titan  </p>` }
                         </div>
                         <div class="mx-3">
                             <div class="flex flex-col justify-start  gap-2 md:gap-4 ">
@@ -490,7 +488,7 @@ function DisplayGallery(gal, key) {
                                         class="bg-white qs py-9 rounded-xl flex flex-col w-[90%] md:w-[80%] lg:w-[60%]  justify-start items-start gap-5 ">
                                         <div
                                             class="flex justify-center h-10 md:h-max items-start w-full pb-2  border-b-2 border-gray-100 ">
-                                            <img src="https://api.iconify.design/logos:${name}.svg" class="w-[40px]">
+                                            ${name.includes("attackOnTitan") ? `<img src="https://api.iconify.design/logos:${name}.svg" alt="${name}" class=" w-6 md:w-10"></img>` : `<p class="capitalize"> attack on titan  </p>` }
                                         </div>
                                         <div
                                             class="py-5 qContainer px-3 md:px-5 flex w-full overflow-x-scroll capitalize font-sans gap-20 justify-between ">
