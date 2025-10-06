@@ -875,4 +875,442 @@
   "tags": ["eren", "theme", "freedom"],
   "category": "Attack on Titan",
   "difficulty": "Medium"
+},{
+  "id": 41,
+  "question": "What philosophical concept best aligns with Eren’s transformation throughout the series?",
+  "description": null,
+  "answers": {
+    "answer_a": "Determinism — his actions were inevitable due to fate and memory influence",
+    "answer_b": "Existentialism — he freely defined his purpose through action",
+    "answer_c": "Utilitarianism — he sought the greatest good for the greatest number",
+    "answer_d": "Nihilism — he believed nothing truly mattered"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren’s journey mirrors determinism — every choice felt predestined by the Attack Titan’s power and the flow of time.",
+  "tags": ["eren", "philosophy", "determinism"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 42,
+  "question": "Why did Eren show Mikasa the vision of a peaceful life together before his death?",
+  "description": null,
+  "answers": {
+    "answer_a": "To manipulate her emotions for his plan",
+    "answer_b": "To express his genuine desire for freedom through love",
+    "answer_c": "To test her Ackerman bond",
+    "answer_d": "To create an alternate timeline"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren’s fantasy showed his human longing for love and peace, contrasting his brutal destiny — symbolizing the price of freedom.",
+  "tags": ["eren", "mikasa", "emotion"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 43,
+  "question": "How does the concept of 'Paths' challenge the linear perception of time in the story?",
+  "description": null,
+  "answers": {
+    "answer_a": "All Eldians share one consciousness that transcends time",
+    "answer_b": "Paths act only as memory transmitters between Titans",
+    "answer_c": "They are limited to royal bloodlines",
+    "answer_d": "They exist only within the Coordinate dimension"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Paths connect all Eldians across time and space, making events past and future coexist — a key to Eren’s predestined actions.",
+  "tags": ["paths", "time", "philosophy"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 44,
+  "question": "Why did Eren choose not to reveal his full plan to his closest friends?",
+  "description": null,
+  "answers": {
+    "answer_a": "He believed they would try to stop him",
+    "answer_b": "He wanted to spare them from guilt and make them heroes",
+    "answer_c": "He didn’t fully know his plan until the Rumbling started",
+    "answer_d": "He distrusted them after Zeke’s betrayal"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "false",
+    "answer_b_correct": "true",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren kept his plan secret to ensure his friends’ moral purity — their opposition would make them saviors to the world.",
+  "tags": ["eren", "friendship", "plan"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 45,
+  "question": "What was the deeper meaning of Mikasa killing Eren at the end?",
+  "description": null,
+  "answers": {
+    "answer_a": "It symbolized love’s ability to end hatred",
+    "answer_b": "It fulfilled the Ackerman instinct",
+    "answer_c": "It broke the curse of the Titans through sacrifice",
+    "answer_d": "It represented revenge for Armin’s suffering"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Mikasa’s act was both tragic and redemptive — choosing love over blind loyalty, breaking the cycle of violence through compassion.",
+  "tags": ["mikasa", "eren", "ending"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 46,
+  "question": "What parallel exists between Grisha and Eren’s ideologies?",
+  "description": null,
+  "answers": {
+    "answer_a": "Both believed freedom justified extreme violence",
+    "answer_b": "Both opposed the use of Titan power",
+    "answer_c": "Both wanted to restore Marley’s dominance",
+    "answer_d": "Both prioritized diplomacy over war"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Grisha and Eren shared a generational obsession with freedom, both crossing moral lines in pursuit of it — history repeating itself.",
+  "tags": ["grisha", "eren", "ideology"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 47,
+  "question": "Why did Ymir Fritz choose to end the Titan curse only after Mikasa’s decision?",
+  "description": null,
+  "answers": {
+    "answer_a": "Mikasa’s act mirrored the love Ymir could never express toward King Fritz",
+    "answer_b": "She needed royal blood to activate it",
+    "answer_c": "Eren ordered her to do so",
+    "answer_d": "The Paths required two Ackermans’ intervention"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Ymir was freed emotionally through Mikasa’s selfless love — breaking the symbolic chain of obedience and abuse that bound her.",
+  "tags": ["ymir", "mikasa", "symbolism"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 48,
+  "question": "What does the recurring bird symbolism represent in the final episode?",
+  "description": null,
+  "answers": {
+    "answer_a": "Eren’s spirit watching over Mikasa — symbolizing eternal freedom",
+    "answer_b": "The souls of fallen Titans returning to nature",
+    "answer_c": "Paradise reborn after destruction",
+    "answer_d": "Ymir reincarnated in bird form"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The bird reflects freedom and connection beyond death — a visual metaphor for Eren’s lingering presence and the idea of liberation.",
+  "tags": ["symbolism", "ending", "eren"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 49,
+  "question": "Why did Zeke ultimately choose to help Armin inside the Paths?",
+  "description": null,
+  "answers": {
+    "answer_a": "Armin reminded him of the beauty of life and connection",
+    "answer_b": "He wanted revenge on Eren",
+    "answer_c": "He was forced by Ymir",
+    "answer_d": "He sought redemption to see his father again"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Zeke, disillusioned with his ideology, was reawakened by Armin’s belief in life’s meaning — regaining his humanity in his final moments.",
+  "tags": ["zeke", "armin", "paths"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 50,
+  "question": "What deeper theme does the Rumbling ultimately expose about human nature?",
+  "description": null,
+  "answers": {
+    "answer_a": "Fear and hatred perpetuate endlessly, even after destruction",
+    "answer_b": "Humanity is inherently peaceful when freed from oppression",
+    "answer_c": "Technology always overcomes morality",
+    "answer_d": "Power can exist without consequence"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The Rumbling proves that cycles of violence continue — humans repeat history even after near extinction, driven by fear and ego.",
+  "tags": ["rumbling", "theme", "humanity"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 51,
+  "question": "What does Eren’s conversation with Armin in the Paths reveal about his emotional conflict?",
+  "description": null,
+  "answers": {
+    "answer_a": "He hated and loved his friends simultaneously",
+    "answer_b": "He regretted killing Zeke",
+    "answer_c": "He doubted the Rumbling’s success",
+    "answer_d": "He envied Reiner’s loyalty"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren admitted conflicting feelings — affection, guilt, and rage — showing he was both victim and perpetrator of his ideology.",
+  "tags": ["eren", "armin", "emotion"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 52,
+  "question": "Why did Isayama choose to parallel the fall of Marley with the fall of Paradis?",
+  "description": null,
+  "answers": {
+    "answer_a": "To emphasize that oppression always shifts hands",
+    "answer_b": "To set up a sequel world war",
+    "answer_c": "To justify Eren’s genocide",
+    "answer_d": "To show Ymir’s control continued after death"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "By showing history repeating, Isayama highlighted that hatred is cyclical — no nation is forever righteous or evil.",
+  "tags": ["theme", "history", "cycle"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 53,
+  "question": "What does Armin’s forgiveness of Eren symbolize?",
+  "description": null,
+  "answers": {
+    "answer_a": "The acceptance of human contradiction and failure",
+    "answer_b": "The triumph of logic over emotion",
+    "answer_c": "The weakness of friendship",
+    "answer_d": "The futility of morality"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Armin’s forgiveness embodies the human capacity to understand imperfection — even in monstrous acts — bridging despair and hope.",
+  "tags": ["armin", "eren", "forgiveness"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 54,
+  "question": "What was the meaning behind Eren’s tears as a child when seeing freedom beyond the walls?",
+  "description": null,
+  "answers": {
+    "answer_a": "He subconsciously remembered future suffering tied to that freedom",
+    "answer_b": "He realized Titans no longer existed",
+    "answer_c": "He missed his mother",
+    "answer_d": "He foresaw Armin’s death"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Those tears foreshadowed the paradox — Eren’s idea of freedom would later bring unimaginable suffering, seen through his future memories.",
+  "tags": ["eren", "foreshadowing", "memory"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 55,
+  "question": "What role did memory inheritance play in shaping Eren’s sense of self?",
+  "description": null,
+  "answers": {
+    "answer_a": "It blurred his identity, merging past and future selves",
+    "answer_b": "It erased his original motivations",
+    "answer_c": "It enhanced his empathy for enemies",
+    "answer_d": "It disconnected him from Titan power"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren’s inherited memories fragmented his sense of identity, making him a vessel for destiny rather than pure individuality.",
+  "tags": ["eren", "memory", "identity"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 56,
+  "question": "Why is the Rumbling considered both a failure and success from Eren’s perspective?",
+  "description": null,
+  "answers": {
+    "answer_a": "It fulfilled his freedom but doomed his people to repeat history",
+    "answer_b": "It annihilated Marley completely",
+    "answer_c": "It restored Ymir’s body",
+    "answer_d": "It united all nations permanently"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren achieved his goal of freeing Paradis temporarily, but the world soon repeated the cycle of fear and war — freedom’s contradiction.",
+  "tags": ["eren", "rumbling", "theme"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 57,
+  "question": "How did Levi’s final words to Zeke encapsulate the story’s moral tension?",
+  "description": null,
+  "answers": {
+    "answer_a": "They reflected the thin line between justice and vengeance",
+    "answer_b": "They revealed Levi’s guilt for killing Erwin",
+    "answer_c": "They admitted Zeke’s ideology was right",
+    "answer_d": "They predicted humanity’s extinction"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Levi’s final act was both justice and personal closure — showing how vengeance can feel righteous yet remain hollow.",
+  "tags": ["levi", "zeke", "justice"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 58,
+  "question": "What was the thematic purpose of the time skip between Marley and Paradis arcs?",
+  "description": null,
+  "answers": {
+    "answer_a": "To show that progress and decay coexist — both sides evolve yet repeat mistakes",
+    "answer_b": "To reset the narrative tension",
+    "answer_c": "To introduce new Titans only",
+    "answer_d": "To show Levi’s aging process"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "The time skip revealed the duality of progress — both nations advanced technologically but remained trapped in ideological conflict.",
+  "tags": ["time skip", "theme", "history"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},{
+  "id": 59,
+  "question": "What philosophical question does Eren indirectly raise through his decision to initiate the Rumbling?",
+  "description": null,
+  "answers": {
+    "answer_a": "Whether true freedom can coexist with morality",
+    "answer_b": "Whether Eldians are superior to other nations",
+    "answer_c": "Whether violence can ever be justified for peace",
+    "answer_d": "Whether Titans should have remained a mystery"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Eren’s decision forces viewers to question if absolute freedom can exist without moral compromise, reflecting his internal conflict between necessity and ethics.",
+  "tags": ["eren", "philosophy", "rumbling"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
+},
+{
+  "id": 60,
+  "question": "Why did Ymir Fritz obey the royal family’s commands for 2000 years despite possessing godlike power?",
+  "description": null,
+  "answers": {
+    "answer_a": "She was bound by her love and psychological submission to King Fritz",
+    "answer_b": "She feared losing her Titan abilities",
+    "answer_c": "She was trapped in the Paths dimension against her will",
+    "answer_d": "She lacked free will due to the curse of Ymir"
+  },
+  "multiple_correct_answers": "false",
+  "correct_answers": {
+    "answer_a_correct": "true",
+    "answer_b_correct": "false",
+    "answer_c_correct": "false",
+    "answer_d_correct": "false"
+  },
+  "explanation": "Despite her immense power, Ymir remained emotionally enslaved to the King, illustrating the show's central idea that psychological chains can be stronger than physical ones.",
+  "tags": ["ymir", "royal family", "paths"],
+  "category": "Attack on Titan",
+  "difficulty": "Hard"
 }]
